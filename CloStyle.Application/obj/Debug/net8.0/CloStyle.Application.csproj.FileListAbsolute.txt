@@ -1,0 +1,17 @@
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\bin\Debug\net8.0\CloStyle.Application.deps.json
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\bin\Debug\net8.0\CloStyle.Application.runtimeconfig.json
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\bin\Debug\net8.0\CloStyle.Application.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\bin\Debug\net8.0\CloStyle.Application.pdb
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\bin\Debug\net8.0\CloStyle.Domain.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\bin\Debug\net8.0\CloStyle.Domain.pdb
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\obj\Debug\net8.0\CloStyle.Application.csproj.AssemblyReference.cache
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\obj\Debug\net8.0\CloStyle.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\obj\Debug\net8.0\CloStyle.Application.AssemblyInfoInputs.cache
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\obj\Debug\net8.0\CloStyle.Application.AssemblyInfo.cs
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\obj\Debug\net8.0\CloStyle.Application.csproj.CoreCompileInputs.cache
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\obj\Debug\net8.0\CloStyle.B6702F14.Up2Date
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\obj\Debug\net8.0\CloStyle.Application.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\obj\Debug\net8.0\refint\CloStyle.Application.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\obj\Debug\net8.0\CloStyle.Application.pdb
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\obj\Debug\net8.0\CloStyle.Application.genruntimeconfig.cache
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application\obj\Debug\net8.0\ref\CloStyle.Application.dll

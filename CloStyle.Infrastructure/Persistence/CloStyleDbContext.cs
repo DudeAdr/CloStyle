@@ -1,0 +1,22 @@
+﻿using CloStyle.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+
+namespace CloStyle.Infrastructure.Persistence
+{
+    public class CloStyleDbContext : DbContext
+    {
+        public CloStyleDbContext(DbContextOptions<CloStyleDbContext> options) : base(options) { }
+
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Gender> Genders { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Size> Sizes { get; set; }
+        public DbSet<ProductSize> ProductSizes { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
+    }
+}
