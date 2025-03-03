@@ -1,4 +1,6 @@
-﻿using CloStyle.Infrastructure.Persistence;
+﻿using CloStyle.Domain.Interfaces;
+using CloStyle.Infrastructure.Persistence;
+using CloStyle.Infrastructure.Repositories;
 using CloStyle.Infrastructure.Seeders;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +21,7 @@ namespace CloStyle.Infrastructure.Extensions
                 configuration.GetConnectionString("CloStyle")));
 
             services.AddScoped<CloStyleSeeder>();
+            services.AddScoped<IBrandRepository, BrandRepository>();
         }
     }
 }

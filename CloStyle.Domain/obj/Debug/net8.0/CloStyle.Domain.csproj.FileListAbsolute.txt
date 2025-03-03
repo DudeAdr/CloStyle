@@ -1,3 +1,17 @@
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\bin\Debug\net8.0\CloStyle.Domain.deps.json
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\bin\Debug\net8.0\CloStyle.Domain.dll
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\bin\Debug\net8.0\CloStyle.Domain.pdb
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.AssemblyInfoInputs.cache
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.AssemblyInfo.cs
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.csproj.CoreCompileInputs.cache
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.dll
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\refint\CloStyle.Domain.dll
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.pdb
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\ref\CloStyle.Domain.dll
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\bin\Debug\net8.0\CloStyle.Domain.runtimeconfig.json
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.csproj.AssemblyReference.cache
+C:\Users\adria\Desktop\ClothesShop.NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.genruntimeconfig.cache
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Domain\bin\Debug\net8.0\CloStyle.Domain.deps.json
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Domain\bin\Debug\net8.0\CloStyle.Domain.runtimeconfig.json
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Domain\bin\Debug\net8.0\CloStyle.Domain.dll
@@ -7,6 +21,7 @@ C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Domain\obj\Debug\net8.
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.AssemblyInfoInputs.cache
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.AssemblyInfo.cs
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.csproj.CoreCompileInputs.cache
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.sourcelink.json
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.dll
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\refint\CloStyle.Domain.dll
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Domain\obj\Debug\net8.0\CloStyle.Domain.pdb
