@@ -12,6 +12,10 @@ namespace CloStyle.Controllers
         {
             _brandService = brandService;
         }
+        public IActionResult Add()
+        {
+            return View();
+        }
 
         [HttpPost]
         public async Task<IActionResult> Add(Brand brand)
