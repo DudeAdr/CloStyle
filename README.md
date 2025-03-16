@@ -1,0 +1,1 @@
+This is a project I am currently working on in my free time (unfortunately, I don't have much of it). It will be a simple application built in .NET MVC, simulating an online store with the ability to add products to specific brands as an administrator and browse the store as a user.
