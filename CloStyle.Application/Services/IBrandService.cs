@@ -1,9 +1,10 @@
-﻿using CloStyle.Domain.Entities;
+﻿using CloStyle.Application.CloStyle;
+using CloStyle.Domain.Entities;
 
 namespace CloStyle.Application.Services
 {
     public interface IBrandService
     {
-        Task Add(Brand brand);
+        Task Add(BrandDto brand);
     }
 }

@@ -1,4 +1,5 @@
-﻿using CloStyle.Application.Services;
+﻿using CloStyle.Application.CloStyle;
+using CloStyle.Application.Services;
 using CloStyle.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,7 +19,7 @@ namespace CloStyle.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(Brand brand)
+        public async Task<IActionResult> Add(BrandDto brand)
         {
             await _brandService.Add(brand);
             return RedirectToAction(nameof(Add));

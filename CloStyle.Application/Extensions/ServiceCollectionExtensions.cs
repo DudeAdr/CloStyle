@@ -1,4 +1,5 @@
-﻿using CloStyle.Application.Services;
+﻿using CloStyle.Application.Mappings;
+using CloStyle.Application.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -14,6 +15,7 @@ namespace CloStyle.Application.Extensions
         public static void AddApplication(this IServiceCollection services)
         {
             services.AddScoped<IBrandService, BrandService>();
+            services.AddAutoMapper(typeof(BrandMappingProfile));
         }
     }
 }
