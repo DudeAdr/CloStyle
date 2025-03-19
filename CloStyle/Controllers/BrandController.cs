@@ -21,6 +21,10 @@ namespace CloStyle.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(BrandDto brand)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(brand);
+            }
             await _brandService.Add(brand);
             return RedirectToAction(nameof(Add));
         }

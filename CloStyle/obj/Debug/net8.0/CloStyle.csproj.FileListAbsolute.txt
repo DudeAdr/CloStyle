@@ -359,3 +359,6 @@ C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\obj\Debug\net8.0\refin
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\obj\Debug\net8.0\CloStyle.pdb
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\obj\Debug\net8.0\CloStyle.genruntimeconfig.cache
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\obj\Debug\net8.0\ref\CloStyle.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\obj\Debug\net8.0\CloStyle.MvcApplicationPartsAssemblyInfo.cs

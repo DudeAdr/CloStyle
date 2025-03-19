@@ -1,11 +1,15 @@
-﻿<h1>Add new brand</h1>
+﻿@using CloStyle.Application.CloStyle
+@model BrandDto
+
+<h1>Add new brand</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form action="/Brand/Add" method="post">
             <div class="form-group mb-3">
-                <label class="control-label" for="Name">Name</label>
-                <input class="form-control" type="text" id="Name" name="Name"
+                <label class="control-label" asp-for="Name">Name</label>
+                <input class="form-control" type="text" asp-for="Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class=" form-group mb-3">
                 <input type="submit" value="Add" class="btn btn-primary my-2" />
@@ -13,3 +17,10 @@
         </form>
     </div>
 </div>
+
+@section Scripts
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
