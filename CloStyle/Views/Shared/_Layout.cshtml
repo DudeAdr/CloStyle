@@ -25,8 +25,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Brand" asp-action="Add">Add Brands</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="brandsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Brands
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="brandsDropdown">
+                                <li><a class="dropdown-item" asp-controller="Brand" asp-action="Add">Add Brand</a></li>
+                                <li><a class="dropdown-item" asp-controller="Brand" asp-action="Index">List of Brands</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>

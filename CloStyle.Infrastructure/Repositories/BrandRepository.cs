@@ -24,6 +24,11 @@ namespace CloStyle.Infrastructure.Repositories
             await _dbContext.SaveChangesAsync();
         }
 
+        public async Task<IEnumerable<Brand>> GetAll()
+        {
+            return await _dbContext.Brands.ToListAsync();
+        }
+
         public Task<Brand?> GetByName(string name)
         {
             return _dbContext.Brands.FirstOrDefaultAsync(b => b.Name.ToLower() == name.ToLower());

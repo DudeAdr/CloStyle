@@ -11,5 +11,6 @@ namespace CloStyle.Domain.Interfaces
     {
         Task Add(Brand brand);
         Task<Brand?> GetByName(string name);
+        Task<IEnumerable<Brand>> GetAll();
     }
 }

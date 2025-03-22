@@ -1,6 +1,5 @@
-﻿using CloStyle.Application.CloStyle;
+﻿using CloStyle.Application.CloStyle.Commands.AddBrand;
 using CloStyle.Application.Mappings;
-using CloStyle.Application.Services;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,13 +12,13 @@ namespace CloStyle.Application.Extensions
         public static void AddApplication(this IServiceCollection services)
         {
             //services
-            services.AddScoped<IBrandService, BrandService>();
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<AddBrandCommand>());
 
             //automapper
             services.AddAutoMapper(typeof(BrandMappingProfile));
 
             //validators
-            services.AddValidatorsFromAssemblyContaining<BrandDtoValidator>()
+            services.AddValidatorsFromAssemblyContaining<AddBrandCommandValidator>()
                 .AddFluentValidationAutoValidation()
                 .AddFluentValidationClientsideAdapters();
         }

@@ -1,17 +1,19 @@
 ﻿using CloStyle.Application.CloStyle;
-using CloStyle.Application.Services;
+using CloStyle.Application.CloStyle.Commands.AddBrand;
+using CloStyle.Application.CloStyle.Queries.GetAllBrands;
 using CloStyle.Domain.Entities;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CloStyle.Controllers
 {
     public class BrandController : Controller
     {
-        private readonly IBrandService _brandService;
+        private readonly IMediator _mediator;
 
-        public BrandController(IBrandService brandService)
+        public BrandController(IMediator brandService)
         {
-            _brandService = brandService;
+            _mediator = brandService;
         }
         public IActionResult Add()
         {
@@ -19,14 +21,20 @@ namespace CloStyle.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(BrandDto brand)
+        public async Task<IActionResult> Add(AddBrandCommand command)
         {
             if (!ModelState.IsValid)
             {
-                return View(brand);
+                return View(command);
             }
-            await _brandService.Add(brand);
-            return RedirectToAction(nameof(Add));
+            await _mediator.Send(command);
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var brand = await _mediator.Send(new GetAllBrandsQuery());
+            return View(brand);
         }
     }
 }

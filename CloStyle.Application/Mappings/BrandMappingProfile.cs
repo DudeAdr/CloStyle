@@ -14,6 +14,7 @@ namespace CloStyle.Application.Mappings
         public BrandMappingProfile()
         {
             CreateMap<BrandDto, Brand>();
+            CreateMap<Brand, BrandDto>();
         }
     }
 }
