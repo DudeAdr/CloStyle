@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.WebRequestMethods;
 
 namespace CloStyle.Infrastructure.Seeders
 {
@@ -61,8 +62,8 @@ namespace CloStyle.Infrastructure.Seeders
                 {
                     var brands = new List<Brand>
                     {
-                        new Brand {Name = "Nike" },
-                        new Brand {Name = "Adidas" }
+                        new Brand {Name = "Nike" , ImgPath = "/images/brands/nike.jpg"},
+                        new Brand {Name = "Adidas", ImgPath = "/images/brands/adidas.png"}
                     };
                     _dbContext.Brands.AddRange(brands);
                     await _dbContext.SaveChangesAsync();

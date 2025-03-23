@@ -54,6 +54,132 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\24c0068c-0bed-4637-8080-96a6aa220d2d_logo-napapirji.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>images/brands/24c0068c-0bed-4637-8080-96a6aa220d2d_logo-napapirji.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vyoxi3drp8</Fingerprint>
+      <Integrity>p8riBlHBGTNVYaJynpV50g+U10dsgCDo75vOAXK2bX0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\24c0068c-0bed-4637-8080-96a6aa220d2d_logo-napapirji.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\37eb0def-bee6-4137-b6c7-a00f4371b667_newbalance.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>images/brands/37eb0def-bee6-4137-b6c7-a00f4371b667_newbalance.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tqwsht1c0d</Fingerprint>
+      <Integrity>xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\37eb0def-bee6-4137-b6c7-a00f4371b667_newbalance.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\4f3f8eec-24b6-4e25-b800-4752b16d589b_logo-napapirji.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>images/brands/4f3f8eec-24b6-4e25-b800-4752b16d589b_logo-napapirji.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vyoxi3drp8</Fingerprint>
+      <Integrity>p8riBlHBGTNVYaJynpV50g+U10dsgCDo75vOAXK2bX0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\4f3f8eec-24b6-4e25-b800-4752b16d589b_logo-napapirji.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\97ddcf99-0b9b-4a43-8567-3bb6000ac100_newbalance.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>images/brands/97ddcf99-0b9b-4a43-8567-3bb6000ac100_newbalance.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tqwsht1c0d</Fingerprint>
+      <Integrity>xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\97ddcf99-0b9b-4a43-8567-3bb6000ac100_newbalance.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\adidas.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>images/brands/adidas.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>l5ik1dq9z8</Fingerprint>
+      <Integrity>F5LidTTFN5X4jfg8319lkyKWxKikLv6vmF5zTPUU4B8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\adidas.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\e649ba31-8b7f-44d4-82ee-1891af66d7e6_newbalance.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>images/brands/e649ba31-8b7f-44d4-82ee-1891af66d7e6_newbalance.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tqwsht1c0d</Fingerprint>
+      <Integrity>xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\e649ba31-8b7f-44d4-82ee-1891af66d7e6_newbalance.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\nike.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>images/brands/nike.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rn4bukq7yx</Fingerprint>
+      <Integrity>V/oOwSQ/u75XjBFdCCP+mmBVX4kvlB/esSuAHJd2xxc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\nike.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
       <SourceType>Package</SourceType>
       <SourceId>CloStyle</SourceId>

@@ -13,6 +13,34 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\24c0068c-0bed-4637-8080-96a6aa220d2d_logo-napapirji.jpg",
+      "PackagePath": "staticwebassets\\images\\brands\\24c0068c-0bed-4637-8080-96a6aa220d2d_logo-napapirji.jpg"
+    },
+    {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\37eb0def-bee6-4137-b6c7-a00f4371b667_newbalance.png",
+      "PackagePath": "staticwebassets\\images\\brands\\37eb0def-bee6-4137-b6c7-a00f4371b667_newbalance.png"
+    },
+    {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\4f3f8eec-24b6-4e25-b800-4752b16d589b_logo-napapirji.jpg",
+      "PackagePath": "staticwebassets\\images\\brands\\4f3f8eec-24b6-4e25-b800-4752b16d589b_logo-napapirji.jpg"
+    },
+    {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\97ddcf99-0b9b-4a43-8567-3bb6000ac100_newbalance.png",
+      "PackagePath": "staticwebassets\\images\\brands\\97ddcf99-0b9b-4a43-8567-3bb6000ac100_newbalance.png"
+    },
+    {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\adidas.png",
+      "PackagePath": "staticwebassets\\images\\brands\\adidas.png"
+    },
+    {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\e649ba31-8b7f-44d4-82ee-1891af66d7e6_newbalance.png",
+      "PackagePath": "staticwebassets\\images\\brands\\e649ba31-8b7f-44d4-82ee-1891af66d7e6_newbalance.png"
+    },
+    {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\nike.jpg",
+      "PackagePath": "staticwebassets\\images\\brands\\nike.jpg"
+    },
+    {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

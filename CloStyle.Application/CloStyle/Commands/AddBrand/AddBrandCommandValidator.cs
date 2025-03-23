@@ -26,3 +26,4 @@ namespace CloStyle.Application.CloStyle.Commands.AddBrand
         }
     }
 }
+

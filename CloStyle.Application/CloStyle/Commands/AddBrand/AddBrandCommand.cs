@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,5 @@ namespace CloStyle.Application.CloStyle.Commands.AddBrand
 {
     public class AddBrandCommand : BrandDto, IRequest<Unit>
     {
-
     }
 }
