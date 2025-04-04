@@ -1,33 +1,60 @@
 ﻿@model IEnumerable<CloStyle.Application.CloStyle.BrandDto>
-
-@{
-    ViewData["Title"] = "Index";
+@section Styles {
+    <link rel="stylesheet" href="~/css/brand.css" asp-append-version="true" />
 }
 
-<h1 style="text-align:center">Manage brands</h1>
+@{
+    ViewData["Title"] = "Manage Brands";
+}
 
-<p>
-    <a asp-action="Add" class="btn btn-primary">Add New Brand</a>
-</p>
+<h1 class="text-center mt-md-3">Manage Brands</h1>
 
-<div class="row">
-    @foreach (var item in Model)
-    {
-        <div class="card m-3" style="width: 18rem;">
-            <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
-                <img src="@item.ImgPath" class="card-img-top" alt="Image of @item.Name" style="max-height: 100%; max-width: 100%; object-fit: cover;">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title text-center">@item.Name</h5>
-                <div class="d-flex justify-content-around">
-                    <a asp-action="Edit" class="btn btn-primary btn-sm">Edit</a>
-                    <a asp-action="ViewProducts" class="btn btn-secondary btn-sm">Products</a>
-                    <a asp-action="Delete" class="btn btn-danger btn-sm">Delete</a>
-                </div>
+<div class="container mb-4">
+    <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
+        <div class="flex-grow-1">
+            <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-search"></i></span>
+                <input type="text" id="brandSearch" class="form-control" placeholder="Search for a brand...">
             </div>
         </div>
-    }
+        <div>
+            <a asp-action="Add" class="btn btn-success d-flex align-items-center">
+                <i class="bi bi-plus-circle me-2"></i> Add New Brand
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-center" id="brandContainer">
+        @foreach (var item in Model)
+        {
+            <div class="card brand-card m-3 p-2" style="width: 18rem;" data-name="@item.Name.ToLower()">
+                <div class="d-flex justify-content-center align-items-center bg-light rounded" style="height: 200px;">
+                    <img src="@item.ImgPath" class="card-img-top" alt="Image of @item.Name" style="max-height: 100%; max-width: 100%; object-fit: cover;">
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">@item.Name</h5>
+                    <div class="d-flex justify-content-around">
+                        <a asp-action="Edit" class="btn btn-outline-primary btn-sm">✏<br /> Edit</a>
+                        <a asp-action="ViewProducts" class="btn btn-outline-secondary btn-sm">🛒 Products</a>
+                        <a asp-action="Delete" class="btn btn-outline-danger btn-sm">❌ Delete</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
 
+<script>
+    document.getElementById("brandSearch").addEventListener("keyup", function () {
+        let input = this.value.toLowerCase();
+        let cards = document.querySelectorAll(".brand-card");
+
+        cards.forEach(card => {
+            let brandName = card.dataset.name || "";
+            card.style.display = brandName.includes(input) ? "block" : "none";
+        });
+    });
+</script>
 
 

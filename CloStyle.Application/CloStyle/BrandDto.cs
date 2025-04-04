@@ -11,6 +11,9 @@ namespace CloStyle.Application.CloStyle
     public class BrandDto
     {
         public string Name { get; set; } = default!;
+        [Required(ErrorMessage = "Logo image is required.")]
+        public IFormFile? ImageFile { get; set; }
+
         public string? ImgPath { get; set; }
     }
 }

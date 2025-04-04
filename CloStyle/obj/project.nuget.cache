@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wYTXYaKCPfE=",
+  "dgSpecHash": "RiZK1N+2E5g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\CloStyle.csproj",
+  "projectFilePath": "C:\\Users\\adria\\Desktop\\CloStyle\\CloStyle\\CloStyle.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adria\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
