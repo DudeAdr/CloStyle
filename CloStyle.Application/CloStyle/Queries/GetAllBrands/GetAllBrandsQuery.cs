@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using CloStyle.Application.CloStyle.Dtos;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;

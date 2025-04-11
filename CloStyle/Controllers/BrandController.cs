@@ -1,6 +1,8 @@
 ﻿using CloStyle.Application.CloStyle;
 using CloStyle.Application.CloStyle.Commands.AddBrand;
 using CloStyle.Application.CloStyle.Queries.GetAllBrands;
+using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
+using CloStyle.Application.CloStyle.Queries.GetProductsByBrandName;
 using CloStyle.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -42,6 +44,15 @@ namespace CloStyle.Controllers
 
             await _mediator.Send(command);
             return RedirectToAction(nameof(Index));
+        }
+
+        [Route("CloStyle/{brandId}/Products")]
+        public async Task<IActionResult> Products(int brandId)
+        {
+            var result = await _mediator.Send(new GetProductsByBrandIdQuery(brandId));
+            var brandName = await _mediator.Send(new GetBrandNameByIdQuery(brandId));
+            ViewData["BrandName"] = brandName;
+            return View(result);
         }
 
         public async Task<IActionResult> Index()

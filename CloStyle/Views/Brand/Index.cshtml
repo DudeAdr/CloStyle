@@ -1,4 +1,5 @@
-﻿@model IEnumerable<CloStyle.Application.CloStyle.BrandDto>
+﻿@using CloStyle.Application.CloStyle.Dtos
+@model IEnumerable<BrandDto>
 @section Styles {
     <link rel="stylesheet" href="~/css/brand.css" asp-append-version="true" />
 }
@@ -36,7 +37,7 @@
                     <h5 class="card-title fw-bold">@item.Name</h5>
                     <div class="d-flex justify-content-around">
                         <a asp-action="Edit" class="btn btn-outline-primary btn-sm">✏<br /> Edit</a>
-                        <a asp-action="ViewProducts" class="btn btn-outline-secondary btn-sm">🛒 Products</a>
+                        <a asp-controller="Brand" asp-action="Products" asp-route-brandId="@item.Id" class="btn btn-outline-secondary btn-sm">🛒 Products</a>
                         <a asp-action="Delete" class="btn btn-outline-danger btn-sm">❌ Delete</a>
                     </div>
                 </div>

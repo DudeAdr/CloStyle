@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CloStyle.Application.CloStyle;
+using CloStyle.Application.CloStyle.Dtos;
 using CloStyle.Domain.Entities;
 using System;
 using System.Collections.Generic;

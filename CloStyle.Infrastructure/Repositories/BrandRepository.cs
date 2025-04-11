@@ -33,5 +33,12 @@ namespace CloStyle.Infrastructure.Repositories
         {
             return _dbContext.Brands.FirstOrDefaultAsync(b => b.Name.ToLower() == name.ToLower());
         }
+        public async Task<string?> GetBrandNameById(int id)
+        {
+            return await _dbContext.Brands
+                .Where(b => b.Id == id)
+                .Select(b => b.Name)
+                .FirstOrDefaultAsync();
+        }
     }
 }

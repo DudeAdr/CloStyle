@@ -1,0 +1,59 @@
+﻿@using CloStyle.Application.CloStyle.Dtos
+@model IEnumerable<ProductDto>
+
+@{
+    ViewData["Title"] = "Produkty marki";
+}
+
+<h1>Produkty marki: @ViewData["BrandName"]</h1>
+
+
+@if (!Model.Any())
+{
+    <p>Brak produktów do wyświetlenia.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().Id)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Price)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Description)</th>
+                <th>@Html.DisplayNameFor(model => model.First().CategoryName)</th>
+                <th>@Html.DisplayNameFor(model => model.First().GenderName)</th>
+                <th>Rozmiary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Price.ToString("C")</td>
+                    <td>@product.Description</td>
+                    <td>@product.CategoryName</td>
+                    <td>@product.GenderName</td>
+                    <td>
+                        @if (product.Sizes != null && product.Sizes.Any())
+                        {
+                            <ul>
+                                @foreach (var size in product.Sizes)
+                                {
+                                    <li>@size</li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <span>Brak danych</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    
+}

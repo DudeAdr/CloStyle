@@ -94,10 +94,16 @@ namespace CloStyle.Infrastructure.Seeders
                 {
                     var productSizes = new List<ProductSize>
                     {
-                        new ProductSize {ProductId = airMax.Id, SizeId = 2, Stock = 100 },
+                        new ProductSize { ProductId = airMax.Id, SizeId = 1, Stock = 100 },
+                        new ProductSize { ProductId = airMax.Id, SizeId = 2, Stock = 150 },
+                        new ProductSize { ProductId = airMax.Id, SizeId = 3, Stock = 75 },
                         new ProductSize {ProductId = ultraboost.Id, SizeId = 3, Stock = 50 },
                         new ProductSize {ProductId = nikeTShirt.Id, SizeId = 1, Stock = 75 }
                     };
+                    foreach (var ps in productSizes)
+                    {
+                        Console.WriteLine($"ProductId: {ps.ProductId}, SizeId: {ps.SizeId}, Stock: {ps.Stock}");
+                    }
                     _dbContext.ProductSizes.AddRange(productSizes);
                     await _dbContext.SaveChangesAsync();
                 }
