@@ -21,31 +21,24 @@ namespace CloStyle.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(AddBrandCommand command, IFormFile? imageFile)
+        public async Task<IActionResult> Add(AddBrandCommand command)
         {
             if (!ModelState.IsValid)
             {
                 return View(command);
             }
 
-            if (imageFile != null)
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "brands");
+
+            var uniqueFileName = $"{Guid.NewGuid()}_{command.ImageFile.FileName}";
+            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
             {
-                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "brands");
-
-                var uniqueFileName = $"{Guid.NewGuid()}_{imageFile.FileName}";
-                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await imageFile.CopyToAsync(fileStream);
-                }
-
-                command.ImgPath = $"/images/brands/{uniqueFileName}";
+                await command.ImageFile.CopyToAsync(fileStream);
             }
-            else
-            {
-                command.ImgPath = null;
-            }
+
+            command.ImgPath = $"/images/brands/{uniqueFileName}";
 
             await _mediator.Send(command);
             return RedirectToAction(nameof(Index));

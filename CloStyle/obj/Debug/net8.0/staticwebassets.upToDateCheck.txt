@@ -1,7 +1,10 @@
+wwwroot\css\brand.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\brands\24c0068c-0bed-4637-8080-96a6aa220d2d_logo-napapirji.jpg
 wwwroot\images\brands\37eb0def-bee6-4137-b6c7-a00f4371b667_newbalance.png
+wwwroot\images\brands\439e0a5e-be60-4381-9d47-5f72d9dc66ee_1526_LOGO.jpg
+wwwroot\images\brands\44607ea1-f1d7-481e-969d-1a64686ca9bb_new-balance-2-logo-png-transparent.png
 wwwroot\images\brands\4f3f8eec-24b6-4e25-b800-4752b16d589b_logo-napapirji.jpg
 wwwroot\images\brands\97ddcf99-0b9b-4a43-8567-3bb6000ac100_newbalance.png
 wwwroot\images\brands\adidas.png
