@@ -17,7 +17,7 @@ namespace CloStyle.Application.CloStyle.Commands.AddBrand
                 .MinimumLength(2).WithMessage("Brand name must be at least 2 characters")
                 .Custom((value, context) =>
                 {
-                    var existingBrand = repository.GetByName(value).Result;
+                    var existingBrand = repository.GetBrandByName(value).Result;
                     if (existingBrand != null)
                     {
                         context.AddFailure($"Brand {value} already exists in database");

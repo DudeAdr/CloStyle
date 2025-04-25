@@ -14,6 +14,6 @@ namespace CloStyle.Application.CloStyle.Dtos
         public string Description { get; set; }
         public string CategoryName { get; set; }
         public string GenderName { get; set; }
-        public List<string> Sizes { get; set; }
+        public List<SizeDto> Sizes { get; set; }
     }
 }

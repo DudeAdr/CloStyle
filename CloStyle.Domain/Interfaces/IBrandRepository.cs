@@ -10,8 +10,10 @@ namespace CloStyle.Domain.Interfaces
     public interface IBrandRepository
     {
         Task Add(Brand brand);
-        Task<Brand?> GetByName(string name);
+        Task<Brand?> GetBrandByName(string name);
         Task<IEnumerable<Brand>> GetAll();
         Task<string?> GetBrandNameById(int id);
+        Task Commit();
+        Task<Brand?> GetBrandById(int id);
     }
 }

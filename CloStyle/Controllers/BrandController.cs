@@ -1,6 +1,10 @@
-﻿using CloStyle.Application.CloStyle;
+﻿using AutoMapper;
+using CloStyle.Application.CloStyle;
 using CloStyle.Application.CloStyle.Commands.AddBrand;
+using CloStyle.Application.CloStyle.Commands.EditBrand;
 using CloStyle.Application.CloStyle.Queries.GetAllBrands;
+using CloStyle.Application.CloStyle.Queries.GetBrandById;
+using CloStyle.Application.CloStyle.Queries.GetBrandByName;
 using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
 using CloStyle.Application.CloStyle.Queries.GetProductsByBrandName;
 using CloStyle.Domain.Entities;
@@ -12,10 +16,12 @@ namespace CloStyle.Controllers
     public class BrandController : Controller
     {
         private readonly IMediator _mediator;
+        private readonly IMapper _mapper;
 
-        public BrandController(IMediator brandService)
+        public BrandController(IMediator brandService, IMapper mapper)
         {
             _mediator = brandService;
+            _mapper = mapper;
         }
         public IActionResult Add()
         {
@@ -46,13 +52,59 @@ namespace CloStyle.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [Route("CloStyle/{brandId}/Products")]
+        [Route("CloStyle/{brandName}/Products")]
         public async Task<IActionResult> Products(int brandId)
         {
             var result = await _mediator.Send(new GetProductsByBrandIdQuery(brandId));
             var brandName = await _mediator.Send(new GetBrandNameByIdQuery(brandId));
             ViewData["BrandName"] = brandName;
             return View(result);
+        }
+
+        [HttpPost]
+        [Route("CloStyle/{brandName}/Edit")]
+        public async Task<IActionResult> Edit(EditBrandCommand command)
+        {
+            var brandName = await _mediator.Send(new GetBrandNameByIdQuery(command.Id));
+
+            if (!ModelState.IsValid)
+            {
+                return View(command);
+            }
+
+            if (command.ImageFile != null && command.ImageFile.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "brands");
+                var uniqueFileName = $"{Guid.NewGuid()}_{command.ImageFile.FileName}";
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await command.ImageFile.CopyToAsync(fileStream);
+                }
+
+                command.ImgPath = $"/images/brands/{uniqueFileName}";
+            }
+
+            else
+            {
+                var existingBrand = await _mediator.Send(new GetBrandByNameQuery(brandName));
+                command.ImgPath = existingBrand.ImgPath;
+            }
+
+            await _mediator.Send(command);
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        [Route("CloStyle/{brandName}/Edit")]
+        public async Task<IActionResult> Edit(int brandId)
+        {
+            var brandName = await _mediator.Send(new GetBrandNameByIdQuery(brandId));
+            var brand = await _mediator.Send(new GetBrandByIdQuery(brandId));
+
+            EditBrandCommand model = _mapper.Map<EditBrandCommand>(brand);
+            return View(model);
         }
 
         public async Task<IActionResult> Index()

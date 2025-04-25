@@ -20,8 +20,7 @@ namespace CloStyle.Application.CloStyle.Queries.GetBrandNameById
         }
         public async Task<string> Handle(GetBrandNameByIdQuery request, CancellationToken cancellationToken)
         {
-            var name = await _repository.GetBrandNameById(request.brandId);
-            return name;
+            return await _repository.GetBrandNameById(request.brandId);
         }
     }
 

@@ -16,7 +16,12 @@ namespace CloStyle.Application.Mappings
             CreateMap<Product, ProductDto>()
             .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name))
             .ForMember(dest => dest.GenderName, opt => opt.MapFrom(src => src.Gender.Name))
-            .ForMember(dest => dest.Sizes, opt => opt.MapFrom(src => src.ProductSizes.Select(ps => ps.Size.Name)));
+            .ForMember(dest => dest.Sizes, opt => opt.MapFrom(src =>
+            src.ProductSizes.Select(ps => new SizeDto
+            {
+                Size = ps.Size.Name,
+                Stock = ps.Stock
+            })));
 
             CreateMap<ProductDto, Product>();
         }

@@ -24,14 +24,24 @@ namespace CloStyle.Infrastructure.Repositories
             await _dbContext.SaveChangesAsync();
         }
 
+        public Task Commit()
+        {
+            return _dbContext.SaveChangesAsync();
+        }
+
         public async Task<IEnumerable<Brand>> GetAll()
         {
             return await _dbContext.Brands.ToListAsync();
         }
 
-        public Task<Brand?> GetByName(string name)
+        public async Task<Brand?> GetBrandById(int id)
         {
-            return _dbContext.Brands.FirstOrDefaultAsync(b => b.Name.ToLower() == name.ToLower());
+            return await _dbContext.Brands.FirstAsync(b => b.Id == id);
+        }
+
+        public Task<Brand?> GetBrandByName(string name)
+        {
+            return _dbContext.Brands.FirstOrDefaultAsync(b => b.Name.ToLower() == name!.ToLower());
         }
         public async Task<string?> GetBrandNameById(int id)
         {

@@ -12,7 +12,6 @@ namespace CloStyle.Application.CloStyle.Dtos
     {
         public int Id { get; set; }
         public string Name { get; set; } = default!;
-        [Required(ErrorMessage = "Logo image is required.")]
         public IFormFile? ImageFile { get; set; }
 
         public string? ImgPath { get; set; }

@@ -1,0 +1,78 @@
+﻿@model CloStyle.Application.CloStyle.Commands.EditBrand.EditBrandCommand
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="mb-4">Edit @Model.Name</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <form asp-action="Edit" enctype="multipart/form-data">
+                    <input type="hidden" asp-for="Id" />
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label fw-semibold"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="imageFile" class="form-label fw-semibold">Logo Image to Change</label>
+                        <input type="file" name="ImageFile" id="imageFile" class="form-control" />
+                        <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    </div>
+                    <div class="mt-3">
+                        <p class="fw-bold mb-2">New Logo Preview:</p>
+                        <img id="previewImage" class="img-fluid border rounded" style="max-height: 300px; display: none;" />
+                    </div>
+
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary w-100">💾 Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <a asp-action="Index" class="btn btn-outline-secondary w-100">
+            ⬅️ Back to List
+        </a>
+    </div>
+
+    <div class="col-md-6">
+        @if (!string.IsNullOrEmpty(Model.ImgPath))
+        {
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <p class="fw-bold mb-3">Current Logo:</p>
+                    <img src="@Url.Content(Model.ImgPath)" alt="Brand Logo"
+                         class="img-fluid border rounded"
+                         style="max-height: 300px;" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+<script>
+    const imageInput = document.getElementById('imageFile');
+    const previewImage = document.getElementById('previewImage');
+
+    imageInput.addEventListener('change', function () {
+        const file = this.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                previewImage.src = e.target.result;
+                previewImage.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        } else {
+            previewImage.style.display = 'none';
+        }
+    });
+</script>
