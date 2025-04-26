@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CloStyle.Application.CloStyle.Commands.DeleteBrand;
 using CloStyle.Application.CloStyle.Commands.EditBrand;
 using CloStyle.Application.CloStyle.Dtos;
 using CloStyle.Domain.Entities;
@@ -17,6 +18,7 @@ namespace CloStyle.Application.Mappings
             CreateMap<BrandDto, Brand>();
             CreateMap<Brand, BrandDto>();
             CreateMap<BrandDto, EditBrandCommand>();
+            CreateMap<BrandDto, DeleteBrandCommand>();
         }
     }
 }

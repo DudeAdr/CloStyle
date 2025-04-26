@@ -29,6 +29,17 @@ namespace CloStyle.Infrastructure.Repositories
             return _dbContext.SaveChangesAsync();
         }
 
+        public async Task Delete(int id)
+        {
+            var brand = await _dbContext.Brands.FindAsync(id);
+
+            if (brand != null)
+            {
+                _dbContext.Brands.Remove(brand);
+                await _dbContext.SaveChangesAsync();
+            }
+        }
+
         public async Task<IEnumerable<Brand>> GetAll()
         {
             return await _dbContext.Brands.ToListAsync();

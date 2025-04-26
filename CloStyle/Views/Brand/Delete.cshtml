@@ -1,0 +1,29 @@
+﻿@model CloStyle.Application.CloStyle.Commands.DeleteBrand.DeleteBrandCommand
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-header bg-danger text-white">
+            <h3 class="mb-0">Delete Brand</h3>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Are you sure you want to delete <strong>@Model.Name</strong>?</h5>
+
+            <form asp-action="Delete" method="post">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="d-flex mt-4">
+                    <button type="submit" class="btn btn-danger me-2">
+                        <i class="bi bi-trash"></i> Delete
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Back to List
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
