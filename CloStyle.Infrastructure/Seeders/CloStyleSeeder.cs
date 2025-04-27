@@ -27,10 +27,12 @@ namespace CloStyle.Infrastructure.Seeders
                 {
                     var sizes = new List<Size>
                     {
+                        new Size {Name = "XS" },
                         new Size {Name = "S" },
                         new Size {Name = "M" },
                         new Size {Name = "L" },
-                        new Size {Name = "XL" }
+                        new Size {Name = "XL" },
+                        new Size {Name = "XXL" }
                     };
                     _dbContext.Sizes.AddRange(sizes);
                     await _dbContext.SaveChangesAsync();
@@ -41,7 +43,16 @@ namespace CloStyle.Infrastructure.Seeders
                     var categories = new List<Category>
                     {
                         new Category {Name = "Shoes" },
-                        new Category {Name = "T-Shirts" }
+                        new Category {Name = "T-Shirts" },
+                        new Category {Name = "Hoodie" },
+                        new Category {Name = "Dress" },
+                        new Category {Name = "Jeans" },
+                        new Category {Name = "Sweater" },
+                        new Category {Name = "Shorts" },
+                        new Category {Name = "Jacket" },
+                        new Category {Name = "Skirt" },
+                        new Category {Name = "Blouse" },
+                        new Category {Name = "Tank top" },
                     };
                     _dbContext.Categories.AddRange(categories);
                     await _dbContext.SaveChangesAsync();
@@ -52,7 +63,8 @@ namespace CloStyle.Infrastructure.Seeders
                     var genders = new List<Gender>
                     {
                         new Gender {Name = "Male" },
-                        new Gender {Name = "Female" }
+                        new Gender {Name = "Female" },
+                        new Gender {Name = "Unisex" }
                     };
                     _dbContext.Genders.AddRange(genders);
                     await _dbContext.SaveChangesAsync();
