@@ -13,6 +13,9 @@
         <a asp-controller="Brand" asp-action="Index" class="btn btn-secondary">
             <i class="bi bi-arrow-left"></i> Powrót do marek
         </a>
+        <a asp-controller="Product" asp-action="Add" asp-route-brandId="Id" asp-route-brandName="Name" class="btn btn-success d-flex align-items-center">
+            <i class="bi bi-plus-circle me-2"></i> Add New Product
+        </a>
     </div>
 
     @if (!Model.Any())
@@ -30,8 +33,8 @@
                         <th>@Html.DisplayNameFor(model => model.First().Name)</th>
                         <th>@Html.DisplayNameFor(model => model.First().Price)</th>
                         <th>@Html.DisplayNameFor(model => model.First().Description)</th>
-                        <th>@Html.DisplayNameFor(model => model.First().CategoryName)</th>
-                        <th>@Html.DisplayNameFor(model => model.First().GenderName)</th>
+                        <th>@Html.DisplayNameFor(model => model.First().Category.Name)</th>
+                        <th>@Html.DisplayNameFor(model => model.First().Gender.Name)</th>
                         <th>Sizes</th>
                     </tr>
                 </thead>
@@ -42,8 +45,8 @@
                             <td>@product.Name</td>
                             <td>@product.Price.ToString("C")</td>
                             <td>@product.Description</td>
-                            <td>@product.CategoryName</td>
-                            <td>@product.GenderName</td>
+                            <td>@product.Category.Name</td>
+                            <td>@product.Gender.Name</td>
                             <td>
                                 @if (product.Sizes != null && product.Sizes.Any())
                                 {

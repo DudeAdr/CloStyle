@@ -22,5 +22,8 @@ namespace CloStyle.Infrastructure.Repositories
         {
             return await _dbContext.Categories.ToListAsync();
         }
+
+        public async Task<int> GetCategoryIdByName(string name) =>
+            (await _dbContext.Categories.FirstOrDefaultAsync(g => g.Name.ToLower() == name.ToLower()))?.Id ?? -1;
     }
 }

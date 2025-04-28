@@ -10,5 +10,6 @@ namespace CloStyle.Domain.Interfaces
     public interface IGenderRepository
     {
         Task<IEnumerable<Gender>> GetAll();
+        Task<int> GetGenderIdByName(string name);
     }
 }

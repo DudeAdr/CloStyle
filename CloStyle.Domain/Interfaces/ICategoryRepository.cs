@@ -10,5 +10,6 @@ namespace CloStyle.Domain.Interfaces
     public interface ICategoryRepository
     {
         Task<IEnumerable<Category>> GetAll();
+        Task<int> GetCategoryIdByName(string name);
     }
 }
