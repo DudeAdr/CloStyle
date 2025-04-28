@@ -14,18 +14,23 @@ namespace CloStyle.Application.CloStyle.Commands.AddBrand
     {
         private IBrandRepository _brandRepository;
         private IMapper _mapper;
+        private IFileRepository _fileRepository;
 
-        public AddBrandCommandHandler(IBrandRepository brandRepository, IMapper mapper)
+        public AddBrandCommandHandler(IBrandRepository brandRepository, IMapper mapper, IFileRepository fileRepository)
         {
             _brandRepository = brandRepository;
             _mapper = mapper;
+            _fileRepository = fileRepository;
         }
 
         public async Task<Unit> Handle(AddBrandCommand request, CancellationToken cancellationToken)
         {
-            var brand = _mapper.Map<Brand>(request);
-            await _brandRepository.Add(brand);
+            string imagePath = await _fileRepository.SaveBrandImageAsync(request.ImageFile);
 
+            var brand = _mapper.Map<Brand>(request);
+            brand.ImgPath = imagePath;
+
+            await _brandRepository.Add(brand);
             return Unit.Value;
         }
     }

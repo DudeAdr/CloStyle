@@ -23,6 +23,9 @@ namespace CloStyle.Infrastructure.Extensions
             services.AddScoped<CloStyleSeeder>();
             services.AddScoped<IBrandRepository, BrandRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IGenderRepository, GenderRepository>();
+            services.AddScoped<IFileRepository, FileRepository>();
         }
     }
 }

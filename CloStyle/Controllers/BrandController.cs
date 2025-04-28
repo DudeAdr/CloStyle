@@ -8,7 +8,7 @@ using CloStyle.Application.CloStyle.Queries.GetBrandById;
 using CloStyle.Application.CloStyle.Queries.GetBrandByName;
 using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
 using CloStyle.Application.CloStyle.Queries.GetProductsByBrandName;
-using CloStyle.Domain.Entities;
+
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -36,20 +36,8 @@ namespace CloStyle.Controllers
             {
                 return View(command);
             }
-
-            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "brands");
-
-            var uniqueFileName = $"{Guid.NewGuid()}_{command.ImageFile.FileName}";
-            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-            using (var fileStream = new FileStream(filePath, FileMode.Create))
-            {
-                await command.ImageFile.CopyToAsync(fileStream);
-            }
-
-            command.ImgPath = $"/images/brands/{uniqueFileName}";
-
             await _mediator.Send(command);
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -71,26 +59,6 @@ namespace CloStyle.Controllers
             if (!ModelState.IsValid)
             {
                 return View(command);
-            }
-
-            if (command.ImageFile != null && command.ImageFile.Length > 0)
-            {
-                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "brands");
-                var uniqueFileName = $"{Guid.NewGuid()}_{command.ImageFile.FileName}";
-                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await command.ImageFile.CopyToAsync(fileStream);
-                }
-
-                command.ImgPath = $"/images/brands/{uniqueFileName}";
-            }
-
-            else
-            {
-                var existingBrand = await _mediator.Send(new GetBrandByNameQuery(brandName));
-                command.ImgPath = existingBrand.ImgPath;
             }
 
             await _mediator.Send(command);
