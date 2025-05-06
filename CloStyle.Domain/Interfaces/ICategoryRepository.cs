@@ -11,5 +11,6 @@ namespace CloStyle.Domain.Interfaces
     {
         Task<IEnumerable<Category>> GetAll();
         Task<int> GetCategoryIdByName(string name);
+        Task<Category?> GetCategoryById(int id);
     }
 }

@@ -10,5 +10,6 @@ namespace CloStyle.Application.CloStyle.Commands.AddProduct
 {
     public class AddProductCommand : ProductDto, IRequest<Unit>
     {
+        public int BrandId { get; set; }
     }
 }

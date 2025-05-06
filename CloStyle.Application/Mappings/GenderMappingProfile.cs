@@ -14,6 +14,7 @@ namespace CloStyle.Application.Mappings
         public GenderMappingProfile()
         {
             CreateMap<Gender, GenderDto>();
+            CreateMap<GenderDto, Gender>();
         }
     }
 }

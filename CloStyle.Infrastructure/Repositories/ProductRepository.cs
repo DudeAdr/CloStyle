@@ -19,9 +19,10 @@ namespace CloStyle.Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
-        public Task Add(Product product)
+        public async Task Add(Product product)
         {
-            throw new NotImplementedException();
+            await _dbContext.Products.AddAsync(product);
+            await _dbContext.SaveChangesAsync();
         }
 
         public Task<IEnumerable<Product>> GetAll()

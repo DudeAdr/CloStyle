@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+﻿ using AutoMapper;
 using CloStyle.Application.CloStyle;
 using CloStyle.Application.CloStyle.Commands.AddBrand;
 using CloStyle.Application.CloStyle.Commands.DeleteBrand;
@@ -46,7 +46,8 @@ namespace CloStyle.Controllers
         {
             var result = await _mediator.Send(new GetProductsByBrandIdQuery(brandId));
             var brandName = await _mediator.Send(new GetBrandNameByIdQuery(brandId));
-            ViewData["BrandName"] = brandName;
+            ViewBag.BrandId = brandId;
+            ViewBag.BrandName = brandName;
             return View(result);
         }
 

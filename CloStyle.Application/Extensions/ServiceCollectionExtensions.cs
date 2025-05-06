@@ -17,6 +17,8 @@ namespace CloStyle.Application.Extensions
             //automapper
             services.AddAutoMapper(typeof(BrandMappingProfile));
             services.AddAutoMapper(typeof(ProductMappingProfile));
+            services.AddAutoMapper(typeof(GenderMappingProfile));
+            services.AddAutoMapper(typeof(CategoryMappingProfile));
 
             //validators
             services.AddValidatorsFromAssemblyContaining<AddBrandCommandValidator>()

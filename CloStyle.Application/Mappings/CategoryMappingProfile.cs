@@ -14,6 +14,7 @@ namespace CloStyle.Application.Mappings
         public CategoryMappingProfile()
         {
             CreateMap<Category, CategoryDto>();
+            CreateMap<CategoryDto, Category>();
         }
     }
 }

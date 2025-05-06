@@ -12,7 +12,7 @@ namespace CloStyle.Application.CloStyle.Dtos
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }
-        public GenderDto Category { get; set; }
+        public CategoryDto Category { get; set; }
         public GenderDto Gender { get; set; }
         public List<SizeDto> Sizes { get; set; }
     }

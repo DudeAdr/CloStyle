@@ -11,5 +11,6 @@ namespace CloStyle.Domain.Interfaces
     {
         Task<IEnumerable<Gender>> GetAll();
         Task<int> GetGenderIdByName(string name);
+        Task<Gender?> GetGenderById(int id);
     }
 }
