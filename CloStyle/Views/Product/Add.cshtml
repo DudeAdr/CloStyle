@@ -61,7 +61,7 @@
 
                 <div class="form-group mb-3">
                     <input type="hidden" asp-for="BrandId" value="@ViewBag.BrandId" />
-                    <button type="submit" class="btn btn-primary w-100">Create</button>
+                    <button type="submit" asp-for-BrandId="@ViewBag.BrandId" class="btn btn-primary w-100">Create</button>
                 </div>
             </form>
         </div>

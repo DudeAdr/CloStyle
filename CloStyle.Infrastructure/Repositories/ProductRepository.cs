@@ -25,6 +25,17 @@ namespace CloStyle.Infrastructure.Repositories
             await _dbContext.SaveChangesAsync();
         }
 
+        public async Task DeleteProduct(int id)
+        {
+            var product = await _dbContext.Products.FindAsync(id);
+
+            if (product != null)
+            {
+                _dbContext.Products.Remove(product);
+                await _dbContext.SaveChangesAsync();
+            }
+        }
+
         public Task<IEnumerable<Product>> GetAll()
         {
             throw new NotImplementedException();
@@ -53,14 +64,14 @@ namespace CloStyle.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Product?> GetById(int id)
+        public Task<IEnumerable<Product>> GetBySizeId(int sizeId)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Product>> GetBySizeId(int sizeId)
+        public async Task<Product?> GetProductById(int id)
         {
-            throw new NotImplementedException();
+            return await _dbContext.FindAsync<Product>(id);
         }
     }
 }
