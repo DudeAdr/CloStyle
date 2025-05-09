@@ -26,6 +26,7 @@ namespace CloStyle.Infrastructure.Extensions
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IGenderRepository, GenderRepository>();
             services.AddScoped<IFileRepository, FileRepository>();
+            services.AddScoped<ISizeRepository, SizeRepository>();
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CloStyle")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3fff199837950058765447ac0e5e6d49d2ea18e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+358e3406350e78ba47c831cf7af31a4437e1f3ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("CloStyle")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CloStyle")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

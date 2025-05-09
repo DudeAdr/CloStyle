@@ -8,7 +8,7 @@ using CloStyle.Application.CloStyle.Queries.GetBrandById;
 using CloStyle.Application.CloStyle.Queries.GetBrandByName;
 using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
 using CloStyle.Application.CloStyle.Queries.GetProductsByBrandName;
-
+using CloStyle.Application.CloStyle.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -44,11 +44,17 @@ namespace CloStyle.Controllers
         [Route("CloStyle/{brandName}/Products")]
         public async Task<IActionResult> Products(int brandId)
         {
-            var result = await _mediator.Send(new GetProductsByBrandIdQuery(brandId));
+            var products = await _mediator.Send(new GetProductsByBrandIdQuery(brandId));
             var brandName = await _mediator.Send(new GetBrandNameByIdQuery(brandId));
-            ViewBag.BrandId = brandId;
-            ViewBag.BrandName = brandName;
-            return View(result);
+
+            var viewModel = new ProductsByBrandViewModel
+            {
+                BrandId = brandId,
+                BrandName = brandName,
+                Products = products
+            };
+
+            return View(viewModel);
         }
 
         [HttpPost]

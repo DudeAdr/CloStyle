@@ -25,19 +25,10 @@ namespace CloStyle.Application.Mappings
                 Stock = ps.Stock
             })));
 
-            CreateMap<ProductDto, Product>()
-            .ForMember(dest => dest.BrandId, opt => opt.Ignore())
-            .ForMember(dest => dest.Brand, opt => opt.Ignore())
-            .ForMember(dest => dest.CategoryId, opt => opt.MapFrom(src => src.Category.Id))
-            .ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Category))
-            .ForMember(dest => dest.GenderId, opt => opt.MapFrom(src => src.Gender.Id))
-            .ForMember(dest => dest.Gender, opt => opt.MapFrom(src => src.Gender))
-            .ForMember(dest => dest.ProductSizes, opt => opt.MapFrom(src => src.Sizes));
-
+            CreateMap<ProductDto, DeleteProductCommand>();
             CreateMap<AddProductCommand, Product>()
             .ForMember(dest => dest.Id, opt => opt.Ignore());
 
-            CreateMap<ProductDto, DeleteProductCommand>();
 
         }
     }

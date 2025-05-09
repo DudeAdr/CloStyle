@@ -1,4 +1,5 @@
-﻿@model CloStyle.Application.CloStyle.Commands.DeleteProduct.DeleteProductCommand
+﻿@using CloStyle.Application.CloStyle.ViewModels
+@model DeleteProductViewModel
 
 @{
     ViewData["Title"] = "Delete Product";
@@ -11,22 +12,22 @@
             <hr />
             <dl class="row">
                 <dt class="col-sm-3">Name</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.Name)</dd>
+                <dd class="col-sm-9">@Model.Name</dd>
 
                 <dt class="col-sm-3">Price</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.Price)</dd>
+                <dd class="col-sm-9">@Model.Price.ToString("C")</dd>
 
                 <dt class="col-sm-3">Description</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.Description)</dd>
+                <dd class="col-sm-9">@Model.Description</dd>
             </dl>
 
             <form asp-action="Delete" method="post">
-                <input type="hidden" asp-for="Id" />
-                <input type="hidden" asp-for="BrandId" />
+                @* <input type="hidden" asp-for="BrandId" /> *@
+                <input type="hidden" name="Id" value="@Model.Id" />
+                <input type="hidden" name="BrandId" value="@Model.BrandId" />
 
                 <div class="d-flex justify-content-between">
-                    <a href="/CloStyle/@ViewBag.BrandName/Products?brandId=@Model.BrandId"
-                       class="btn btn-secondary">
+                    <a href="/CloStyle/@Model.BrandName/Products?brandId=@Model.BrandId" class="btn btn-secondary">
                         Back to List
                     </a>
                     <input type="submit" value="Delete" class="btn btn-danger" />

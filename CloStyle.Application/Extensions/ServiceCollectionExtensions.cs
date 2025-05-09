@@ -1,4 +1,5 @@
 ﻿using CloStyle.Application.CloStyle.Commands.AddBrand;
+using CloStyle.Application.CloStyle.Commands.AddProduct;
 using CloStyle.Application.Mappings;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -19,9 +20,14 @@ namespace CloStyle.Application.Extensions
             services.AddAutoMapper(typeof(ProductMappingProfile));
             services.AddAutoMapper(typeof(GenderMappingProfile));
             services.AddAutoMapper(typeof(CategoryMappingProfile));
+            services.AddAutoMapper(typeof(SizeMappingProfile));
 
             //validators
             services.AddValidatorsFromAssemblyContaining<AddBrandCommandValidator>()
+                .AddFluentValidationAutoValidation()
+                .AddFluentValidationClientsideAdapters();
+
+            services.AddValidatorsFromAssemblyContaining<AddProductCommandValidator>()
                 .AddFluentValidationAutoValidation()
                 .AddFluentValidationClientsideAdapters();
         }

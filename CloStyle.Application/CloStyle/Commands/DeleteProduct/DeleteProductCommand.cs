@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Commands.DeleteProduct
 {
-    public class DeleteProductCommand : ProductDto, IRequest<Unit>
+    public class DeleteProductCommand : IRequest<Unit>
     {
+        public int Id { get; set; }
+        public int BrandId { get; set; }
     }
 }

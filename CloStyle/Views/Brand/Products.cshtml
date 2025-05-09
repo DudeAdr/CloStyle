@@ -1,24 +1,25 @@
-﻿@using CloStyle.Application.CloStyle.Dtos
-@model IEnumerable<ProductDto>
+﻿@using CloStyle.Application.CloStyle.ViewModels
+@model ProductsByBrandViewModel
 
 @{
     ViewData["Title"] = "Produkty marki";
+    var products = Model.Products;
 }
 
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h1 class="display-5 mb-0">
-            Products: <span class="text-primary">@ViewBag.BrandName</span>
+            Products: <span class="text-primary">@Model.BrandName</span>
         </h1>
         <a asp-controller="Brand" asp-action="Index" class="btn btn-secondary">
             <i class="bi bi-arrow-left"></i> Powrót do marek
         </a>
-        <a asp-controller="Product" asp-action="Add" asp-route-id="@ViewBag.BrandId" aspclass="btn btn-success d-flex align-items-center">
+        <a asp-controller="Product" asp-action="Add" asp-route-id="@Model.BrandId" class="btn btn-success d-flex align-items-center">
             <i class="bi bi-plus-circle me-2"></i> Add New Product
         </a>
     </div>
 
-    @if (!Model.Any())
+    @if (!products.Any())
     {
         <div class="alert alert-warning text-center" role="alert">
             Brak produktów do wyświetlenia.
@@ -30,17 +31,17 @@
             <table class="table table-bordered table-hover align-middle shadow-sm">
                 <thead class="table-dark">
                     <tr>
-                        <th>@Html.DisplayNameFor(model => model.First().Name)</th>
-                        <th>@Html.DisplayNameFor(model => model.First().Price)</th>
-                        <th>@Html.DisplayNameFor(model => model.First().Description)</th>
-                        <th>@Html.DisplayNameFor(model => model.First().Category.Name)</th>
-                        <th>@Html.DisplayNameFor(model => model.First().Gender.Name)</th>
+                        <th>@Html.DisplayNameFor(_ => products.First().Name)</th>
+                        <th>@Html.DisplayNameFor(_ => products.First().Price)</th>
+                        <th>@Html.DisplayNameFor(_ => products.First().Description)</th>
+                        <th>@Html.DisplayNameFor(_ => products.First().Category.Name)</th>
+                        <th>@Html.DisplayNameFor(_ => products.First().Gender.Name)</th>
                         <th>Sizes</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var product in Model)
+                    @foreach (var product in products)
                     {
                         <tr>
                             <td>@product.Name</td>
