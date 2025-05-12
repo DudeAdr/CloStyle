@@ -26,11 +26,13 @@
                 <input type="hidden" name="Id" value="@Model.Id" />
                 <input type="hidden" name="BrandId" value="@Model.BrandId" />
 
-                <div class="d-flex justify-content-between">
-                    <a href="/CloStyle/@Model.BrandName/Products?brandId=@Model.BrandId" class="btn btn-secondary">
-                        Back to List
+                <div class="d-flex">
+                    <a href="/CloStyle/@Model.BrandName/Products?brandId=@Model.BrandId" class="btn btn-secondary me-2">
+                        ⬅️ Back to List
                     </a>
-                    <input type="submit" value="Delete" class="btn btn-danger" />
+                    <button type="submit" class="btn btn-danger me-2">
+                        <i class="bi bi-trash"></i> Delete
+                    </button>
                 </div>
             </form>
 

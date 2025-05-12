@@ -26,7 +26,7 @@
                         <span asp-validation-for="ImageFile" class="text-danger"></span>
                     </div>
                     <div class="mt-3">
-                        <p class="fw-bold mb-2">New Logo Preview:</p>
+                        <p id="previewText" class=" fw-bold mb-2" style="display: none;">New Logo Preview:</p>
                         <img id="previewImage" class="img-fluid border rounded" style="max-height: 300px; display: none;" />
                     </div>
 
@@ -69,6 +69,7 @@
             reader.onload = function (e) {
                 previewImage.src = e.target.result;
                 previewImage.style.display = 'block';
+                previewText.style.display = 'block';
             }
             reader.readAsDataURL(file);
         } else {

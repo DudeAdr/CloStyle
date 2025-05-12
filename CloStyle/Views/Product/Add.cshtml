@@ -1,75 +1,84 @@
 ﻿@model CloStyle.Application.CloStyle.Commands.AddProduct.AddProductCommand
 
 @{
-    ViewData["Title"] = "Add Product";
+    ViewData["Title"] = "ADD NEW PRODUCT";
     var categories = Model.Categories;
     var genders = Model.Genders;
     var sizes = Model.Sizes;
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="container mt-5">
+    <div class=" card-shadow-lg">
+        <div class="p-4 mb-4 bg-gradient bg-primary text-white text-center rounded-top shadow-sm">
+            <h3 class="mb-0"><i class="bi bi-plus-circle me-3"></i>@ViewData["Title"]</h3>
+        </div>
+        <div class="card-body">
+            <form asp-action="Add" method="post">
+                <input type="hidden" asp-for="BrandId" />
+                <input type="hidden" name="brandName" value="@Model.BrandName" />
 
-<form asp-action="Add" method="post">
-    <input type="hidden" asp-for="BrandId" />
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
 
-    <div class="form-group mb-3">
-        <label asp-for="Name"></label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
+                <div class="mb-3">
+                    <label asp-for="Price" class="form-label"></label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label"></label>
+                    <textarea asp-for="Description" class="form-control"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CategoryId" class="form-label">Category</label>
+                    <select asp-for="CategoryId" class="form-select">
+                        <option value="">Select...</option>
+                        @foreach (var c in categories)
+                        {
+                            <option value="@c.Id">@c.Name</option>
+                        } 
+                    </select>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="GenderId" class="form-label">Gender</label>
+                    <select asp-for="GenderId" class="form-select">
+                        <option value="">Select...</option>
+                        @foreach (var g in genders)
+                        {
+                            <option value="@g.Id">@g.Name</option>
+                        }
+                    </select>
+                    <span asp-validation-for="GenderId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Sizes & stock</label>
+                    @for (int i = 0; i < sizes.Count; i++)
+                    {
+                        <div class="d-flex align-items-center mb-2 gap-2 flex-wrap">
+                            <input type="hidden" asp-for="Sizes[@i].Id" />
+                            <input type="hidden" asp-for="Sizes[@i].Size" />
+                            <label class="me-1" style="min-width:40px;">@sizes[i].Size</label>
+                            <input asp-for="Sizes[@i].Stock" class="form-control form-control-sm" style="width: 100px;" />
+                        </div>
+                    }   
+                    <span asp-validation-for="Sizes" class="text-danger"></span>
+                </div>
+
+                <a href="/CloStyle/@Model.BrandName/Products?brandId=@Model.BrandId" class="btn btn-secondary"> ⬅️ Back to List</a>
+                <button type="submit" class="btn btn-primary"> <i class="bi bi-plus-circle"></i> Create</button>
+            </form>
+        </div>
     </div>
-
-    <div class="form-group mb-3">
-        <label asp-for="Price"></label>
-        <input asp-for="Price" class="form-control" />
-        <span asp-validation-for="Price" class="text-danger"></span>
-    </div>
-
-    <div class="form-group mb-3">
-        <label asp-for="Description"></label>
-        <textarea asp-for="Description" class="form-control"></textarea>
-    </div>
-
-    <div class="form-group mb-3">
-        <label asp-for="CategoryId">Category</label>
-        <select asp-for="CategoryId" class="form-select">
-            <option value="">Select...</option>
-            @foreach (var c in categories)
-            {
-                <option value="@c.Id">@c.Name</option>
-            }
-        </select>
-        <span asp-validation-for="CategoryId" class="text-danger"></span>
-    </div>
-
-    <div class="form-group mb-3">
-        <label asp-for="GenderId">Gender</label>
-        <select asp-for="GenderId" class="form-select">
-            <option value="">Select...</option>
-            @foreach (var g in genders)
-            {
-                <option value="@g.Id">@g.Name</option>
-            }
-        </select>
-        <span asp-validation-for="GenderId" class="text-danger"></span>
-    </div>
-
-    <div class="form-group mb-3">
-        <label>Sizes & stock</label>
-        @for (int i = 0; i < sizes.Count; i++)
-        {
-            <div class="d-flex mb-2">
-                <input type="hidden" asp-for="Sizes[@i].Id" />
-                <input type="hidden" asp-for="Sizes[@i].Size" />
-                <label class="me-2">@sizes[i].Size</label>
-                <input asp-for="Sizes[@i].Stock" class="form-control" />
-                <span asp-validation-for="Sizes[@i].Stock" class="text-danger"></span>
-            </div>
-        }
-    </div>
-
-    <button type="submit" class="btn btn-primary">Create</button>
-</form>
-
+</div>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

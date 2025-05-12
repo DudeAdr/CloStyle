@@ -33,10 +33,11 @@ namespace CloStyle.Controllers
         {
             var command = new AddProductCommand
             {
-                BrandId = id,
+                BrandId = id,   
                 Sizes = (await _mediator.Send(new GetAllSizesQuery())).ToList(),
                 Categories = (await _mediator.Send(new GetAllCategoriesQuery())).ToList(),
-                Genders = (await _mediator.Send(new GetAllGendersQuery())).ToList()
+                Genders = (await _mediator.Send(new GetAllGendersQuery())).ToList(),
+                BrandName = (await _mediator.Send(new GetBrandNameByIdQuery(id)))
             };
 
             return View(command);

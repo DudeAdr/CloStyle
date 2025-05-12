@@ -1,6 +1,7 @@
 wwwroot\css\brand.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\brands\140b48db-6280-4714-89b2-9c5247addb88_Test-Logo.png
 wwwroot\images\brands\adidas.png
 wwwroot\images\brands\nike.jpg
 wwwroot\js\site.js

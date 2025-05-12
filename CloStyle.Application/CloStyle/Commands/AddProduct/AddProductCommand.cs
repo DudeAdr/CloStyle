@@ -13,7 +13,7 @@ namespace CloStyle.Application.CloStyle.Commands.AddProduct
     {
         [Required]
         public string Name { get; set; }
-
+        public string BrandName { get; set; }
         [Required]
         [Range(0.01, double.MaxValue)]
         public decimal Price { get; set; }

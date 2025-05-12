@@ -11,18 +11,20 @@
         <h1 class="display-5 mb-0">
             Products: <span class="text-primary">@Model.BrandName</span>
         </h1>
-        <a asp-controller="Brand" asp-action="Index" class="btn btn-secondary">
-            <i class="bi bi-arrow-left"></i> Powrót do marek
-        </a>
-        <a asp-controller="Product" asp-action="Add" asp-route-id="@Model.BrandId" class="btn btn-success d-flex align-items-center">
-            <i class="bi bi-plus-circle me-2"></i> Add New Product
-        </a>
+        <div class="d-flex gap-2">
+            <a asp-controller="Brand" asp-action="Index" class="btn btn-outline-secondary d-flex align-items-center">
+                <span>⬅️</span> Back to Brands
+            </a>
+            <a asp-controller="Product" asp-action="Add" asp-route-id="@Model.BrandId" class="btn btn-success d-flex align-items-center">
+                <i class="bi bi-plus-circle me-2"></i> Add New Product
+            </a>
+        </div>
     </div>
 
     @if (!products.Any())
     {
         <div class="alert alert-warning text-center" role="alert">
-            Brak produktów do wyświetlenia.
+            Brand currently has no products.
         </div>
     }
     else

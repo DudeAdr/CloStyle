@@ -40,7 +40,6 @@ namespace CloStyle.Application.CloStyle.Commands.AddProduct
             product.Category = await _categoryRepository.GetCategoryById(request.CategoryId);
             product.Gender = await _genderRepository.GetGenderById(request.GenderId);
 
-            // Handle sizes and stock
             product.ProductSizes = new List<ProductSize>();
 
             foreach (var sizeDto in request.Sizes)
