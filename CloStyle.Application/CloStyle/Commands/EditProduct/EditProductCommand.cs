@@ -2,13 +2,14 @@
 using MediatR;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetCategoryById
+namespace CloStyle.Application.CloStyle.Commands.EditProduct
 {
-    public record GetCategoryByIdQuery(int id): IRequest<CategoryDto>
+    public class EditProductCommand :IRequest<Unit>
     {
     }
 }

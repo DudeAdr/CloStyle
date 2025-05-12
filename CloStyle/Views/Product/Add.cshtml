@@ -15,7 +15,7 @@
         <div class="card-body">
             <form asp-action="Add" method="post">
                 <input type="hidden" asp-for="BrandId" />
-                <input type="hidden" name="brandName" value="@Model.BrandName" />
+                <input type="hidden" asp-for="BrandName"/>
 
                 <div class="mb-3">
                     <label asp-for="Name" class="form-label"></label>

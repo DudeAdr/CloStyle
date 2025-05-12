@@ -17,14 +17,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\140b48db-6280-4714-89b2-9c5247addb88_Test-Logo.png",
-      "PackagePath": "staticwebassets\\images\\brands\\140b48db-6280-4714-89b2-9c5247addb88_Test-Logo.png"
-    },
-    {
-      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\adidas.png",
-      "PackagePath": "staticwebassets\\images\\brands\\adidas.png"
-    },
-    {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\nike.jpg",
       "PackagePath": "staticwebassets\\images\\brands\\nike.jpg"
     },

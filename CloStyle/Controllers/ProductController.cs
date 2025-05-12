@@ -6,9 +6,8 @@ using CloStyle.Application.CloStyle.Queries.GetAllCategories;
 using CloStyle.Application.CloStyle.Queries.GetAllGenders;
 using CloStyle.Application.CloStyle.Queries.GetAllSizes;
 using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
-using CloStyle.Application.CloStyle.Queries.GetCategoryById;
-using CloStyle.Application.CloStyle.Queries.GetGenderById;
-using CloStyle.Application.CloStyle.Queries.GetProductById;
+using CloStyle.Application.CloStyle.Queries.GetProductForDelete;
+using CloStyle.Application.CloStyle.Queries.GetProductsForEdit;
 using CloStyle.Application.CloStyle.ViewModels;
 using CloStyle.Domain.Entities;
 using MediatR;
@@ -62,19 +61,7 @@ namespace CloStyle.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
-            var product = await _mediator.Send(new GetProductByIdQuery(id));
-            var brandName = await _mediator.Send(new GetBrandNameByIdQuery(product.BrandId));
-
-            var model = new DeleteProductViewModel
-            {
-                Id = product.Id,
-                Name = product.Name,
-                Price = product.Price,
-                BrandId = product.BrandId,
-                BrandName = brandName,
-                Description = product.Description
-            };
-
+            var model = await _mediator.Send(new GetProductForDeleteQuery(id));
             return View(model);
         }
 
@@ -86,6 +73,13 @@ namespace CloStyle.Controllers
             await _mediator.Send(command);
             return Redirect($"/CloStyle/{brandName}/Products?brandId={command.BrandId}");
 
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var model = await _mediator.Send(new GetProductsForEditQuery(id));
+            return View(model);
         }
     }
 }

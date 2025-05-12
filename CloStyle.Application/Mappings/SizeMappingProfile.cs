@@ -15,8 +15,7 @@ namespace CloStyle.Application.Mappings
         public SizeMappingProfile()
         {
             CreateMap<Size, SizeDto>()
-                .ForMember(dest => dest.Size, opt => opt.MapFrom(src => src.Name))
-                .ForMember(dest => dest.Stock, opt => opt.Ignore());
+                .ForMember(dest => dest.Size, opt => opt.MapFrom(src => src.Name));
 
             CreateMap<SizeDto, ProductSize>()
             .ForMember(dest => dest.SizeId, opt => opt.MapFrom(src => src.Id))

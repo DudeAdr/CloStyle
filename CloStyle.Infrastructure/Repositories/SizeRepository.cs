@@ -20,7 +20,7 @@ namespace CloStyle.Infrastructure.Repositories
         }
         public async Task<IEnumerable<Size>> GetAll()
         {
-            return await _dbContext.Sizes.ToListAsync();
+            return await _dbContext.Sizes.Include(s => s.ProductSizes).ToListAsync();
         }
 
         public async Task<Size> GetSizeById(int id)

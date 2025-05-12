@@ -4,10 +4,9 @@ using CloStyle.Application.CloStyle.Commands.AddBrand;
 using CloStyle.Application.CloStyle.Commands.DeleteBrand;
 using CloStyle.Application.CloStyle.Commands.EditBrand;
 using CloStyle.Application.CloStyle.Queries.GetAllBrands;
+using CloStyle.Application.CloStyle.Queries.GetAllProducts;
 using CloStyle.Application.CloStyle.Queries.GetBrandById;
-using CloStyle.Application.CloStyle.Queries.GetBrandByName;
 using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
-using CloStyle.Application.CloStyle.Queries.GetProductsByBrandName;
 using CloStyle.Application.CloStyle.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -44,17 +43,8 @@ namespace CloStyle.Controllers
         [Route("CloStyle/{brandName}/Products")]
         public async Task<IActionResult> Products(int brandId)
         {
-            var products = await _mediator.Send(new GetProductsByBrandIdQuery(brandId));
-            var brandName = await _mediator.Send(new GetBrandNameByIdQuery(brandId));
-
-            var viewModel = new ProductsByBrandViewModel
-            {
-                BrandId = brandId,
-                BrandName = brandName,
-                Products = products
-            };
-
-            return View(viewModel);
+            var model = await _mediator.Send(new GetAllProductsQuery(brandId));
+            return View(model);
         }
 
         [HttpPost]

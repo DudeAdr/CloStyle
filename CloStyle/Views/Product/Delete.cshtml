@@ -22,9 +22,8 @@
             </dl>
 
             <form asp-action="Delete" method="post">
-                @* <input type="hidden" asp-for="BrandId" /> *@
-                <input type="hidden" name="Id" value="@Model.Id" />
-                <input type="hidden" name="BrandId" value="@Model.BrandId" />
+                <input type="hidden" asp-for="BrandId" />
+                <input type="hidden" asp-for="Id" />
 
                 <div class="d-flex">
                     <a href="/CloStyle/@Model.BrandName/Products?brandId=@Model.BrandId" class="btn btn-secondary me-2">
