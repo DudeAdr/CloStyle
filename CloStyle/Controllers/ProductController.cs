@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using CloStyle.Application.CloStyle.Commands.AddProduct;
 using CloStyle.Application.CloStyle.Commands.DeleteProduct;
-using CloStyle.Application.CloStyle.Dtos;
+using CloStyle.Application.CloStyle.Commands.EditProduct;
 using CloStyle.Application.CloStyle.Queries.GetAllCategories;
 using CloStyle.Application.CloStyle.Queries.GetAllGenders;
 using CloStyle.Application.CloStyle.Queries.GetAllSizes;
@@ -9,10 +9,8 @@ using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
 using CloStyle.Application.CloStyle.Queries.GetProductForDelete;
 using CloStyle.Application.CloStyle.Queries.GetProductsForEdit;
 using CloStyle.Application.CloStyle.ViewModels;
-using CloStyle.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 namespace CloStyle.Controllers
 {
@@ -58,7 +56,7 @@ namespace CloStyle.Controllers
             return Redirect($"/CloStyle/{brandName}/Products?brandId={command.BrandId}");
         }
 
-
+        [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
             var model = await _mediator.Send(new GetProductForDeleteQuery(id));
@@ -80,6 +78,20 @@ namespace CloStyle.Controllers
         {
             var model = await _mediator.Send(new GetProductsForEditQuery(id));
             return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(EditProductCommand command)
+        {
+            if (!ModelState.IsValid)
+            {
+                command.Categories = (await _mediator.Send(new GetAllCategoriesQuery())).ToList();
+                command.Genders = (await _mediator.Send(new GetAllGendersQuery())).ToList();
+                command.Sizes = (await _mediator.Send(new GetAllSizesQuery())).ToList();
+                return View(command);
+            }
+            await _mediator.Send(command);
+            return Redirect($"/CloStyle/{command.BrandName}/Products?brandId={command.BrandId}");
         }
     }
 }

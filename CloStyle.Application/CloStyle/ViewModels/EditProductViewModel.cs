@@ -16,12 +16,12 @@ namespace CloStyle.Application.CloStyle.ViewModels
         public string Description { get; set; }
 
         public int CategoryId { get; set; }
-        public List<CategoryDto> Categories { get; set; }
+        public List<CategoryDto> Categories { get; set; } = new();
 
         public int GenderId { get; set; }
-        public List<GenderDto> Genders { get; set; }
+        public List<GenderDto> Genders { get; set; } = new();
 
-        public List<SizeDto> Sizes { get; set; }
+        public List<SizeDto> Sizes { get; set; } = new();
 
         public string BrandName { get; set; }
         public int BrandId { get; set; }

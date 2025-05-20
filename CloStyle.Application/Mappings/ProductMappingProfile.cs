@@ -1,13 +1,11 @@
 ﻿using AutoMapper;
 using CloStyle.Application.CloStyle.Commands.AddProduct;
 using CloStyle.Application.CloStyle.Commands.DeleteProduct;
+using CloStyle.Application.CloStyle.Commands.EditProduct;
 using CloStyle.Application.CloStyle.Dtos;
+using CloStyle.Application.CloStyle.ViewModels;
 using CloStyle.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CloStyle.Application.Mappings
 {
@@ -28,7 +26,6 @@ namespace CloStyle.Application.Mappings
             CreateMap<ProductDto, DeleteProductCommand>();
             CreateMap<AddProductCommand, Product>()
             .ForMember(dest => dest.Id, opt => opt.Ignore());
-
 
         }
     }

@@ -11,5 +11,6 @@ namespace CloStyle.Domain.Interfaces
     {
         Task<IEnumerable<Size>> GetAll();
         Task<Size> GetSizeById(int id);
+        Task RemoveProductSizes(int productId);
     }
 }

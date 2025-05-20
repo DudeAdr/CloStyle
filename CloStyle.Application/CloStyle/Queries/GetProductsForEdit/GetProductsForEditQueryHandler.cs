@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CloStyle.Application.CloStyle.Commands.EditProduct;
 using CloStyle.Application.CloStyle.Dtos;
 using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
 using CloStyle.Application.CloStyle.ViewModels;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
 {
-    public class GetProductsForEditQueryHandler : IRequestHandler<GetProductsForEditQuery, EditProductViewModel>
+    public class GetProductsForEditQueryHandler : IRequestHandler<GetProductsForEditQuery, EditProductCommand>
     {
         private IBrandRepository _brandRepository;
         private IProductRepository _productRepository;
@@ -31,7 +32,7 @@ namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
             _mapper = mapper;
         }
 
-        public async Task<EditProductViewModel> Handle(GetProductsForEditQuery request, CancellationToken cancellationToken)
+        public async Task<EditProductCommand> Handle(GetProductsForEditQuery request, CancellationToken cancellationToken)
         {
             var product = await _productRepository.GetProductById(request.id);
 
@@ -52,7 +53,7 @@ namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
                 Stock = product.ProductSizes.FirstOrDefault(ps => ps.SizeId == size.Id)?.Stock ?? 0
             }).ToList();
 
-            var model = new EditProductViewModel
+            var model = new EditProductCommand
             {
                 Id = request.id,
                 Name = product.Name,

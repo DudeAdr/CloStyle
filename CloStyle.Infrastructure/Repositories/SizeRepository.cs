@@ -27,5 +27,11 @@ namespace CloStyle.Infrastructure.Repositories
         {
            return await _dbContext.Sizes.FirstAsync(s => s.Id == id);
         }
+
+        public async Task RemoveProductSizes(int productId)
+        {
+            var existingSizes = _dbContext.ProductSizes.Where(ps => ps.ProductId == productId);
+            _dbContext.ProductSizes.RemoveRange(existingSizes);
+        }
     }
 }

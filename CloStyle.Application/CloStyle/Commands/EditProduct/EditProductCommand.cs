@@ -1,4 +1,5 @@
 ﻿using CloStyle.Application.CloStyle.Dtos;
+using CloStyle.Application.CloStyle.ViewModels;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,22 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Commands.EditProduct
 {
-    public class EditProductCommand :IRequest<Unit>
+    public class EditProductCommand : IRequest<Unit>
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public string Description { get; set; }
+
+        public int CategoryId { get; set; }
+        public List<CategoryDto> Categories { get; set; } = new();
+
+        public int GenderId { get; set; }
+        public List<GenderDto> Genders { get; set; } = new();
+
+        public List<SizeDto> Sizes { get; set; } = new();
+
+        public string BrandName { get; set; }
+        public int BrandId { get; set; }
     }
 }

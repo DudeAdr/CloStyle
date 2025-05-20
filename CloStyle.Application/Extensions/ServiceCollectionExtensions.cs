@@ -1,5 +1,8 @@
 ﻿using CloStyle.Application.CloStyle.Commands.AddBrand;
 using CloStyle.Application.CloStyle.Commands.AddProduct;
+using CloStyle.Application.CloStyle.Commands.EditProduct;
+using CloStyle.Application.CloStyle.Queries.GetProductsForEdit;
+using CloStyle.Application.CloStyle.ViewModels;
 using CloStyle.Application.Mappings;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -27,9 +30,6 @@ namespace CloStyle.Application.Extensions
                 .AddFluentValidationAutoValidation()
                 .AddFluentValidationClientsideAdapters();
 
-            services.AddValidatorsFromAssemblyContaining<AddProductCommandValidator>()
-                .AddFluentValidationAutoValidation()
-                .AddFluentValidationClientsideAdapters();
         }
     }
 }

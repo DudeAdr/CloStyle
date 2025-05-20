@@ -1,4 +1,5 @@
-﻿using CloStyle.Application.CloStyle.ViewModels;
+﻿using CloStyle.Application.CloStyle.Commands.EditProduct;
+using CloStyle.Application.CloStyle.ViewModels;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
 {
-    public record GetProductsForEditQuery(int id) : IRequest<EditProductViewModel>
+    public record GetProductsForEditQuery(int id) : IRequest<EditProductCommand>
     {
     }
 }

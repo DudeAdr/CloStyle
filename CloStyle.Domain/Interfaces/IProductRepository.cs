@@ -17,5 +17,6 @@ namespace CloStyle.Domain.Interfaces
         Task<IEnumerable<Product>> GetByGenderId(int genderId);
         Task<IEnumerable<Product>> GetBySizeId(int sizeId);
         Task DeleteProduct(int id);
+        Task Commit();
     }
 }

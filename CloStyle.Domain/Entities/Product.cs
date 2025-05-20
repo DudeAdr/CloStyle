@@ -32,6 +32,6 @@ namespace CloStyle.Domain.Entities
         public int GenderId { get; set; }
         public Gender Gender { get; set; }
 
-        public ICollection<ProductSize> ProductSizes { get; set; }
+        public ICollection<ProductSize> ProductSizes { get; set; } = new List<ProductSize>();
     }
 }
