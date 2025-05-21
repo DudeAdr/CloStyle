@@ -30,6 +30,9 @@ namespace CloStyle.Application.Extensions
                 .AddFluentValidationAutoValidation()
                 .AddFluentValidationClientsideAdapters();
 
+            services.AddScoped<IValidator<EditProductCommand>, EditProductCommandValidator>();
+            services.AddScoped<IValidator<EditProductViewModel>, EditProductCommandValidator>();
+
         }
     }
 }

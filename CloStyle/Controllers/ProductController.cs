@@ -85,10 +85,14 @@ namespace CloStyle.Controllers
         {
             if (!ModelState.IsValid)
             {
-                command.Categories = (await _mediator.Send(new GetAllCategoriesQuery())).ToList();
-                command.Genders = (await _mediator.Send(new GetAllGendersQuery())).ToList();
-                command.Sizes = (await _mediator.Send(new GetAllSizesQuery())).ToList();
-                return View(command);
+                var vm = new EditProductViewModel
+                {
+                    Sizes = command.Sizes,
+                    Categories = (await _mediator.Send(new GetAllCategoriesQuery())).ToList(),
+                    Genders = (await _mediator.Send(new GetAllGendersQuery())).ToList()
+                };
+
+                return View(vm);
             }
             await _mediator.Send(command);
             return Redirect($"/CloStyle/{command.BrandName}/Products?brandId={command.BrandId}");

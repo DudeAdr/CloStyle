@@ -27,6 +27,8 @@ namespace CloStyle.Application.Mappings
             CreateMap<AddProductCommand, Product>()
             .ForMember(dest => dest.Id, opt => opt.Ignore());
 
+            CreateMap<EditProductViewModel, EditProductCommand>();
+
         }
     }
 }

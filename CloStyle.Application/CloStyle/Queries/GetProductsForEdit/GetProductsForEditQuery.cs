@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
 {
-    public record GetProductsForEditQuery(int id) : IRequest<EditProductCommand>
+    public record GetProductsForEditQuery(int id) : IRequest<EditProductViewModel>
     {
     }
 }

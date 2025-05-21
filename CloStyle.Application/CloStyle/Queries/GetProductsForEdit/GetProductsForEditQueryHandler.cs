@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
 {
-    public class GetProductsForEditQueryHandler : IRequestHandler<GetProductsForEditQuery, EditProductCommand>
+    public class GetProductsForEditQueryHandler : IRequestHandler<GetProductsForEditQuery, EditProductViewModel>
     {
         private IBrandRepository _brandRepository;
         private IProductRepository _productRepository;
@@ -32,7 +32,7 @@ namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
             _mapper = mapper;
         }
 
-        public async Task<EditProductCommand> Handle(GetProductsForEditQuery request, CancellationToken cancellationToken)
+        public async Task<EditProductViewModel> Handle(GetProductsForEditQuery request, CancellationToken cancellationToken)
         {
             var product = await _productRepository.GetProductById(request.id);
 
@@ -53,7 +53,7 @@ namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
                 Stock = product.ProductSizes.FirstOrDefault(ps => ps.SizeId == size.Id)?.Stock ?? 0
             }).ToList();
 
-            var model = new EditProductCommand
+            var model = new EditProductViewModel
             {
                 Id = request.id,
                 Name = product.Name,
