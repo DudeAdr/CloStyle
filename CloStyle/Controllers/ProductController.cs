@@ -2,13 +2,9 @@
 using CloStyle.Application.CloStyle.Commands.AddProduct;
 using CloStyle.Application.CloStyle.Commands.DeleteProduct;
 using CloStyle.Application.CloStyle.Commands.EditProduct;
-using CloStyle.Application.CloStyle.Queries.GetAllCategories;
-using CloStyle.Application.CloStyle.Queries.GetAllGenders;
-using CloStyle.Application.CloStyle.Queries.GetAllSizes;
-using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
+using CloStyle.Application.CloStyle.Queries.GetAddProductData;
 using CloStyle.Application.CloStyle.Queries.GetProductForDelete;
 using CloStyle.Application.CloStyle.Queries.GetProductsForEdit;
-using CloStyle.Application.CloStyle.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,32 +24,21 @@ namespace CloStyle.Controllers
         [HttpGet]
         public async Task<IActionResult> Add(int id)
         {
-            var command = new AddProductCommand
-            {
-                BrandId = id,   
-                Sizes = (await _mediator.Send(new GetAllSizesQuery())).ToList(),
-                Categories = (await _mediator.Send(new GetAllCategoriesQuery())).ToList(),
-                Genders = (await _mediator.Send(new GetAllGendersQuery())).ToList(),
-                BrandName = (await _mediator.Send(new GetBrandNameByIdQuery(id)))
-            };
-
-            return View(command);
+            var model = await _mediator.Send(new GetAddProductDataQuery(id));
+            return View(model);
         }
+
         [HttpPost]
         public async Task<IActionResult> Add(AddProductCommand command)
         {
             if (!ModelState.IsValid)
             {
-                command.Categories = (await _mediator.Send(new GetAllCategoriesQuery())).ToList();
-                command.Genders = (await _mediator.Send(new GetAllGendersQuery())).ToList();
-                command.Sizes = (await _mediator.Send(new GetAllSizesQuery())).ToList();
-                return View(command);
+                var model = await _mediator.Send(new GetAddProductDataQuery(command.Id));
+                return View(model);
             }
 
-            var brandName = await _mediator.Send(new GetBrandNameByIdQuery(command.BrandId));
             await _mediator.Send(command);
-
-            return Redirect($"/CloStyle/{brandName}/Products?brandId={command.BrandId}");
+            return Redirect($"/CloStyle/{command.BrandName}/Products?brandId={command.BrandId}");
         }
 
         [HttpGet]
@@ -66,11 +51,8 @@ namespace CloStyle.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(DeleteProductCommand command)
         {
-            var brandName = await _mediator.Send(new GetBrandNameByIdQuery(command.BrandId));
-
             await _mediator.Send(command);
-            return Redirect($"/CloStyle/{brandName}/Products?brandId={command.BrandId}");
-
+            return Redirect($"/CloStyle/{command.BrandName}/Products?brandId={command.BrandId}");
         }
 
         [HttpGet]
@@ -85,15 +67,10 @@ namespace CloStyle.Controllers
         {
             if (!ModelState.IsValid)
             {
-                var vm = new EditProductViewModel
-                {
-                    Sizes = command.Sizes,
-                    Categories = (await _mediator.Send(new GetAllCategoriesQuery())).ToList(),
-                    Genders = (await _mediator.Send(new GetAllGendersQuery())).ToList()
-                };
-
-                return View(vm);
+                var model = await _mediator.Send(new GetProductsForEditQuery(command.Id));
+                return View(model);
             }
+
             await _mediator.Send(command);
             return Redirect($"/CloStyle/{command.BrandName}/Products?brandId={command.BrandId}");
         }

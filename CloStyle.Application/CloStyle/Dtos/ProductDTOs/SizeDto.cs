@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Dtos
+namespace CloStyle.Application.CloStyle.Dtos.ProductDTOs
 {
     public class SizeDto
     {

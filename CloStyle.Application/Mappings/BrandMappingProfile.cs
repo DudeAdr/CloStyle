@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using CloStyle.Application.CloStyle.Commands.DeleteBrand;
 using CloStyle.Application.CloStyle.Commands.EditBrand;
-using CloStyle.Application.CloStyle.Dtos;
+using CloStyle.Application.CloStyle.Dtos.BrandDTOs;
 using CloStyle.Domain.Entities;
 using System;
 using System.Collections.Generic;

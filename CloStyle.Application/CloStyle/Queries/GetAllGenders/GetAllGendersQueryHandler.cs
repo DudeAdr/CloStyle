@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CloStyle.Application.CloStyle.Dtos;
+using CloStyle.Application.CloStyle.Dtos.ProductDTOs;
 using CloStyle.Application.CloStyle.Queries.GetAllCategories;
 using CloStyle.Domain.Interfaces;
 using MediatR;

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CloStyle.Application.CloStyle.Commands.EditProduct;
 using CloStyle.Application.CloStyle.Dtos;
+using CloStyle.Application.CloStyle.Dtos.ProductDTOs;
 using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
 using CloStyle.Application.CloStyle.ViewModels;
 using CloStyle.Domain.Interfaces;

@@ -1,4 +1,4 @@
-﻿using CloStyle.Application.CloStyle.Dtos;
+﻿using CloStyle.Application.CloStyle.Dtos.ProductDTOs;
 using FluentValidation;
 
 namespace CloStyle.Application.CloStyle.Commands.EditProduct

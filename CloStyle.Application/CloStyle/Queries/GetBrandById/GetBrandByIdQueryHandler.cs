@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CloStyle.Application.CloStyle.Dtos;
+using CloStyle.Application.CloStyle.Dtos.BrandDTOs;
 using CloStyle.Domain.Interfaces;
 using MediatR;
 using System;

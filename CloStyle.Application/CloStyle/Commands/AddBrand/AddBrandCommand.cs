@@ -1,4 +1,4 @@
-﻿using CloStyle.Application.CloStyle.Dtos;
+﻿using CloStyle.Application.CloStyle.Dtos.BrandDTOs;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using System;

@@ -12,5 +12,6 @@ namespace CloStyle.Application.CloStyle.Commands.DeleteProduct
     {
         public int Id { get; set; }
         public int BrandId { get; set; }
+        public string BrandName { get; set; }
     }
 }

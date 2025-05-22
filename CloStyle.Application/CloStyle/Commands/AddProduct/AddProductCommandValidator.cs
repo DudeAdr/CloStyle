@@ -1,8 +1,9 @@
-﻿using FluentValidation;
+﻿using CloStyle.Application.CloStyle.Dtos.ProductDTOs;
+using FluentValidation;
 
 namespace CloStyle.Application.CloStyle.Commands.AddProduct
 {
-    public class AddProductCommandValidator : AbstractValidator<AddProductCommand>
+    public class AddProductCommandValidator : AbstractValidator<AddProductDto>
     {
         public AddProductCommandValidator()
         {

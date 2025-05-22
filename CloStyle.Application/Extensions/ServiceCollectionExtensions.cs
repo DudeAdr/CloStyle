@@ -33,6 +33,9 @@ namespace CloStyle.Application.Extensions
             services.AddScoped<IValidator<EditProductCommand>, EditProductCommandValidator>();
             services.AddScoped<IValidator<EditProductViewModel>, EditProductCommandValidator>();
 
+            services.AddScoped<IValidator<AddProductCommand>, AddProductCommandValidator>();
+            services.AddScoped<IValidator<AddProductViewModel>, AddProductCommandValidator>();
+
         }
     }
 }
