@@ -1,20 +1,12 @@
 ﻿using AutoMapper;
-using CloStyle.Application.CloStyle.Commands.EditProduct;
-using CloStyle.Application.CloStyle.Dtos;
 using CloStyle.Application.CloStyle.Dtos.ProductDTOs;
-using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
 using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using CloStyle.Domain.Interfaces;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
+namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetEditProductData
 {
-    public class GetProductsForEditQueryHandler : IRequestHandler<GetProductsForEditQuery, EditProductViewModel>
+    public class GetEditProductDataQueryHandler : IRequestHandler<GetEditProductDataQuery, EditProductViewModel>
     {
         private IBrandRepository _brandRepository;
         private IProductRepository _productRepository;
@@ -23,7 +15,7 @@ namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
         private ISizeRepository _sizeRepository;
         private IMapper _mapper;
 
-        public GetProductsForEditQueryHandler(IBrandRepository brandRepository, IProductRepository productRepository, IGenderRepository genderRepository, ICategoryRepository categoryRepository, ISizeRepository sizeRepository, IMapper mapper)
+        public GetEditProductDataQueryHandler(IBrandRepository brandRepository, IProductRepository productRepository, IGenderRepository genderRepository, ICategoryRepository categoryRepository, ISizeRepository sizeRepository, IMapper mapper)
         {
             _brandRepository = brandRepository;
             _productRepository = productRepository;
@@ -33,7 +25,7 @@ namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
             _mapper = mapper;
         }
 
-        public async Task<EditProductViewModel> Handle(GetProductsForEditQuery request, CancellationToken cancellationToken)
+        public async Task<EditProductViewModel> Handle(GetEditProductDataQuery request, CancellationToken cancellationToken)
         {
             var product = await _productRepository.GetProductById(request.id);
 

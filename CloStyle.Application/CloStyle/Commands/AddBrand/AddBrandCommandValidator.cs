@@ -23,6 +23,20 @@ namespace CloStyle.Application.CloStyle.Commands.AddBrand
                         context.AddFailure($"Brand {value} already exists in database");
                     }
                 });
+            RuleFor(a => a.ImageFile)
+                .Cascade(CascadeMode.Stop)
+                .NotNull().WithMessage("Please upload a logo image.")
+                .Must(file => file != null && file.Length > 0)
+                    .WithMessage("Uploaded file is empty.")
+                .Must(file =>
+                {
+                    if (file == null) return false;
+
+                    var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+                    var extension = Path.GetExtension(file.FileName)?.ToLowerInvariant();
+                    return extension != null && allowedExtensions.Contains(extension);
+                }).WithMessage("Only image files (jpg, jpeg, png, gif) are allowed.");
+
         }
     }
 }

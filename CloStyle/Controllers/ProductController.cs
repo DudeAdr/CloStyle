@@ -2,9 +2,9 @@
 using CloStyle.Application.CloStyle.Commands.AddProduct;
 using CloStyle.Application.CloStyle.Commands.DeleteProduct;
 using CloStyle.Application.CloStyle.Commands.EditProduct;
-using CloStyle.Application.CloStyle.Queries.GetAddProductData;
-using CloStyle.Application.CloStyle.Queries.GetProductForDelete;
-using CloStyle.Application.CloStyle.Queries.GetProductsForEdit;
+using CloStyle.Application.CloStyle.Queries.ProductQueries.GetAddProductData;
+using CloStyle.Application.CloStyle.Queries.ProductQueries.GetDeleteProductData;
+using CloStyle.Application.CloStyle.Queries.ProductQueries.GetEditProductData;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -44,7 +44,7 @@ namespace CloStyle.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            var model = await _mediator.Send(new GetProductForDeleteQuery(id));
+            var model = await _mediator.Send(new GetDeleteProductDataQuery(id));
             return View(model);
         }
 
@@ -58,7 +58,7 @@ namespace CloStyle.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
-            var model = await _mediator.Send(new GetProductsForEditQuery(id));
+            var model = await _mediator.Send(new GetEditProductDataQuery(id));
             return View(model);
         }
 
@@ -67,7 +67,7 @@ namespace CloStyle.Controllers
         {
             if (!ModelState.IsValid)
             {
-                var model = await _mediator.Send(new GetProductsForEditQuery(command.Id));
+                var model = await _mediator.Send(new GetEditProductDataQuery(command.Id));
                 return View(model);
             }
 

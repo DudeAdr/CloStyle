@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetBrandById
+namespace CloStyle.Application.CloStyle.Queries.BrandQueries.GetBrandById
 {
     public class GetBrandByIdQueryHandler : IRequestHandler<GetBrandByIdQuery, BrandDto>
     {

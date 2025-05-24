@@ -5,7 +5,7 @@ using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using CloStyle.Domain.Interfaces;
 using MediatR;
 
-namespace CloStyle.Application.CloStyle.Queries.GetAddProductData
+namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetAddProductData
 {
     public class GetAddProductDataQueryHandler : IRequestHandler<GetAddProductDataQuery, AddProductViewModel>
     {
@@ -25,7 +25,7 @@ namespace CloStyle.Application.CloStyle.Queries.GetAddProductData
                 Sizes = (await _mediator.Send(new GetAllSizesQuery())).ToList(),
                 Categories = (await _mediator.Send(new GetAllCategoriesQuery())).ToList(),
                 Genders = (await _mediator.Send(new GetAllGendersQuery())).ToList(),
-                BrandName = (await _repository.GetBrandNameById(request.id))
+                BrandName = await _repository.GetBrandNameById(request.id)
             };
 
             return vm;

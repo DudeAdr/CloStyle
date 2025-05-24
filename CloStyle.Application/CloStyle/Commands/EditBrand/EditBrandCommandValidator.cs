@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using CloStyle.Domain.Interfaces;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetProductForDelete
+namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllProducts
 {
-    public record GetProductForDeleteQuery(int id) : IRequest<DeleteProductViewModel>
+    public record GetAllProductsQuery(int brandId) : IRequest<ProductsByBrandViewModel>
     {
     }
 }

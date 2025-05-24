@@ -1,14 +1,14 @@
-﻿ using AutoMapper;
-using CloStyle.Application.CloStyle;
+﻿using AutoMapper;
 using CloStyle.Application.CloStyle.Commands.AddBrand;
 using CloStyle.Application.CloStyle.Commands.DeleteBrand;
 using CloStyle.Application.CloStyle.Commands.EditBrand;
-using CloStyle.Application.CloStyle.Queries.GetAllBrands;
-using CloStyle.Application.CloStyle.Queries.GetAllProducts;
-using CloStyle.Application.CloStyle.Queries.GetBrandById;
-using CloStyle.Application.CloStyle.ViewModels;
+using CloStyle.Application.CloStyle.Queries.BrandQueries.GetAllBrands;
+using CloStyle.Application.CloStyle.Queries.BrandQueries.GetBrandById;
+using CloStyle.Application.CloStyle.Queries.BrandQueries.GetEditBrandData;
+using CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllProducts;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace CloStyle.Controllers
 {
@@ -55,7 +55,8 @@ namespace CloStyle.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View(command);
+                var model = await _mediator.Send(new GetEditBrandDataQuery(command.Id));
+                return View(model);
             }
 
             await _mediator.Send(command);
@@ -66,9 +67,7 @@ namespace CloStyle.Controllers
         [Route("CloStyle/{brandName}/Edit")]
         public async Task<IActionResult> Edit(int brandId)
         {
-            var brand = await _mediator.Send(new GetBrandByIdQuery(brandId));
-
-            EditBrandCommand model = _mapper.Map<EditBrandCommand>(brand);
+            var model = await _mediator.Send(new GetEditBrandDataQuery(brandId));
             return View(model);
         }
 
@@ -86,6 +85,7 @@ namespace CloStyle.Controllers
         {
             var brand = await _mediator.Send(new GetBrandByIdQuery(brandId));
             DeleteBrandCommand model = _mapper.Map<DeleteBrandCommand>(brand);
+
             return View(model);
         }
 

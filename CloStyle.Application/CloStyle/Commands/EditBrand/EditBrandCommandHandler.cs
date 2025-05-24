@@ -29,13 +29,12 @@ namespace CloStyle.Application.CloStyle.Commands.EditBrand
             { 
                 await _fileRepository.DeleteFileAsync(brand.ImgPath);
                 request.ImgPath = await _fileRepository.SaveBrandImageAsync(request.ImageFile);
+                brand.ImgPath = request.ImgPath;
             }
 
             brand.Name = request.Name;
-            brand.ImgPath = request.ImgPath;
 
             await _brandRepository.Commit();
-
             return Unit.Value;
         }
     }

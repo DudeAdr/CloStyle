@@ -1,28 +1,20 @@
-﻿using AutoMapper;
-using CloStyle.Application.CloStyle.ViewModels.ProductVM;
+﻿using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using CloStyle.Domain.Interfaces;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetProductForDelete
+namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetDeleteProductData
 {
-    public class GetProductForDeleteQueryHandler : IRequestHandler<GetProductForDeleteQuery, DeleteProductViewModel>
+    public class GetDeleteProductDataQueryHandler: IRequestHandler<GetDeleteProductDataQuery, DeleteProductViewModel>
     {
         private IBrandRepository _brandRepository;
         private IProductRepository _productRepository;
-        private IMapper _mapper;
 
-        public GetProductForDeleteQueryHandler(IProductRepository productRepository, IBrandRepository brandRepository, IMapper mapper)
+        public GetDeleteProductDataQueryHandler(IProductRepository productRepository, IBrandRepository brandRepository)
         {
             _brandRepository = brandRepository;
             _productRepository = productRepository;
-            _mapper = mapper;
         }
-        public async Task<DeleteProductViewModel> Handle(GetProductForDeleteQuery request, CancellationToken cancellationToken)
+        public async Task<DeleteProductViewModel> Handle(GetDeleteProductDataQuery request, CancellationToken cancellationToken)
         {
             var product = await _productRepository.GetProductById(request.id);
             var brandName = await _brandRepository.GetBrandNameById(product.BrandId);

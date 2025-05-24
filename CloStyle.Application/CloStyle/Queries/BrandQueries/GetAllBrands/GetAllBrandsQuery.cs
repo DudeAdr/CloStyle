@@ -1,14 +1,15 @@
 ﻿using CloStyle.Application.CloStyle.Dtos.BrandDTOs;
-using Microsoft.AspNetCore.Http;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.ViewModels.BrandVM
+namespace CloStyle.Application.CloStyle.Queries.BrandQueries.GetAllBrands
 {
-    public class AddBrandViewModel : BrandDto
+    public class GetAllBrandsQuery : IRequest<IEnumerable<BrandDto>>
     {
+
     }
 }

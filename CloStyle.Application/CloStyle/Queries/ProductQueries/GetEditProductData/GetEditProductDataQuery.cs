@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetProductsForEdit
+namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetEditProductData
 {
-    public record GetProductsForEditQuery(int id) : IRequest<EditProductViewModel>
+    public record GetEditProductDataQuery(int id) : IRequest<EditProductViewModel>
     {
     }
 }

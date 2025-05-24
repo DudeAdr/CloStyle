@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetBrandById
+namespace CloStyle.Application.CloStyle.Queries.BrandQueries.GetBrandById
 {
     public record GetBrandByIdQuery (int Id) : IRequest<BrandDto>
     {

@@ -8,7 +8,10 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Commands.DeleteBrand
 {
-    public class DeleteBrandCommand : BrandDto, IRequest<Unit>
+    public class DeleteBrandCommand : IRequest<Unit>
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string ImgPath { get; set; }
     }
 }

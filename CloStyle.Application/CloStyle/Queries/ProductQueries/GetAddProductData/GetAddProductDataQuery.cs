@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetAddProductData
+namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetAddProductData
 {
     public record GetAddProductDataQuery(int id) : IRequest<AddProductViewModel>
     {
