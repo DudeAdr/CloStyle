@@ -13,7 +13,6 @@ namespace CloStyle.Application.CloStyle.Dtos.BrandDTOs
         public int Id { get; set; }
         public string Name { get; set; } = default!;
         public IFormFile? ImageFile { get; set; }
-
         public string? ImgPath { get; set; }
     }
 }

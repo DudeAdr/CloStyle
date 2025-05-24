@@ -1,5 +1,5 @@
 ﻿using CloStyle.Application.CloStyle.Commands.EditProduct;
-using CloStyle.Application.CloStyle.ViewModels;
+using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using MediatR;
 using System;
 using System.Collections.Generic;

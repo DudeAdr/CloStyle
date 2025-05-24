@@ -1,6 +1,8 @@
 wwwroot\css\brand.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\brands\98b90f9d-0e4e-4335-a0c7-132d8fbdcce5_New-Yorker-logo.jpg
+wwwroot\images\brands\fb6e388c-eaaf-4960-819f-727db57e49fb_Test-Logo.png
 wwwroot\images\brands\nike.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

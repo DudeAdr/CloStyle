@@ -1,14 +1,13 @@
 ﻿using CloStyle.Application.CloStyle.Dtos.ProductDTOs;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.ViewModels
+namespace CloStyle.Application.CloStyle.ViewModels.ProductVM
 {
-    public class EditProductViewModel : EditProductDto
+    public class AddProductViewModel : AddProductDto
     {
         public int Id { get; set; }
         public List<CategoryDto> Categories { get; set; } = new();

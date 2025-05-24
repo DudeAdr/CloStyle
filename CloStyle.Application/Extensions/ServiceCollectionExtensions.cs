@@ -2,7 +2,7 @@
 using CloStyle.Application.CloStyle.Commands.AddProduct;
 using CloStyle.Application.CloStyle.Commands.EditProduct;
 using CloStyle.Application.CloStyle.Queries.GetProductsForEdit;
-using CloStyle.Application.CloStyle.ViewModels;
+using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using CloStyle.Application.Mappings;
 using FluentValidation;
 using FluentValidation.AspNetCore;

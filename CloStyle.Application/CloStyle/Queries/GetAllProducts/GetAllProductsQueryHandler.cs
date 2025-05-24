@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using CloStyle.Application.CloStyle.Dtos.ProductDTOs;
-using CloStyle.Application.CloStyle.ViewModels;
+using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using CloStyle.Domain.Entities;
 using CloStyle.Domain.Interfaces;
 using MediatR;

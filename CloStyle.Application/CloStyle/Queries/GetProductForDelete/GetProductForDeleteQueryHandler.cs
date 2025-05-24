@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
-using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
-using CloStyle.Application.CloStyle.ViewModels;
+using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using CloStyle.Domain.Interfaces;
 using MediatR;
 using System;

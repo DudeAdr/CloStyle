@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.ViewModels
+namespace CloStyle.Application.CloStyle.ViewModels.ProductVM
 {
     public class ProductsByBrandViewModel
     {

@@ -1,15 +1,14 @@
 ﻿using CloStyle.Application.CloStyle.Dtos.BrandDTOs;
-using MediatR;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Commands.EditBrand
+namespace CloStyle.Application.CloStyle.ViewModels.BrandVM
 {
-    public class EditBrandCommand : BrandDto, IRequest<Unit>
+    public class AddBrandViewModel : BrandDto
     {
-        public string BrandName { get; set; }
     }
 }

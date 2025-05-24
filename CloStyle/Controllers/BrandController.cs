@@ -6,7 +6,6 @@ using CloStyle.Application.CloStyle.Commands.EditBrand;
 using CloStyle.Application.CloStyle.Queries.GetAllBrands;
 using CloStyle.Application.CloStyle.Queries.GetAllProducts;
 using CloStyle.Application.CloStyle.Queries.GetBrandById;
-using CloStyle.Application.CloStyle.Queries.GetBrandNameById;
 using CloStyle.Application.CloStyle.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -23,6 +22,8 @@ namespace CloStyle.Controllers
             _mediator = brandService;
             _mapper = mapper;
         }
+
+        [HttpGet]
         public IActionResult Add()
         {
             return View();
@@ -35,11 +36,12 @@ namespace CloStyle.Controllers
             {
                 return View(command);
             }
-            await _mediator.Send(command);
 
+            await _mediator.Send(command);
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpGet]
         [Route("CloStyle/{brandName}/Products")]
         public async Task<IActionResult> Products(int brandId)
         {
@@ -51,8 +53,6 @@ namespace CloStyle.Controllers
         [Route("CloStyle/{brandName}/Edit")]
         public async Task<IActionResult> Edit(EditBrandCommand command)
         {
-            var brandName = await _mediator.Send(new GetBrandNameByIdQuery(command.Id));
-
             if (!ModelState.IsValid)
             {
                 return View(command);
@@ -62,11 +62,10 @@ namespace CloStyle.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-
+        [HttpGet]
         [Route("CloStyle/{brandName}/Edit")]
         public async Task<IActionResult> Edit(int brandId)
         {
-            var brandName = await _mediator.Send(new GetBrandNameByIdQuery(brandId));
             var brand = await _mediator.Send(new GetBrandByIdQuery(brandId));
 
             EditBrandCommand model = _mapper.Map<EditBrandCommand>(brand);
@@ -77,21 +76,20 @@ namespace CloStyle.Controllers
         [Route("CloStyle/{brandName}/Delete")]
         public async Task<IActionResult> Delete(DeleteBrandCommand command)
         {
-            var brandName = await _mediator.Send(new GetBrandNameByIdQuery(command.Id));
-
             await _mediator.Send(command);
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpGet]
         [Route("CloStyle/{brandName}/Delete")]
         public async Task<IActionResult> Delete(int brandId)
         {
-            var brandName = await _mediator.Send(new GetBrandNameByIdQuery(brandId));
             var brand = await _mediator.Send(new GetBrandByIdQuery(brandId));
             DeleteBrandCommand model = _mapper.Map<DeleteBrandCommand>(brand);
-
             return View(model);
         }
+
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var brand = await _mediator.Send(new GetAllBrandsQuery());

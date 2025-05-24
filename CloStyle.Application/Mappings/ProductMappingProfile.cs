@@ -4,7 +4,7 @@ using CloStyle.Application.CloStyle.Commands.DeleteProduct;
 using CloStyle.Application.CloStyle.Commands.EditProduct;
 using CloStyle.Application.CloStyle.Dtos;
 using CloStyle.Application.CloStyle.Dtos.ProductDTOs;
-using CloStyle.Application.CloStyle.ViewModels;
+using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using CloStyle.Domain.Entities;
 
 
