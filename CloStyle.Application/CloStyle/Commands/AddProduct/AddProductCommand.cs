@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Commands.AddProduct
 {
-    public class AddProductCommand : AddProductDto, IRequest<Unit>
+    public class AddProductCommand : ProductFormDto, IRequest<Unit>
     {
         public int Id { get; set; }
         public List<CategoryDto> Categories { get; set; } = new();

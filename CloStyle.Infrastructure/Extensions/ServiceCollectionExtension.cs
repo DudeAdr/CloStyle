@@ -2,6 +2,7 @@
 using CloStyle.Infrastructure.Persistence;
 using CloStyle.Infrastructure.Repositories;
 using CloStyle.Infrastructure.Seeders;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,6 +20,10 @@ namespace CloStyle.Infrastructure.Extensions
         {
             services.AddDbContext<CloStyleDbContext>(opt => opt.UseSqlServer(
                 configuration.GetConnectionString("CloStyle")));
+
+            services.AddDefaultIdentity<IdentityUser>()
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<CloStyleDbContext>();
 
             services.AddScoped<CloStyleSeeder>();
             services.AddScoped<IBrandRepository, BrandRepository>();

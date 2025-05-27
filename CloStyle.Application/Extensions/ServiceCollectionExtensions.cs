@@ -1,4 +1,6 @@
-﻿using CloStyle.Application.CloStyle.Commands.AddBrand;
+﻿using AutoMapper;
+using CloStyle.Application.ApplicationUser;
+using CloStyle.Application.CloStyle.Commands.AddBrand;
 using CloStyle.Application.CloStyle.Commands.AddProduct;
 using CloStyle.Application.CloStyle.Commands.EditProduct;
 using CloStyle.Application.CloStyle.ViewModels.ProductVM;
@@ -16,13 +18,21 @@ namespace CloStyle.Application.Extensions
         {
             //services
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<AddBrandCommand>());
+            services.AddScoped<IUserContext, UserContext>();
 
             //automapper
-            services.AddAutoMapper(typeof(BrandMappingProfile));
-            services.AddAutoMapper(typeof(ProductMappingProfile));
-            services.AddAutoMapper(typeof(GenderMappingProfile));
-            services.AddAutoMapper(typeof(CategoryMappingProfile));
-            services.AddAutoMapper(typeof(SizeMappingProfile));
+
+            services.AddScoped(provider => new MapperConfiguration(cfg =>
+            {
+                var scope = provider.CreateScope();
+                var userContext = scope.ServiceProvider.GetRequiredService<IUserContext>();
+                cfg.AddProfile(new BrandMappingProfile(userContext));
+                cfg.AddProfile(new ProductMappingProfile(userContext));
+                cfg.AddProfile(new GenderMappingProfile());
+                cfg.AddProfile(new CategoryMappingProfile());
+                cfg.AddProfile(new SizeMappingProfile());
+            }).CreateMapper()
+            );
 
             //validators
             services.AddValidatorsFromAssemblyContaining<AddBrandCommandValidator>()

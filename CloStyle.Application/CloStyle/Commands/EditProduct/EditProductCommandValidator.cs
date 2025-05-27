@@ -3,7 +3,7 @@ using FluentValidation;
 
 namespace CloStyle.Application.CloStyle.Commands.EditProduct
 { 
-    public class EditProductCommandValidator : AbstractValidator<EditProductDto>
+    public class EditProductCommandValidator : AbstractValidator<ProductFormDto>
     {
         public EditProductCommandValidator()
         {

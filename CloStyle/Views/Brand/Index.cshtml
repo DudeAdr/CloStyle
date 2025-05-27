@@ -7,6 +7,7 @@
 
 @{
     ViewData["Title"] = "Manage Brands";
+    bool canAddBrand = User.IsInRole("Owner") || User.IsInRole("Admin");
 }
 
 <h1 class="text-center mt-md-3">Manage Brands</h1>
@@ -20,9 +21,14 @@
             </div>
         </div>
         <div>
-            <a asp-action="Add" class="btn btn-success d-flex align-items-center">
-                <i class="bi bi-plus-circle me-2"></i> Add New Brand
-            </a>
+            @{
+                if (canAddBrand)
+                {
+                    <a asp-action="Add" class="btn btn-success d-flex align-items-center">
+                        <i class="bi bi-plus-circle me-2"></i> Add New Brand
+                    </a>
+                }
+            }
         </div>
     </div>
 </div>
@@ -37,9 +43,19 @@
                 <div class="card-body text-center">
                     <h5 class="card-title fw-bold">@item.Name</h5>
                     <div class="d-flex justify-content-around">
-                        <a asp-controller="Brand" asp-action="Edit" asp-route-brandId="@item.Id" asp-route-brandName="@item.Name" class="btn btn-outline-primary btn-sm">✏<br /> Edit</a>
+                        @{
+                            if (item.IsEditable)
+                            {
+                                <a asp-controller="Brand" asp-action="Edit" asp-route-brandId="@item.Id" asp-route-brandName="@item.Name" class="btn btn-outline-primary btn-sm">✏<br /> Edit</a>
+                            }
+                        }
                         <a asp-controller="Brand" asp-action="Products" asp-route-brandId="@item.Id" asp-route-brandName="@item.Name" class="btn btn-outline-secondary btn-sm">🛒 Products</a>
-                        <a asp-controller="Brand" asp-action="Delete" asp-route-brandId="@item.Id" asp-route-brandName="@item.Name" class="btn btn-outline-danger btn-sm">❌ Delete</a>
+                        @{
+                            if (item.IsEditable)
+                            {
+                                <a asp-controller="Brand" asp-action="Delete" asp-route-brandId="@item.Id" asp-route-brandName="@item.Name" class="btn btn-outline-danger btn-sm">❌ Delete</a>
+                            }
+                        }                      
                     </div>
                 </div>
             </div>

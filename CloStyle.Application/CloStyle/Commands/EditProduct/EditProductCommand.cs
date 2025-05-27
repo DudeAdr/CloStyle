@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Commands.EditProduct
 {
-    public class EditProductCommand : EditProductDto, IRequest<Unit>
+    public class EditProductCommand : ProductFormDto, IRequest<Unit>
     {
         public int Id { get; set; }
         public List<CategoryDto> Categories { get; set; } = new();

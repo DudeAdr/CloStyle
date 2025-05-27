@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CloStyle.Application.ApplicationUser;
 using CloStyle.Application.CloStyle.Commands.DeleteBrand;
 using CloStyle.Application.CloStyle.Commands.EditBrand;
 using CloStyle.Application.CloStyle.Dtos.BrandDTOs;
@@ -13,10 +14,13 @@ namespace CloStyle.Application.Mappings
 {
     public class BrandMappingProfile : Profile  
     {
-        public BrandMappingProfile()
+        public BrandMappingProfile(IUserContext userContext)
         {
+            var user = userContext.GetCurrentUser();
+
             CreateMap<BrandDto, Brand>();
-            CreateMap<Brand, BrandDto>();
+            CreateMap<Brand, BrandDto>()
+                .ForMember(dto => dto.IsEditable, opt => opt.MapFrom(src => user != null && (src.CreatedById == user.Id || user.IsInRole("Admin"))));
             CreateMap<BrandDto, EditBrandCommand>();
             CreateMap<BrandDto, DeleteBrandCommand>();
         }

@@ -1,4 +1,5 @@
-﻿using CloStyle.Domain.Entities;
+﻿using CloStyle.Application.ApplicationUser;
+using CloStyle.Domain.Entities;
 using CloStyle.Domain.Interfaces;
 using MediatR;
 using System;
@@ -13,15 +14,25 @@ namespace CloStyle.Application.CloStyle.Commands.EditProduct
     {
         private IProductRepository _productRepository;
         private ISizeRepository _sizeRepository;
+        private IUserContext _userContext;
 
-        public EditProductCommandHandler(IProductRepository productRepository, ISizeRepository sizeRepository)
+        public EditProductCommandHandler(IProductRepository productRepository, ISizeRepository sizeRepository, IUserContext userContext)
         {
             _productRepository = productRepository;
             _sizeRepository = sizeRepository;
+            _userContext = userContext;
         }
         public async Task<Unit> Handle(EditProductCommand request, CancellationToken cancellationToken)
         {
             var product = await _productRepository.GetProductById(request.Id);
+            var user = _userContext.GetCurrentUser();
+            var isEditable = user != null && (product.CreatedById == user.Id || user.IsInRole("Admin"));
+
+            if (!isEditable)
+            {
+                return Unit.Value;
+            }
+
             product.Name = request.Name;
             product.Description = request.Description;
             product.Price = request.Price;

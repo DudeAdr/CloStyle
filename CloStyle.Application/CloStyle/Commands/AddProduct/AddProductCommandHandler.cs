@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CloStyle.Application.ApplicationUser;
 using CloStyle.Domain.Entities;
 using CloStyle.Domain.Interfaces;
 using MediatR;
@@ -18,8 +19,9 @@ namespace CloStyle.Application.CloStyle.Commands.AddProduct
         private readonly ICategoryRepository _categoryRepository;
         private readonly ISizeRepository _sizeRepository;
         private readonly IMapper _mapper;
+        private readonly IUserContext _userContext;
 
-        public AddProductCommandHandler(IProductRepository productRepository, IBrandRepository brandRepository, IGenderRepository genderRepository, ICategoryRepository categoryRepository, ISizeRepository sizeRepository, IMapper mapper)
+        public AddProductCommandHandler(IProductRepository productRepository, IBrandRepository brandRepository, IGenderRepository genderRepository, ICategoryRepository categoryRepository, ISizeRepository sizeRepository, IMapper mapper, IUserContext userContext)
         {
             _productRepository = productRepository;
             _brandRepository = brandRepository;
@@ -27,15 +29,26 @@ namespace CloStyle.Application.CloStyle.Commands.AddProduct
             _categoryRepository = categoryRepository;
             _sizeRepository = sizeRepository;
             _mapper = mapper;
+            _userContext = userContext;
         }
 
         public async Task<Unit> Handle(AddProductCommand request, CancellationToken cancellationToken)
         {
+            var user = _userContext.GetCurrentUser();
+            var brand = await _brandRepository.GetBrandById(request.BrandId);
             var product = _mapper.Map<Product>(request);
+
+            var isEditable = user != null && (brand.CreatedById == user.Id || user.IsInRole("Admin"));
+
+            if(!isEditable)
+            {
+                return Unit.Value;
+            }
+
             product.BrandId = request.BrandId;
             product.CategoryId = request.CategoryId;
             product.GenderId = request.GenderId;
-
+            product.CreatedById = brand.CreatedById;
             product.Brand = await _brandRepository.GetBrandById(request.BrandId);
             product.Category = await _categoryRepository.GetCategoryById(request.CategoryId);
             product.Gender = await _genderRepository.GetGenderById(request.GenderId);

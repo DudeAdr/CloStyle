@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.ViewModels.ProductVM
 {
-    public class AddProductViewModel : AddProductDto
+    public class AddProductViewModel : ProductFormDto
     {
         public int Id { get; set; }
         public List<CategoryDto> Categories { get; set; } = new();

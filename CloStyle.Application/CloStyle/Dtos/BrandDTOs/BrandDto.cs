@@ -14,5 +14,6 @@ namespace CloStyle.Application.CloStyle.Dtos.BrandDTOs
         public string Name { get; set; } = default!;
         public IFormFile? ImageFile { get; set; }
         public string? ImgPath { get; set; }
+        public bool IsEditable { get; set; }
     }
 }

@@ -31,7 +31,7 @@ namespace CloStyle.Domain.Entities
         [ForeignKey("Gender")]
         public int GenderId { get; set; }
         public Gender Gender { get; set; }
-
+        public string? CreatedById { get; set; }
         public ICollection<ProductSize> ProductSizes { get; set; } = new List<ProductSize>();
     }
 }

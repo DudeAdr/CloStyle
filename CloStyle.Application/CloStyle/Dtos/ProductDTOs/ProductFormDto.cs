@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Dtos.ProductDTOs
 {
-    public class EditProductDto
+    public class ProductFormDto
     {
         public string Name { get; set; }
         public decimal Price { get; set; }
@@ -14,5 +14,6 @@ namespace CloStyle.Application.CloStyle.Dtos.ProductDTOs
         public int CategoryId { get; set; }
         public int GenderId { get; set; }
         public List<SizeDto> Sizes { get; set; } = new();
+        public bool IsEditable { get; set; }
     }
 }

@@ -11,6 +11,7 @@ namespace CloStyle.Application.CloStyle.ViewModels.ProductVM
     {
         public int BrandId { get; set; }
         public string BrandName { get; set; }
+        public bool IsEditable { get; set; }
         public IEnumerable<ProductDto> Products { get; set; } = new List<ProductDto>();
     }
 }

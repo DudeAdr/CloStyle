@@ -1,0 +1,5 @@
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\3ca21d51-9fff-4a31-a4cb-692dabb00b1a_New-Yorker-logo.jpg
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\7b1cf08f-4e77-4fad-a086-dde1b62b25d6_New-Yorker-logo.jpg
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\8633abdd-ef7a-4ee9-9eae-0021ce1f87c0_Test-Logo.png
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\be734e42-62cf-41b1-bfaf-4a66b67f8e73_New-Yorker-logo.jpg
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\fa38621f-98d2-4214-95ea-c66f6d6ae673_newb.png

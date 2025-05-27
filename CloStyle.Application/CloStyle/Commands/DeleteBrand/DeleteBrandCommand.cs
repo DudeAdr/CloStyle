@@ -13,5 +13,6 @@ namespace CloStyle.Application.CloStyle.Commands.DeleteBrand
         public int Id { get; set; }
         public string Name { get; set; }
         public string ImgPath { get; set; }
+        public bool IsEditable { get; set; }
     }
 }

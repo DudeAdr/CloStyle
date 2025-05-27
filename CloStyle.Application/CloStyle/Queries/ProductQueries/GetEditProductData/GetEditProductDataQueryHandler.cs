@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CloStyle.Application.ApplicationUser;
 using CloStyle.Application.CloStyle.Dtos.ProductDTOs;
 using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using CloStyle.Domain.Interfaces;
@@ -14,8 +15,9 @@ namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetEditProductDat
         private ICategoryRepository _categoryRepository;
         private ISizeRepository _sizeRepository;
         private IMapper _mapper;
+        private IUserContext _userContext;
 
-        public GetEditProductDataQueryHandler(IBrandRepository brandRepository, IProductRepository productRepository, IGenderRepository genderRepository, ICategoryRepository categoryRepository, ISizeRepository sizeRepository, IMapper mapper)
+        public GetEditProductDataQueryHandler(IBrandRepository brandRepository, IProductRepository productRepository, IGenderRepository genderRepository, ICategoryRepository categoryRepository, ISizeRepository sizeRepository, IMapper mapper, IUserContext userContext)
         {
             _brandRepository = brandRepository;
             _productRepository = productRepository;
@@ -23,15 +25,26 @@ namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetEditProductDat
             _categoryRepository = categoryRepository;
             _sizeRepository = sizeRepository;
             _mapper = mapper;
+            _userContext = userContext;
         }
 
         public async Task<EditProductViewModel> Handle(GetEditProductDataQuery request, CancellationToken cancellationToken)
         {
             var product = await _productRepository.GetProductById(request.id);
+            var user = _userContext.GetCurrentUser();
+            var isEditable = user != null && (product.CreatedById == user.Id || user.IsInRole("Admin"));
 
             if (product == null)
             {
                 throw new Exception("Product not found");
+            }
+
+            if (!isEditable)
+            {
+                return new EditProductViewModel
+                {
+                    IsEditable = isEditable,
+                };
             }
 
             var categories = await _categoryRepository.GetAll();
@@ -58,7 +71,8 @@ namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetEditProductDat
                 GenderId = product.GenderId,
                 Categories = _mapper.Map<List<CategoryDto>>(categories),
                 Genders = _mapper.Map<List<GenderDto>>(genders),
-                Sizes = sizes
+                Sizes = sizes,
+                IsEditable = isEditable
             };
 
             return model;

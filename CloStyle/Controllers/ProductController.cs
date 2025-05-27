@@ -6,6 +6,7 @@ using CloStyle.Application.CloStyle.Queries.ProductQueries.GetAddProductData;
 using CloStyle.Application.CloStyle.Queries.ProductQueries.GetDeleteProductData;
 using CloStyle.Application.CloStyle.Queries.ProductQueries.GetEditProductData;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CloStyle.Controllers
@@ -22,13 +23,19 @@ namespace CloStyle.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Owner,Admin")]
         public async Task<IActionResult> Add(int id)
         {
             var model = await _mediator.Send(new GetAddProductDataQuery(id));
+            if (!model.IsEditable)
+            {
+                return RedirectToAction("NoAccess", "Home");
+            }
             return View(model);
         }
 
         [HttpPost]
+        [Authorize(Roles = "Owner,Admin")]
         public async Task<IActionResult> Add(AddProductCommand command)
         {
             if (!ModelState.IsValid)
@@ -42,13 +49,19 @@ namespace CloStyle.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Owner,Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var model = await _mediator.Send(new GetDeleteProductDataQuery(id));
+            if (!model.IsEditable)
+            {
+                return RedirectToAction("NoAccess", "Home");
+            }
             return View(model);
         }
 
         [HttpPost]
+        [Authorize(Roles = "Owner,Admin")]
         public async Task<IActionResult> Delete(DeleteProductCommand command)
         {
             await _mediator.Send(command);
@@ -56,13 +69,19 @@ namespace CloStyle.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Owner,Admin")]
         public async Task<IActionResult> Edit(int id)
         {
             var model = await _mediator.Send(new GetEditProductDataQuery(id));
+            if (!model.IsEditable)
+            {
+                return RedirectToAction("NoAccess", "Home");
+            }
             return View(model);
         }
 
         [HttpPost]
+        [Authorize(Roles = "Owner,Admin")]
         public async Task<IActionResult> Edit(EditProductCommand command)
         {
             if (!ModelState.IsValid)

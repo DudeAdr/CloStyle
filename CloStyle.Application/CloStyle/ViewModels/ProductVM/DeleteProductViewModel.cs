@@ -15,5 +15,6 @@ namespace CloStyle.Application.CloStyle.ViewModels.ProductVM
         public string Description { get; set; }
         public int BrandId { get; set; }
         public string BrandName { get; set; }
+        public bool IsEditable { get; set; }
     }
 }

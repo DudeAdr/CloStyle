@@ -1,9 +1,10 @@
 ﻿using CloStyle.Domain.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CloStyle.Infrastructure.Persistence
 {
-    public class CloStyleDbContext : DbContext
+    public class CloStyleDbContext : IdentityDbContext
     {
         public CloStyleDbContext(DbContextOptions<CloStyleDbContext> options) : base(options) { }
 

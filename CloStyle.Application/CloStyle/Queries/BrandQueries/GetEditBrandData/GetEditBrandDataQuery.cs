@@ -11,5 +11,6 @@ namespace CloStyle.Application.CloStyle.Queries.BrandQueries.GetEditBrandData
 {
     public record GetEditBrandDataQuery(int Id) : IRequest<EditBrandCommand>
     {
+        public bool isEditable { get; set; }
     }
 }

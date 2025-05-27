@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CloStyle.Application.ApplicationUser;
 using CloStyle.Application.CloStyle.Dtos;
 using CloStyle.Domain.Interfaces;
 using MediatR;
@@ -14,16 +15,26 @@ namespace CloStyle.Application.CloStyle.Commands.EditBrand
     {
         private IBrandRepository _brandRepository;
         private IFileRepository _fileRepository;
+        private IUserContext _userContext;
 
-        public EditBrandCommandHandler(IBrandRepository brandRepository, IMapper mapper, IFileRepository fileRepository)
+        public EditBrandCommandHandler(IBrandRepository brandRepository, IMapper mapper, IFileRepository fileRepository, IUserContext userContext)
         {
             _brandRepository = brandRepository;
             _fileRepository = fileRepository;
+            _userContext = userContext;
         }
 
         public async Task<Unit> Handle(EditBrandCommand request, CancellationToken cancellationToken)
         {
             var brand = await _brandRepository.GetBrandById(request.Id!);
+            var user = _userContext.GetCurrentUser();
+
+            var isEditable = user != null && (brand?.CreatedById == user.Id || (user.IsInRole("Admin")));
+
+            if (!isEditable)
+            {
+                return Unit.Value;
+            }
 
             if (request.ImageFile != null && request.ImageFile.Length > 0)
             { 
