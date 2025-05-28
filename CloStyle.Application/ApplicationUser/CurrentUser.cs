@@ -18,6 +18,13 @@ namespace CloStyle.Application.ApplicationUser
         public string Id { get; set; }
         public string Email { get; set; }
         public IEnumerable<string> Roles { get; set; }
-        public bool IsInRole(string role) => Roles.Contains(role);       
+        public bool IsInRole(string role) => Roles.Contains(role);
+
+
+        public static readonly int maxBrandsNumber = 5;
+        public bool HasSpaceForBrand(int brandAmount)
+        {
+            return brandAmount < maxBrandsNumber;
+        }
     }
 }

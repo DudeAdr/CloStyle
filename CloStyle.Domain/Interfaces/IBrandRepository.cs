@@ -16,5 +16,6 @@ namespace CloStyle.Domain.Interfaces
         Task Commit();
         Task<Brand?> GetBrandById(int id);
         Task Delete(int id);
+        Task<int> GetUserBrandAmount(string id);
     }
 }

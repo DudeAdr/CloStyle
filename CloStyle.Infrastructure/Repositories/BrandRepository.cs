@@ -61,5 +61,10 @@ namespace CloStyle.Infrastructure.Repositories
                 .Select(b => b.Name)
                 .FirstOrDefaultAsync();
         }
+
+        public async Task<int> GetUserBrandAmount(string id)
+        {
+            return await _dbContext.Brands.CountAsync(b => b.CreatedById == id);
+        }
     }
 }

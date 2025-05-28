@@ -2,6 +2,7 @@
 using CloStyle.Application.CloStyle.Commands.AddBrand;
 using CloStyle.Application.CloStyle.Commands.DeleteBrand;
 using CloStyle.Application.CloStyle.Commands.EditBrand;
+using CloStyle.Application.CloStyle.Queries.BrandQueries.CanUserAddBrandByAmount;
 using CloStyle.Application.CloStyle.Queries.BrandQueries.GetAllBrands;
 using CloStyle.Application.CloStyle.Queries.BrandQueries.GetBrandById;
 using CloStyle.Application.CloStyle.Queries.BrandQueries.GetEditBrandData;
@@ -9,6 +10,7 @@ using CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllProducts;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace CloStyle.Controllers
@@ -26,8 +28,13 @@ namespace CloStyle.Controllers
 
         [HttpGet]
         [Authorize(Roles = "Owner,Admin")]
-        public IActionResult Add()
+        public async Task<IActionResult> Add()
         {
+            var canAddBrand = await _mediator.Send(new CanUserAddBrandByAmountQuery());
+            if(!canAddBrand)
+            {
+                return RedirectToAction("NoAddBrandAccess", "Home");
+            }
             return View();
         }
 
@@ -35,9 +42,16 @@ namespace CloStyle.Controllers
         [Authorize(Roles = "Owner,Admin")]
         public async Task<IActionResult> Add(AddBrandCommand command)
         {
+            var canAddBrand = await _mediator.Send(new CanUserAddBrandByAmountQuery());
+
             if (!ModelState.IsValid)
             {
                 return View(command);
+            }
+            
+            if (!canAddBrand)
+            {
+                return RedirectToAction("NoAddBrandAccess", "Home");
             }
 
             await _mediator.Send(command);

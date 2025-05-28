@@ -1,0 +1,8 @@
+﻿@{
+    @using CloStyle.Application.ApplicationUser
+    ViewData["Title"] = "NoAddBrandAccess";
+    var maxNumber = CurrentUser.maxBrandsNumber;
+}
+
+<h1>You can't add any more Brands to your account. Your current limit is @maxNumber</h1>
+

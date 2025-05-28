@@ -41,5 +41,6 @@ namespace CloStyle.Application.ApplicationUser
 
             return new CurrentUser(id, email, role);
         }
+
     }
 }

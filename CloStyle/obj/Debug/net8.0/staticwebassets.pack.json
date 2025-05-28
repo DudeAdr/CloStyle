@@ -17,16 +17,32 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\02d74d84-670d-4f56-8075-40670e6e8568_New-Yorker-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\brands\\02d74d84-670d-4f56-8075-40670e6e8568_New-Yorker-logo.jpg"
+    },
+    {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.jpg",
       "PackagePath": "staticwebassets\\images\\brands\\0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.jpg"
     },
     {
-      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\5abeebc8-0191-4572-9353-190d20fe0b08_newb.png",
-      "PackagePath": "staticwebassets\\images\\brands\\5abeebc8-0191-4572-9353-190d20fe0b08_newb.png"
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\3b791cfd-0f4b-4bcd-aff9-198efeb41698_New-Yorker-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\brands\\3b791cfd-0f4b-4bcd-aff9-198efeb41698_New-Yorker-logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\65415701-f31b-4afa-bb1e-43b492c76b5d_Test-Logo.png",
+      "PackagePath": "staticwebassets\\images\\brands\\65415701-f31b-4afa-bb1e-43b492c76b5d_Test-Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\9d1142e9-b051-4e35-9bdd-1fac87c4b310_Test-Logo.png",
+      "PackagePath": "staticwebassets\\images\\brands\\9d1142e9-b051-4e35-9bdd-1fac87c4b310_Test-Logo.png"
     },
     {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\adidas.jpg",
       "PackagePath": "staticwebassets\\images\\brands\\adidas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\d60f33ad-3ca2-4a1c-95de-c350f13819ae_newb.png",
+      "PackagePath": "staticwebassets\\images\\brands\\d60f33ad-3ca2-4a1c-95de-c350f13819ae_newb.png"
     },
     {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\nike.jpg",
