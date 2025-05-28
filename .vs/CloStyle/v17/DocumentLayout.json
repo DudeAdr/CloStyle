@@ -98,8 +98,7 @@
               "RelativeToolTip": "CloStyle\\Views\\Home\\NoAddBrandAccess.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T09:34:51.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T09:34:51.863Z"
             },
             {
               "$type": "Document",
@@ -111,8 +110,7 @@
               "RelativeToolTip": "CloStyle.Application\\ApplicationUser\\CurrentUser.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAlwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T08:58:03.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T08:58:03.241Z"
             },
             {
               "$type": "Document",
@@ -146,7 +144,7 @@
               "RelativeDocumentMoniker": "CloStyle\\Controllers\\BrandController.cs",
               "ToolTip": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\Controllers\\BrandController.cs",
               "RelativeToolTip": "CloStyle\\Controllers\\BrandController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T08:35:53.389Z",
               "EditorCaption": ""
@@ -161,8 +159,7 @@
               "RelativeToolTip": "CloStyle.Domain\\Entities\\Brand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T08:56:05.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T08:56:05.941Z"
             },
             {
               "$type": "Document",
@@ -174,8 +171,7 @@
               "RelativeToolTip": "CloStyle\\Views\\Home\\NoDeleteAccess.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T08:42:19.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T08:42:19.627Z"
             },
             {
               "$type": "Document",
@@ -187,8 +183,7 @@
               "RelativeToolTip": "CloStyle\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T08:41:36.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T08:41:36.37Z"
             },
             {
               "$type": "Document",
@@ -230,8 +225,7 @@
               "RelativeToolTip": "CloStyle.Application\\ApplicationUser\\UserContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T08:59:41.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T08:59:41.887Z"
             },
             {
               "$type": "Document",
@@ -243,8 +237,7 @@
               "RelativeToolTip": "CloStyle.Infrastructure\\Repositories\\BrandRepository.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAqwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T09:11:24.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T09:11:24.366Z"
             },
             {
               "$type": "Document",
@@ -256,8 +249,7 @@
               "RelativeToolTip": "CloStyle.Application\\CloStyle\\Queries\\BrandQueries\\CanUserAddBrandByAmount\\CanUserAddBrandByAmountQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T09:09:40.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T09:09:40.186Z"
             },
             {
               "$type": "Document",
@@ -282,8 +274,7 @@
               "RelativeToolTip": "CloStyle.Domain\\Interfaces\\IBrandRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T09:10:48.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T09:10:48.298Z"
             },
             {
               "$type": "Document",
@@ -295,8 +286,7 @@
               "RelativeToolTip": "CloStyle.Application\\CloStyle\\Commands\\AddBrand\\AddBrandCommandHandler.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T09:05:58.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T09:05:58.497Z"
             },
             {
               "$type": "Document",
@@ -308,8 +298,7 @@
               "RelativeToolTip": "CloStyle.Application\\Extensions\\ServiceCollectionExtensions.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T09:05:36.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T09:05:36.994Z"
             },
             {
               "$type": "Document",
@@ -321,8 +310,7 @@
               "RelativeToolTip": "CloStyle.Infrastructure\\Persistence\\CloStyleDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T09:04:59.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T09:04:59.597Z"
             }
           ]
         }
