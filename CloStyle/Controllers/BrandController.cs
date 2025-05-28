@@ -83,23 +83,22 @@ namespace CloStyle.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Owner,Admin")]
         [Route("CloStyle/{brandName}/Delete")]
         public async Task<IActionResult> Delete(int brandId)
         {
             var brand = await _mediator.Send(new GetBrandByIdQuery(brandId));
             DeleteBrandCommand model = _mapper.Map<DeleteBrandCommand>(brand);
 
-            if (!model.IsEditable)
+            if (!model.IsEditable || !User.IsInRole("Admin"))
             {
-                return RedirectToAction("NoAccess", "Home");
+                return RedirectToAction("NoDeleteAccess", "Home");
             }
 
             return View(model);
         }
 
         [HttpPost]
-        [Authorize(Roles = "Owner,Admin")]
+        [Authorize(Roles = "Admin")]
         [Route("CloStyle/{brandName}/Delete")]
         public async Task<IActionResult> Delete(DeleteBrandCommand command)
         {

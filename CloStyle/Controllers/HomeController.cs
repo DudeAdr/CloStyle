@@ -17,7 +17,10 @@ public class HomeController : Controller
     {
         return View();
     }
-
+    public IActionResult NoDeleteAccess()
+    {
+        return View();
+    }
     public IActionResult NoAccess()
     {
         return View();

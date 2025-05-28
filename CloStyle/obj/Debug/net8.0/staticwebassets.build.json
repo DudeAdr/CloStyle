@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9dGzrEDcrrW3k90a/zLmue5irYWEo6dLwDZW+JvssAc=",
+  "Hash": "jVihncLeRkKOKTUvYWWpBsQiVlxirOZmbkn3X+iD8h4=",
   "Source": "CloStyle",
   "BasePath": "_content/CloStyle",
   "Mode": "Default",
@@ -122,12 +122,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\3ca21d51-9fff-4a31-a4cb-692dabb00b1a_New-Yorker-logo.jpg",
+      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.jpg",
       "SourceId": "CloStyle",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\",
       "BasePath": "_content/CloStyle",
-      "RelativePath": "images/brands/3ca21d51-9fff-4a31-a4cb-692dabb00b1a_New-Yorker-logo#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/brands/0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -140,15 +140,15 @@
       "Integrity": "gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\brands\\3ca21d51-9fff-4a31-a4cb-692dabb00b1a_New-Yorker-logo.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\brands\\0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.jpg"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\7b1cf08f-4e77-4fad-a086-dde1b62b25d6_New-Yorker-logo.jpg",
+      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\5abeebc8-0191-4572-9353-190d20fe0b08_newb.png",
       "SourceId": "CloStyle",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\",
       "BasePath": "_content/CloStyle",
-      "RelativePath": "images/brands/7b1cf08f-4e77-4fad-a086-dde1b62b25d6_New-Yorker-logo#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/brands/5abeebc8-0191-4572-9353-190d20fe0b08_newb#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -157,32 +157,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "iz8g43hhmx",
-      "Integrity": "gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=",
+      "Fingerprint": "tqwsht1c0d",
+      "Integrity": "xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\brands\\7b1cf08f-4e77-4fad-a086-dde1b62b25d6_New-Yorker-logo.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\8633abdd-ef7a-4ee9-9eae-0021ce1f87c0_Test-Logo.png",
-      "SourceId": "CloStyle",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\",
-      "BasePath": "_content/CloStyle",
-      "RelativePath": "images/brands/8633abdd-ef7a-4ee9-9eae-0021ce1f87c0_Test-Logo#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "4ggcsxjldt",
-      "Integrity": "RA6AAwD91dAXQ5nKkGZdfclwiYGR1yo12YNFIT2cWY8=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\brands\\8633abdd-ef7a-4ee9-9eae-0021ce1f87c0_Test-Logo.png"
+      "OriginalItemSpec": "wwwroot\\images\\brands\\5abeebc8-0191-4572-9353-190d20fe0b08_newb.png"
     },
     {
       "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\adidas.jpg",
@@ -204,48 +183,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\brands\\adidas.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\be734e42-62cf-41b1-bfaf-4a66b67f8e73_New-Yorker-logo.jpg",
-      "SourceId": "CloStyle",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\",
-      "BasePath": "_content/CloStyle",
-      "RelativePath": "images/brands/be734e42-62cf-41b1-bfaf-4a66b67f8e73_New-Yorker-logo#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "iz8g43hhmx",
-      "Integrity": "gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\brands\\be734e42-62cf-41b1-bfaf-4a66b67f8e73_New-Yorker-logo.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\fa38621f-98d2-4214-95ea-c66f6d6ae673_newb.png",
-      "SourceId": "CloStyle",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\",
-      "BasePath": "_content/CloStyle",
-      "RelativePath": "images/brands/fa38621f-98d2-4214-95ea-c66f6d6ae673_newb#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "tqwsht1c0d",
-      "Integrity": "xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\brands\\fa38621f-98d2-4214-95ea-c66f6d6ae673_newb.png"
     },
     {
       "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\nike.jpg",
@@ -1899,8 +1836,8 @@
       ]
     },
     {
-      "Route": "images/brands/3ca21d51-9fff-4a31-a4cb-692dabb00b1a_New-Yorker-logo.iz8g43hhmx.jpg",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\3ca21d51-9fff-4a31-a4cb-692dabb00b1a_New-Yorker-logo.jpg",
+      "Route": "images/brands/0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.iz8g43hhmx.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1921,7 +1858,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 18:01:33 GMT"
+          "Value": "Tue, 27 May 2025 19:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1935,7 +1872,7 @@
         },
         {
           "Name": "label",
-          "Value": "images/brands/3ca21d51-9fff-4a31-a4cb-692dabb00b1a_New-Yorker-logo.jpg"
+          "Value": "images/brands/0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.jpg"
         },
         {
           "Name": "integrity",
@@ -1944,8 +1881,8 @@
       ]
     },
     {
-      "Route": "images/brands/3ca21d51-9fff-4a31-a4cb-692dabb00b1a_New-Yorker-logo.jpg",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\3ca21d51-9fff-4a31-a4cb-692dabb00b1a_New-Yorker-logo.jpg",
+      "Route": "images/brands/0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1966,7 +1903,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 18:01:33 GMT"
+          "Value": "Tue, 27 May 2025 19:31:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1981,8 +1918,8 @@
       ]
     },
     {
-      "Route": "images/brands/7b1cf08f-4e77-4fad-a086-dde1b62b25d6_New-Yorker-logo.iz8g43hhmx.jpg",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\7b1cf08f-4e77-4fad-a086-dde1b62b25d6_New-Yorker-logo.jpg",
+      "Route": "images/brands/5abeebc8-0191-4572-9353-190d20fe0b08_newb.png",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\5abeebc8-0191-4572-9353-190d20fe0b08_newb.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1991,19 +1928,56 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "51512"
+          "Value": "7717"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=\""
+          "Value": "\"xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 07:00:09 GMT"
+          "Value": "Tue, 27 May 2025 19:26:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg="
+        }
+      ]
+    },
+    {
+      "Route": "images/brands/5abeebc8-0191-4572-9353-190d20fe0b08_newb.tqwsht1c0d.png",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\5abeebc8-0191-4572-9353-190d20fe0b08_newb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7717"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 19:26:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2013,134 +1987,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "iz8g43hhmx"
+          "Value": "tqwsht1c0d"
         },
         {
           "Name": "label",
-          "Value": "images/brands/7b1cf08f-4e77-4fad-a086-dde1b62b25d6_New-Yorker-logo.jpg"
+          "Value": "images/brands/5abeebc8-0191-4572-9353-190d20fe0b08_newb.png"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE="
-        }
-      ]
-    },
-    {
-      "Route": "images/brands/7b1cf08f-4e77-4fad-a086-dde1b62b25d6_New-Yorker-logo.jpg",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\7b1cf08f-4e77-4fad-a086-dde1b62b25d6_New-Yorker-logo.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "51512"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 07:00:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE="
-        }
-      ]
-    },
-    {
-      "Route": "images/brands/8633abdd-ef7a-4ee9-9eae-0021ce1f87c0_Test-Logo.4ggcsxjldt.png",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\8633abdd-ef7a-4ee9-9eae-0021ce1f87c0_Test-Logo.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "32035"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RA6AAwD91dAXQ5nKkGZdfclwiYGR1yo12YNFIT2cWY8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 17:47:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4ggcsxjldt"
-        },
-        {
-          "Name": "label",
-          "Value": "images/brands/8633abdd-ef7a-4ee9-9eae-0021ce1f87c0_Test-Logo.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RA6AAwD91dAXQ5nKkGZdfclwiYGR1yo12YNFIT2cWY8="
-        }
-      ]
-    },
-    {
-      "Route": "images/brands/8633abdd-ef7a-4ee9-9eae-0021ce1f87c0_Test-Logo.png",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\8633abdd-ef7a-4ee9-9eae-0021ce1f87c0_Test-Logo.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "32035"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RA6AAwD91dAXQ5nKkGZdfclwiYGR1yo12YNFIT2cWY8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 17:47:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-RA6AAwD91dAXQ5nKkGZdfclwiYGR1yo12YNFIT2cWY8="
+          "Value": "sha256-xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg="
         }
       ]
     },
@@ -2223,170 +2078,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-9PwT4MUKkhCIcMsuCcYc9rkDIdLmJ1a34jVjzlxZfag="
-        }
-      ]
-    },
-    {
-      "Route": "images/brands/be734e42-62cf-41b1-bfaf-4a66b67f8e73_New-Yorker-logo.iz8g43hhmx.jpg",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\be734e42-62cf-41b1-bfaf-4a66b67f8e73_New-Yorker-logo.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "51512"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 15:58:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iz8g43hhmx"
-        },
-        {
-          "Name": "label",
-          "Value": "images/brands/be734e42-62cf-41b1-bfaf-4a66b67f8e73_New-Yorker-logo.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE="
-        }
-      ]
-    },
-    {
-      "Route": "images/brands/be734e42-62cf-41b1-bfaf-4a66b67f8e73_New-Yorker-logo.jpg",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\be734e42-62cf-41b1-bfaf-4a66b67f8e73_New-Yorker-logo.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "51512"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 15:58:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE="
-        }
-      ]
-    },
-    {
-      "Route": "images/brands/fa38621f-98d2-4214-95ea-c66f6d6ae673_newb.png",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\fa38621f-98d2-4214-95ea-c66f6d6ae673_newb.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7717"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 16:01:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg="
-        }
-      ]
-    },
-    {
-      "Route": "images/brands/fa38621f-98d2-4214-95ea-c66f6d6ae673_newb.tqwsht1c0d.png",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\fa38621f-98d2-4214-95ea-c66f6d6ae673_newb.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7717"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 16:01:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tqwsht1c0d"
-        },
-        {
-          "Name": "label",
-          "Value": "images/brands/fa38621f-98d2-4214-95ea-c66f6d6ae673_newb.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg="
         }
       ]
     },

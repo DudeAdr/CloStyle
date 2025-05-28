@@ -29,7 +29,7 @@ namespace CloStyle.Application.CloStyle.Commands.DeleteBrand
         {
             var user = _userContext.GetCurrentUser();
             var brand = await _repository.GetBrandById(request.Id);
-            var isEditable = user != null && (brand?.CreatedById == user.Id || user.IsInRole("Admin"));
+            var isEditable = user != null && user.IsInRole("Admin");
 
             if (!isEditable)
             {
