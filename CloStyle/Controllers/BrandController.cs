@@ -4,26 +4,25 @@ using CloStyle.Application.CloStyle.Commands.DeleteBrand;
 using CloStyle.Application.CloStyle.Commands.EditBrand;
 using CloStyle.Application.CloStyle.Queries.BrandQueries.CanUserAddBrandByAmount;
 using CloStyle.Application.CloStyle.Queries.BrandQueries.GetAllBrands;
-using CloStyle.Application.CloStyle.Queries.BrandQueries.GetBrandById;
+using CloStyle.Application.CloStyle.Queries.BrandQueries.GetDeleteBrandData;
 using CloStyle.Application.CloStyle.Queries.BrandQueries.GetEditBrandData;
 using CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllProducts;
+using CloStyle.Extensions;
+using CloStyle.Models;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using Newtonsoft.Json;
 
 namespace CloStyle.Controllers
 {
     public class BrandController : Controller
     {
         private readonly IMediator _mediator;
-        private readonly IMapper _mapper;
 
-        public BrandController(IMediator brandService, IMapper mapper)
+        public BrandController(IMediator brandService)
         {
             _mediator = brandService; 
-            _mapper = mapper;
         }
 
         [HttpGet]
@@ -46,6 +45,7 @@ namespace CloStyle.Controllers
 
             if (!ModelState.IsValid)
             {
+                this.AddNotification("warning", $"Please check if every field of your form is filled properly");
                 return View(command);
             }
             
@@ -55,6 +55,8 @@ namespace CloStyle.Controllers
             }
 
             await _mediator.Send(command);
+            this.AddNotification("success", $"Brand {command.Name} added successfully!");
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -93,6 +95,8 @@ namespace CloStyle.Controllers
             }
 
             await _mediator.Send(command);
+            this.AddNotification("success", $"Brand {command.Name} edited successfully!");
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -100,8 +104,7 @@ namespace CloStyle.Controllers
         [Route("CloStyle/{brandName}/Delete")]
         public async Task<IActionResult> Delete(int brandId)
         {
-            var brand = await _mediator.Send(new GetBrandByIdQuery(brandId));
-            DeleteBrandCommand model = _mapper.Map<DeleteBrandCommand>(brand);
+            var model = await _mediator.Send(new GetDeleteBrandDataQuery(brandId));
 
             if (!model.IsEditable || !User.IsInRole("Admin"))
             {
@@ -117,6 +120,8 @@ namespace CloStyle.Controllers
         public async Task<IActionResult> Delete(DeleteBrandCommand command)
         {
             await _mediator.Send(command);
+            this.AddNotification("success", $"Brand {command.Name} deleted successfully!");
+
             return RedirectToAction(nameof(Index));
         }
 

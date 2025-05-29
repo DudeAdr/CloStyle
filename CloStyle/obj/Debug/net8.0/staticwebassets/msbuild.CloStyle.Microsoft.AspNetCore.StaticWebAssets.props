@@ -72,168 +72,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\02d74d84-670d-4f56-8075-40670e6e8568_New-Yorker-logo.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/02d74d84-670d-4f56-8075-40670e6e8568_New-Yorker-logo.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>iz8g43hhmx</Fingerprint>
-      <Integrity>gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\02d74d84-670d-4f56-8075-40670e6e8568_New-Yorker-logo.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>iz8g43hhmx</Fingerprint>
-      <Integrity>gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\0f5807b8-bb32-4110-8757-aaa2197bb33c_New-Yorker-logo.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\3b791cfd-0f4b-4bcd-aff9-198efeb41698_New-Yorker-logo.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/3b791cfd-0f4b-4bcd-aff9-198efeb41698_New-Yorker-logo.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>iz8g43hhmx</Fingerprint>
-      <Integrity>gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\3b791cfd-0f4b-4bcd-aff9-198efeb41698_New-Yorker-logo.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\3f70359d-3fb9-46d0-82ef-76a02baffc4a_Test-Logo.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/3f70359d-3fb9-46d0-82ef-76a02baffc4a_Test-Logo.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4ggcsxjldt</Fingerprint>
-      <Integrity>RA6AAwD91dAXQ5nKkGZdfclwiYGR1yo12YNFIT2cWY8=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\3f70359d-3fb9-46d0-82ef-76a02baffc4a_Test-Logo.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\4b1d4a0f-fbf0-4d6f-8598-4545c25fd0b3_New-Yorker-logo.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/4b1d4a0f-fbf0-4d6f-8598-4545c25fd0b3_New-Yorker-logo.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>iz8g43hhmx</Fingerprint>
-      <Integrity>gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\4b1d4a0f-fbf0-4d6f-8598-4545c25fd0b3_New-Yorker-logo.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\604beaab-8e5d-45e4-9798-768e23cb783d_newb.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/604beaab-8e5d-45e4-9798-768e23cb783d_newb.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tqwsht1c0d</Fingerprint>
-      <Integrity>xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\604beaab-8e5d-45e4-9798-768e23cb783d_newb.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\65415701-f31b-4afa-bb1e-43b492c76b5d_Test-Logo.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/65415701-f31b-4afa-bb1e-43b492c76b5d_Test-Logo.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4ggcsxjldt</Fingerprint>
-      <Integrity>RA6AAwD91dAXQ5nKkGZdfclwiYGR1yo12YNFIT2cWY8=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\65415701-f31b-4afa-bb1e-43b492c76b5d_Test-Logo.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\750436ec-c23a-44ac-82ed-ef8fce695417_newb.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/750436ec-c23a-44ac-82ed-ef8fce695417_newb.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tqwsht1c0d</Fingerprint>
-      <Integrity>xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\750436ec-c23a-44ac-82ed-ef8fce695417_newb.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\9d1142e9-b051-4e35-9bdd-1fac87c4b310_Test-Logo.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/9d1142e9-b051-4e35-9bdd-1fac87c4b310_Test-Logo.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4ggcsxjldt</Fingerprint>
-      <Integrity>RA6AAwD91dAXQ5nKkGZdfclwiYGR1yo12YNFIT2cWY8=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\9d1142e9-b051-4e35-9bdd-1fac87c4b310_Test-Logo.png'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\adidas.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>CloStyle</SourceId>
@@ -252,12 +90,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\adidas.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\b25015b3-f133-4961-9509-4ba79ac3b967_New-Yorker-logo.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\cc8e9269-b6be-4918-acc1-5bf54ccd887b_New-Yorker-logo.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>CloStyle</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/b25015b3-f133-4961-9509-4ba79ac3b967_New-Yorker-logo.jpg</RelativePath>
+      <RelativePath>images/brands/cc8e9269-b6be-4918-acc1-5bf54ccd887b_New-Yorker-logo.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -268,61 +106,7 @@
       <Integrity>gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\b25015b3-f133-4961-9509-4ba79ac3b967_New-Yorker-logo.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\d16992a5-877b-4fba-8590-20f56b4243f0_Test-Logo.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/d16992a5-877b-4fba-8590-20f56b4243f0_Test-Logo.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4ggcsxjldt</Fingerprint>
-      <Integrity>RA6AAwD91dAXQ5nKkGZdfclwiYGR1yo12YNFIT2cWY8=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\d16992a5-877b-4fba-8590-20f56b4243f0_Test-Logo.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\d60f33ad-3ca2-4a1c-95de-c350f13819ae_newb.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/d60f33ad-3ca2-4a1c-95de-c350f13819ae_newb.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tqwsht1c0d</Fingerprint>
-      <Integrity>xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\d60f33ad-3ca2-4a1c-95de-c350f13819ae_newb.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\f9ae7c13-b95b-4ad4-a70c-02b74dc6d148_New-Yorker-logo.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/f9ae7c13-b95b-4ad4-a70c-02b74dc6d148_New-Yorker-logo.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>iz8g43hhmx</Fingerprint>
-      <Integrity>gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\f9ae7c13-b95b-4ad4-a70c-02b74dc6d148_New-Yorker-logo.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\cc8e9269-b6be-4918-acc1-5bf54ccd887b_New-Yorker-logo.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\nike.jpg'))">
       <SourceType>Package</SourceType>
@@ -1385,6 +1169,78 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\toastr.js\toastr.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>lib/toastr.js/toastr.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7znil99lx5</Fingerprint>
+      <Integrity>He3QEBKoL/nMXlVsoM7S2C2kjFQqS5L+mgA+F8LpG+U=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\toastr.js\toastr.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\toastr.js\toastr.js.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>lib/toastr.js/toastr.js.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9r5hbeiiyi</Fingerprint>
+      <Integrity>m0WLbupw1WfA6UG9pD/LUsQ9v8m1hDjDb3scyrP2N7M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\toastr.js\toastr.js.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\toastr.js\toastr.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>lib/toastr.js/toastr.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fuwkiubrsj</Fingerprint>
+      <Integrity>R91pD48xW+oHbpJYGn5xR0Q7tMhH4xOrWn1QqMRINtA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\toastr.js\toastr.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\toastr.js\toastr.min.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>lib/toastr.js/toastr.min.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>oosw0sin1v</Fingerprint>
+      <Integrity>yNbKY1y6h2rbVcQtf0b8lq4a+xpktyFc3pSYoGAY1qQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\toastr.js\toastr.min.js'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

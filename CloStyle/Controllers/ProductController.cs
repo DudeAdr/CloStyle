@@ -5,6 +5,7 @@ using CloStyle.Application.CloStyle.Commands.EditProduct;
 using CloStyle.Application.CloStyle.Queries.ProductQueries.GetAddProductData;
 using CloStyle.Application.CloStyle.Queries.ProductQueries.GetDeleteProductData;
 using CloStyle.Application.CloStyle.Queries.ProductQueries.GetEditProductData;
+using CloStyle.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -41,10 +42,14 @@ namespace CloStyle.Controllers
             if (!ModelState.IsValid)
             {
                 var model = await _mediator.Send(new GetAddProductDataQuery(command.Id));
+                this.AddNotification("warning", $"Please check if every field of your form is filled properly");
                 return View(model);
             }
 
             await _mediator.Send(command);
+
+            this.AddNotification("success", $"Product {command.Name} added successfully!");
+
             return Redirect($"/CloStyle/{command.BrandName}/Products?brandId={command.BrandId}");
         }
 
@@ -65,6 +70,8 @@ namespace CloStyle.Controllers
         public async Task<IActionResult> Delete(DeleteProductCommand command)
         {
             await _mediator.Send(command);
+            this.AddNotification("success", $"Product deleted successfully!");
+
             return Redirect($"/CloStyle/{command.BrandName}/Products?brandId={command.BrandId}");
         }
 
@@ -87,10 +94,13 @@ namespace CloStyle.Controllers
             if (!ModelState.IsValid)
             {
                 var model = await _mediator.Send(new GetEditProductDataQuery(command.Id));
+                this.AddNotification("warning", $"Please check if every field of your form is filled properly");
                 return View(model);
             }
 
             await _mediator.Send(command);
+            this.AddNotification("success", $"Product {command.Name} edited successfully!");
+
             return Redirect($"/CloStyle/{command.BrandName}/Products?brandId={command.BrandId}");
         }
     }

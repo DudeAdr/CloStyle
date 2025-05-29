@@ -1,12 +1,1 @@
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\02d74d84-670d-4f56-8075-40670e6e8568_New-Yorker-logo.jpg
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\3b791cfd-0f4b-4bcd-aff9-198efeb41698_New-Yorker-logo.jpg
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\3f70359d-3fb9-46d0-82ef-76a02baffc4a_Test-Logo.png
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\4b1d4a0f-fbf0-4d6f-8598-4545c25fd0b3_New-Yorker-logo.jpg
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\604beaab-8e5d-45e4-9798-768e23cb783d_newb.png
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\65415701-f31b-4afa-bb1e-43b492c76b5d_Test-Logo.png
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\750436ec-c23a-44ac-82ed-ef8fce695417_newb.png
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\9d1142e9-b051-4e35-9bdd-1fac87c4b310_Test-Logo.png
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\b25015b3-f133-4961-9509-4ba79ac3b967_New-Yorker-logo.jpg
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\d16992a5-877b-4fba-8590-20f56b4243f0_Test-Logo.png
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\d60f33ad-3ca2-4a1c-95de-c350f13819ae_newb.png
-C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\f9ae7c13-b95b-4ad4-a70c-02b74dc6d148_New-Yorker-logo.jpg
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\wwwroot\images\brands\cc8e9269-b6be-4918-acc1-5bf54ccd887b_New-Yorker-logo.jpg

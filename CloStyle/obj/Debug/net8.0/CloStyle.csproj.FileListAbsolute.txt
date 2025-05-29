@@ -789,3 +789,4 @@ C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\Micro
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\libman.json

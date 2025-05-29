@@ -17,7 +17,7 @@ namespace CloStyle.Application.CloStyle.Commands.EditBrand
         private IFileRepository _fileRepository;
         private IUserContext _userContext;
 
-        public EditBrandCommandHandler(IBrandRepository brandRepository, IMapper mapper, IFileRepository fileRepository, IUserContext userContext)
+        public EditBrandCommandHandler(IBrandRepository brandRepository, IFileRepository fileRepository, IUserContext userContext)
         {
             _brandRepository = brandRepository;
             _fileRepository = fileRepository;

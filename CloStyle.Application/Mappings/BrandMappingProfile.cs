@@ -21,8 +21,8 @@ namespace CloStyle.Application.Mappings
             CreateMap<BrandDto, Brand>();
             CreateMap<Brand, BrandDto>()
                 .ForMember(dto => dto.IsEditable, opt => opt.MapFrom(src => user != null && (src.CreatedById == user.Id || user.IsInRole("Admin"))));
-            CreateMap<BrandDto, EditBrandCommand>();
-            CreateMap<BrandDto, DeleteBrandCommand>();
+            CreateMap<Brand, DeleteBrandCommand> ()
+                .ForMember(dto => dto.IsEditable, opt => opt.MapFrom(src => user != null && (src.CreatedById == user.Id || user.IsInRole("Admin"))));
         }
     }
 }
