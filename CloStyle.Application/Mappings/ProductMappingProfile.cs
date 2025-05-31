@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CloStyle.Application.ApplicationUser;
+using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Application.CloStyle.Commands.AddProduct;
 using CloStyle.Application.CloStyle.Commands.DeleteProduct;
 using CloStyle.Application.CloStyle.Commands.EditProduct;

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CloStyle.Application.ApplicationUser;
+using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Application.CloStyle.Commands.DeleteBrand;
 using CloStyle.Application.CloStyle.Commands.EditBrand;
 using CloStyle.Application.CloStyle.Dtos.BrandDTOs;

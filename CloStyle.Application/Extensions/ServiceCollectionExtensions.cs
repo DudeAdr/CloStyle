@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CloStyle.Application.ApplicationUser;
+using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Application.CloStyle.Commands.AddBrand;
 using CloStyle.Application.CloStyle.Commands.AddProduct;
 using CloStyle.Application.CloStyle.Commands.EditProduct;
@@ -31,6 +31,7 @@ namespace CloStyle.Application.Extensions
                 cfg.AddProfile(new GenderMappingProfile());
                 cfg.AddProfile(new CategoryMappingProfile());
                 cfg.AddProfile(new SizeMappingProfile());
+                cfg.AddProfile(new UserMappingProfile());
             }).CreateMapper()
             );
 

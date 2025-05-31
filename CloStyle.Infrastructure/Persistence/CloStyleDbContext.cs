@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CloStyle.Infrastructure.Persistence
 {
-    public class CloStyleDbContext : IdentityDbContext
+    public class CloStyleDbContext : IdentityDbContext<ApplicationUser>
     {
         public CloStyleDbContext(DbContextOptions<CloStyleDbContext> options) : base(options) { }
 

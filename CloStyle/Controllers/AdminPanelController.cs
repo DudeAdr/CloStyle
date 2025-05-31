@@ -1,5 +1,7 @@
-﻿using MediatR;
+﻿using CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUsersDataQuery;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace CloStyle.Controllers
 {
@@ -11,9 +13,10 @@ namespace CloStyle.Controllers
         {
             _mediator = mediator;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var userList = await _mediator.Send(new GetUsersDataQuery());
+            return View(userList);
         }
     }
 }

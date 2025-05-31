@@ -1,4 +1,4 @@
-﻿using CloStyle.Application.ApplicationUser;
+﻿using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Application.CloStyle.Commands.EditBrand;
 using CloStyle.Domain.Interfaces;
 using MediatR;

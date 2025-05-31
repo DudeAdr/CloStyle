@@ -23,8 +23,4 @@
 		<ProjectReference Include="..\CloStyle.Infrastructure\CloStyle.Infrastructure.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Views\AdminPanel\" />
-	</ItemGroup>
-
 </Project>

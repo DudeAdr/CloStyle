@@ -19,6 +19,6 @@ namespace CloStyle.Domain.Entities
         public ICollection<Product> Products { get; set; } = new List<Product>();
 
         public string? CreatedById { get; set; }
-        public IdentityUser? CreatedBy { get; set; }
+        public ApplicationUser? CreatedBy { get; set; }
     }
 }

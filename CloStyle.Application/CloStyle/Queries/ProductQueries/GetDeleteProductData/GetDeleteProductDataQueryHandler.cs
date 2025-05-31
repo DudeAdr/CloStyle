@@ -1,4 +1,4 @@
-﻿using CloStyle.Application.ApplicationUser;
+﻿using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using CloStyle.Domain.Interfaces;
 using MediatR;

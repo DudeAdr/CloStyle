@@ -1,4 +1,5 @@
-﻿using CloStyle.Domain.Interfaces;
+﻿using CloStyle.Domain.Entities;
+using CloStyle.Domain.Interfaces;
 using CloStyle.Infrastructure.Persistence;
 using CloStyle.Infrastructure.Repositories;
 using CloStyle.Infrastructure.Seeders;
@@ -21,9 +22,10 @@ namespace CloStyle.Infrastructure.Extensions
             services.AddDbContext<CloStyleDbContext>(opt => opt.UseSqlServer(
                 configuration.GetConnectionString("CloStyle")));
 
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddRoles<IdentityRole>()
-                .AddEntityFrameworkStores<CloStyleDbContext>();
+            services.AddDefaultIdentity<ApplicationUser>()
+                    .AddRoles<IdentityRole>()
+                    .AddEntityFrameworkStores<CloStyleDbContext>();
+
 
             services.AddScoped<CloStyleSeeder>();
             services.AddScoped<IBrandRepository, BrandRepository>();
@@ -32,6 +34,7 @@ namespace CloStyle.Infrastructure.Extensions
             services.AddScoped<IGenderRepository, GenderRepository>();
             services.AddScoped<IFileRepository, FileRepository>();
             services.AddScoped<ISizeRepository, SizeRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
     }
 }

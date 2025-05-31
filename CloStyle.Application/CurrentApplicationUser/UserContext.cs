@@ -6,7 +6,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.ApplicationUser
+namespace CloStyle.Application.CurrentApplicationUser
 {
     public interface IUserContext
     {

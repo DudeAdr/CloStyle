@@ -1,4 +1,4 @@
-﻿using CloStyle.Application.ApplicationUser;
+﻿using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Application.CloStyle.Commands.DeleteBrand;
 using CloStyle.Application.CloStyle.Dtos;
 using CloStyle.Domain.Interfaces;

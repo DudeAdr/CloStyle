@@ -1,4 +1,4 @@
-﻿using CloStyle.Application.ApplicationUser;
+﻿using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Application.CloStyle.Queries.GetAllCategories;
 using CloStyle.Application.CloStyle.Queries.GetAllGenders;
 using CloStyle.Application.CloStyle.Queries.GetAllSizes;

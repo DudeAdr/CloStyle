@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.ApplicationUser
+namespace CloStyle.Application.CurrentApplicationUser
 {
     public class CurrentUser
     {
@@ -19,7 +19,6 @@ namespace CloStyle.Application.ApplicationUser
         public string Email { get; set; }
         public IEnumerable<string> Roles { get; set; }
         public bool IsInRole(string role) => Roles.Contains(role);
-
 
         public static readonly int maxBrandsNumber = 5;
         public bool HasSpaceForBrand(int brandAmount)

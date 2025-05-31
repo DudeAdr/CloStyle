@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CloStyle.Application.ApplicationUser;
+using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Domain.Entities;
 using CloStyle.Domain.Interfaces;
 using MediatR;
@@ -34,7 +34,7 @@ namespace CloStyle.Application.CloStyle.Commands.AddBrand
 
             var brand = _mapper.Map<Brand>(request);
             brand.ImgPath = imagePath;
-            brand.CreatedById = currentUser.Id;
+            brand.CreatedById = currentUser.Id;  
 
             await _brandRepository.Add(brand);
             return Unit.Value;

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CloStyle.Application.CloStyle.Dtos.AdminPanelDTOs.UserDto>
+
+@{
+    ViewData["Title"] = "Users List";
+}
+
+<div class="text-center mb-5 mt-4">
+    <h1>Users List</h1>
+</div>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr class="fs-5">
+            <th>Username</th>
+            <th>Email</th>          
+            <th>Amount of Brands</th>
+            <th>Roles</th>
+            @* <th>Actions</th> *@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <input type="hidden" asp-for="@user.Id"/>
+                <td><b>@user.Name</b></td>
+                <td>@user.Email</td>                
+                <td>@user.BrandsCount</td>
+                <td class="d-flex justify-content-between align-items-center">
+                    <div>
+                        @if (user.Roles != null && user.Roles.Any())
+                        {
+                            @string.Join(", ", user.Roles)
+                        }
+                        else
+                        {
+                            <em>No roles</em>
+                        }
+                    </div>
+                    <button type="submit" class="btn btn-group-sm me-3">
+                        <i class="bi bi-pencil-square"></i>
+                    </button>
+                </td>
+
+                @* <td>
+                    <a asp-action="Edit" asp-route-id="@user.Id" class="btn btn-sm btn-primary">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@user.Id" class="btn btn-sm btn-danger">Delete</a>
+                </td> *@
+            </tr>
+        }
+    </tbody>
+</table>

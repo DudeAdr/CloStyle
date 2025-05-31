@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CloStyle.Application.ApplicationUser;
+using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Application.CloStyle.Dtos.ProductDTOs;
 using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using CloStyle.Domain.Entities;
