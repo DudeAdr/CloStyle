@@ -12,5 +12,7 @@ namespace CloStyle.Domain.Interfaces
     {
         Task<IEnumerable<string>> GetUserRolesAsync(string userId);
         Task<IEnumerable<ApplicationUser>> GetApplicationUsersAsync();
+        Task<ApplicationUser> GetUserByIdAsync(string userId);
+        Task<List<Brand>> GetUserBrandsAsync(string userId);
     }
 }

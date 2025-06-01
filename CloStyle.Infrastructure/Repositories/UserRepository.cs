@@ -27,6 +27,18 @@ namespace CloStyle.Infrastructure.Repositories
             return await _dbContext.Users.ToListAsync();
         }
 
+        public async Task<List<Brand>> GetUserBrandsAsync(string userId)
+        {
+            return await _dbContext.Brands
+                .Where(b => b.CreatedById == userId)
+                .ToListAsync();
+        }
+
+        public async Task<ApplicationUser?> GetUserByIdAsync(string userId)
+        {
+            return await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == userId);
+        }
+
         public async Task<IEnumerable<string>> GetUserRolesAsync(string userId)
         {
             var user = await _userManager.FindByIdAsync(userId);

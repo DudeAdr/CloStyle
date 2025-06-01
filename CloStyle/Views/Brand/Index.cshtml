@@ -46,7 +46,7 @@
                         @{
                             if (item.IsEditable)
                             {
-                                <a asp-controller="Brand" asp-action="Edit" asp-route-brandId="@item.Id" asp-route-brandName="@item.Name" class="btn btn-outline-primary btn-sm">✏<br /> Edit</a>
+                                <a asp-controller="Brand" asp-action="Edit" asp-route-brandId="@item.Id" asp-route-brandName="@item.Name" class="btn btn-outline-primary btn-sm">🔧<br /> Edit</a>
                             }
                         }
                         <a asp-controller="Brand" asp-action="Products" asp-route-brandId="@item.Id" asp-route-brandName="@item.Name" class="btn btn-outline-secondary btn-sm">🛒 Products</a>
