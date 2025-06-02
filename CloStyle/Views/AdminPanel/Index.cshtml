@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<CloStyle.Application.CloStyle.Dtos.AdminPanelDTOs.UserDto>
-
+@using CloStyle.Application.CloStyle.ViewModels.AdminPanelVM;
 @{
     ViewData["Title"] = "Users List";
 }
@@ -22,7 +22,6 @@
         @foreach (var user in Model)
         {
             <tr>
-                <input type="hidden" asp-for="@user.Id" />
                 <td><strong>@user.Name</strong></td>
                 <td>@user.Email</td>
                 <td>@user.BrandsCount</td>
@@ -43,9 +42,9 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
-                                <a class="dropdown-item" asp-controller="AdminPanel" asp-action="ShowUserBrands" asp-route-id="@user.Id">
-                                    👁 See Brands
-                                </a>
+                                <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#userBrandsModal_@user.Id">
+                                    👁 Show Brands
+                                </button>
                             </li>
                             <li>
                                 <a class="dropdown-item" asp-controller="AdminPanel" asp-action="ChangeUserPermissions" asp-route-id="@user.Id">
@@ -60,6 +59,7 @@
                                 </form>
                             </li>
                         </ul>
+                        <partial name="_ShowUserBrands" model="new ShowUserBrandsVM(){UserId = user.Id, UserName = user.Name, Brands = user.Brands}" />
                     </div>
                 </td>
             </tr>

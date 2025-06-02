@@ -2,9 +2,9 @@ wwwroot\css\brand.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\brands\2be15539-d34e-4663-ad4b-23227e4b7c27_New-Yorker-logo.jpg
+wwwroot\images\brands\3b5755f3-fb4c-48c1-92ae-878651e23e78_Test-Logo.png
 wwwroot\images\brands\adidas.jpg
 wwwroot\images\brands\d17adb5b-7aae-4988-a980-91746d107e25_newb.png
-wwwroot\images\brands\de66d492-f33b-44b5-ba2d-0548745b1b20_New-Yorker-logo.jpg
 wwwroot\images\brands\nike.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

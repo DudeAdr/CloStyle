@@ -90,6 +90,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\2be15539-d34e-4663-ad4b-23227e4b7c27_New-Yorker-logo.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\3b5755f3-fb4c-48c1-92ae-878651e23e78_Test-Logo.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CloStyle</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CloStyle</BasePath>
+      <RelativePath>images/brands/3b5755f3-fb4c-48c1-92ae-878651e23e78_Test-Logo.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4ggcsxjldt</Fingerprint>
+      <Integrity>RA6AAwD91dAXQ5nKkGZdfclwiYGR1yo12YNFIT2cWY8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\3b5755f3-fb4c-48c1-92ae-878651e23e78_Test-Logo.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\adidas.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>CloStyle</SourceId>
@@ -125,24 +143,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\d17adb5b-7aae-4988-a980-91746d107e25_newb.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\de66d492-f33b-44b5-ba2d-0548745b1b20_New-Yorker-logo.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CloStyle</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CloStyle</BasePath>
-      <RelativePath>images/brands/de66d492-f33b-44b5-ba2d-0548745b1b20_New-Yorker-logo.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>iz8g43hhmx</Fingerprint>
-      <Integrity>gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\de66d492-f33b-44b5-ba2d-0548745b1b20_New-Yorker-logo.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\brands\nike.jpg'))">
       <SourceType>Package</SourceType>

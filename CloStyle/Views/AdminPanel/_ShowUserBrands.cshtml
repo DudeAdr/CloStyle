@@ -1,0 +1,75 @@
+﻿@model CloStyle.Application.CloStyle.ViewModels.AdminPanelVM.ShowUserBrandsVM
+@{
+    var modalId = $"userBrandsModal_{Model.UserId}";
+}
+
+<div class="modal fade" id="@modalId" tabindex="-1" role="dialog" aria-labelledby="@($"{modalId}_label")" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="@($"{modalId}_label")">User's Brands</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @if (!Model.Brands.Any())
+                {
+                    <div class="alert alert-info text-center">
+                        User has currently no brands.
+                    </div>
+                }
+                else
+                {
+                    <table class="table table-bordered table-striped text-center align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Logo</th>
+                                <th scope="col">Brand Name</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var brand in Model.Brands)
+                            {
+                                <tr>
+                                    <input type="hidden" asp-for="@brand.Id" />
+                                    <td class="align-middle">
+                                        @if (!string.IsNullOrEmpty(brand.ImgPath))
+                                        {
+                                            <img src="@brand.ImgPath" alt="Brand logo" style="max-height: 50px;" />
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">No logo</span>
+                                        }
+                                    </td>
+                                    <td class="align-middle">@brand.Name</td>
+                                    <td class="align-middle">
+                                        <div class="d-flex justify-content-center gap-2">
+                                            <a asp-controller="Brand" asp-action="Edit"
+                                               asp-route-brandId="@brand.Id"
+                                               asp-route-brandName="@brand.Name"
+                                               class="btn btn-sm btn-outline-primary" title="Edit">
+                                                🔧 Edit
+                                            </a>
+                                            <a asp-controller="Brand" asp-action="Delete"
+                                               asp-route-brandId="@brand.Id"
+                                               asp-route-brandName="@brand.Name"
+                                               class="btn btn-sm btn-outline-danger" title="Delete">
+                                                🗑 Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

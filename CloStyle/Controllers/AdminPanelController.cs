@@ -21,6 +21,7 @@ namespace CloStyle.Controllers
             return View(userList);
         }
 
+        //MAYBE NOT NECESSARY
         public async Task<IActionResult> ShowUserBrands(string Id)
         {
             var userBrands = await _mediator.Send(new GetUserBrandsQuery(Id));

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CloStyle.Application.CloStyle.Dtos.AdminPanelDTOs;
+using CloStyle.Application.CloStyle.Dtos.BrandDTOs;
 using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Domain.Interfaces;
 using MediatR;
@@ -40,8 +41,11 @@ namespace CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUsersDataQu
             foreach (var user in mappedUsers)
             {
                 var roles = await _userRepository.GetUserRolesAsync(user.Id);
-                user.Roles = roles ?? new List<string>();
-                user.BrandsCount = await _brandRepository.GetUserBrandAmount(user.Id);
+                var brands = await _userRepository.GetUserBrandsAsync(user.Id);
+
+                user.Roles = roles ?? new List<string>();                
+                user.Brands = _mapper.Map<List<BrandDto>>(brands);
+                user.BrandsCount = brands.Count;
             }
 
             return mappedUsers;

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using CloStyle.Application.CloStyle.Dtos.BrandDTOs;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace CloStyle.Application.CloStyle.Dtos.AdminPanelDTOs
         public string Email { get; set; }
         public IEnumerable<string> Roles { get; set; } = new List<string>();
         public int BrandsCount { get; set; }
+        public List<BrandDto> Brands = new List<BrandDto>();
     }
 }
