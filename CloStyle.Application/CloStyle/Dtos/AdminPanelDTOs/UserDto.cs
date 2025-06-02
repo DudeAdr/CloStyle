@@ -13,7 +13,7 @@ namespace CloStyle.Application.CloStyle.Dtos.AdminPanelDTOs
         public string Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public IEnumerable<string> Roles { get; set; } = new List<string>();
+        public Dictionary<string,string> Roles { get; set; } = new Dictionary<string,string>();
         public int BrandsCount { get; set; }
         public List<BrandDto> Brands = new List<BrandDto>();
     }

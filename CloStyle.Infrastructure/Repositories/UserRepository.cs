@@ -15,11 +15,13 @@ namespace CloStyle.Infrastructure.Repositories
     {
         private CloStyleDbContext _dbContext;
         private UserManager<ApplicationUser> _userManager;
+        private RoleManager<IdentityRole> _roleManager;
 
-        public UserRepository(CloStyleDbContext dbContext, UserManager<ApplicationUser> userManager)
+        public UserRepository(CloStyleDbContext dbContext, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             _dbContext = dbContext;
             _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         public async Task<IEnumerable<ApplicationUser>> GetApplicationUsersAsync()
@@ -39,14 +41,20 @@ namespace CloStyle.Infrastructure.Repositories
             return await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == userId);
         }
 
-        public async Task<IEnumerable<string>> GetUserRolesAsync(string userId)
+        public async Task<Dictionary<string,string>> GetUserRolesAsync(string userId)
         {
             var user = await _userManager.FindByIdAsync(userId);
-            if(user != null)
+            var roleNames = await _userManager.GetRolesAsync(user);
+            var rolesDict = new Dictionary<string, string>();
+            foreach(var roleName in roleNames)
             {
-                return await _userManager.GetRolesAsync(user);
+                var role = await _roleManager.FindByNameAsync(roleName);
+                if (role != null)
+                {
+                    rolesDict[role.Id] = role.Name;
+                }
             }
-            return null;  
+            return rolesDict;
         }
     }
 }

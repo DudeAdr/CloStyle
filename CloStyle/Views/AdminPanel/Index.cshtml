@@ -28,7 +28,7 @@
                 <td>
                     @if (user.Roles != null && user.Roles.Any())
                     {
-                        <span>@string.Join(", ", user.Roles)</span>
+                        <span>@string.Join(", ", user.Roles.Values)</span>
                     }
                     else
                     {

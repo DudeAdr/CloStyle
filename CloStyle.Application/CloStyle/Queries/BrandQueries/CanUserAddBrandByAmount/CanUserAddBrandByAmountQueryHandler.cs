@@ -32,8 +32,7 @@ namespace CloStyle.Application.CloStyle.Queries.BrandQueries.CanUserAddBrandByAm
                 return true;
             }
 
-            var brandCount = await _brandRepository.GetUserBrandAmount(currentUser.Id);
-            return currentUser.HasSpaceForBrand(brandCount);
+            return currentUser.HasSpaceForBrand();
         }
     }
 }

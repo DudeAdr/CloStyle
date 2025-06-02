@@ -43,7 +43,7 @@ namespace CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUsersDataQu
                 var roles = await _userRepository.GetUserRolesAsync(user.Id);
                 var brands = await _userRepository.GetUserBrandsAsync(user.Id);
 
-                user.Roles = roles ?? new List<string>();                
+                user.Roles = roles ?? new Dictionary<string,string>();                
                 user.Brands = _mapper.Map<List<BrandDto>>(brands);
                 user.BrandsCount = brands.Count;
             }
