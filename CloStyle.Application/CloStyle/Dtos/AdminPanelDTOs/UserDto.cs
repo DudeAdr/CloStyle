@@ -10,10 +10,10 @@ namespace CloStyle.Application.CloStyle.Dtos.AdminPanelDTOs
 {
     public class UserDto
     {
-        public string Id { get; set; }
+        public string UserId { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public Dictionary<string,string> Roles { get; set; } = new Dictionary<string,string>();
+        public RoleDto Role { get; set; }
         public int BrandsCount { get; set; }
         public List<BrandDto> Brands = new List<BrandDto>();
     }

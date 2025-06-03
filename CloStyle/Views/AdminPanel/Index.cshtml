@@ -26,9 +26,9 @@
                 <td>@user.Email</td>
                 <td>@user.BrandsCount</td>
                 <td>
-                    @if (user.Roles != null && user.Roles.Any())
+                    @if (user.Role != null)
                     {
-                        <span>@string.Join(", ", user.Roles.Values)</span>
+                        <span>@user.Role.Name</span>
                     }
                     else
                     {
@@ -42,24 +42,24 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
-                                <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#userBrandsModal_@user.Id">
+                                <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#userBrandsModal_@user.UserId">
                                     👁 Show Brands
                                 </button>
                             </li>
                             <li>
-                                <a class="dropdown-item" asp-controller="AdminPanel" asp-action="ChangeUserPermissions" asp-route-id="@user.Id">
+                                <a class="dropdown-item" asp-controller="AdminPanel" asp-action="ChangeUserPermissions" asp-route-id="@user.UserId">
                                     🔧 Change Permissions
                                 </a>
                             </li>
                             <li>
-                                <form asp-action="DeleteUser" asp-route-id="@user.Id" method="post" onsubmit="return confirm('Are you sure you want to delete this user?');">
+                                <form asp-action="DeleteUser" asp-route-id="@user.UserId" method="post" onsubmit="return confirm('Are you sure you want to delete this user?');">
                                     <button type="submit" class="dropdown-item text-danger">
                                         🗑 Delete
                                     </button>
                                 </form>
                             </li>
                         </ul>
-                        <partial name="_ShowUserBrands" model="new ShowUserBrandsVM(){UserId = user.Id, UserName = user.Name, Brands = user.Brands}" />
+                        <partial name="_ShowUserBrands" model="new ShowUserBrandsVM(){UserId = user.UserId, UserName = user.Name, Brands = user.Brands}" />
                     </div>
                 </td>
             </tr>

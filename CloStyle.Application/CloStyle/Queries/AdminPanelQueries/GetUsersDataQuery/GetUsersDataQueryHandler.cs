@@ -4,6 +4,7 @@ using CloStyle.Application.CloStyle.Dtos.BrandDTOs;
 using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Domain.Interfaces;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,10 +41,18 @@ namespace CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUsersDataQu
 
             foreach (var user in mappedUsers)
             {
-                var roles = await _userRepository.GetUserRolesAsync(user.Id);
-                var brands = await _userRepository.GetUserBrandsAsync(user.Id);
+                var role = await _userRepository.GetUserRoleAsync(user.UserId);
+                var brands = await _userRepository.GetUserBrandsAsync(user.UserId);
 
-                user.Roles = roles ?? new Dictionary<string,string>();                
+                if (role != null)
+                {
+                    user.Role = new RoleDto
+                    {
+                        Id = role.Id,
+                        Name = role.Name
+                    };
+                }
+
                 user.Brands = _mapper.Map<List<BrandDto>>(brands);
                 user.BrandsCount = brands.Count;
             }

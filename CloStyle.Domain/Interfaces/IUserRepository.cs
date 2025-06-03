@@ -10,9 +10,11 @@ namespace CloStyle.Domain.Interfaces
 {
     public interface IUserRepository
     {
-        Task<Dictionary<string,string>> GetUserRolesAsync(string userId);
+        Task<IdentityRole> GetUserRoleAsync(string userId);
         Task<IEnumerable<ApplicationUser>> GetApplicationUsersAsync();
         Task<ApplicationUser> GetUserByIdAsync(string userId);
         Task<List<Brand>> GetUserBrandsAsync(string userId);
+        Task<List<IdentityRole>> GetAllAvaillableRolesAsync();
+        Task<IdentityRole?> GetRoleNameById(string roleId);
     }
 }

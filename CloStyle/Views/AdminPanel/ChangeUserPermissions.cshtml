@@ -1,0 +1,52 @@
+﻿@model CloStyle.Application.CloStyle.ViewModels.AdminPanelVM.ShowUserRolesVM
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="my-1">Change permissions for "@Model.Name"</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="ChangeUserPermissions">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                        <input type="hidden" asp-for="UserId" />
+
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Username</label>
+                            <input asp-for="Name" class="form-control" readonly />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="SelectedRoleId" class="form-label">User Role</label>
+                            <select asp-for="SelectedRoleId" class="form-select">
+                                <option value="">-- Select role --</option>
+                                @foreach (var c in Model.AllAvailableRoles)
+                                {
+                                    <option value="@c.Id" selected="@(Model.UserRole?.Id == c.Id)">
+                                        @c.Name
+                                    </option>
+                                }
+                            </select>
+                            <span asp-validation-for="SelectedRoleId" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid">
+                            <input type="submit" value="Save changes" class="btn btn-success" />
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-end">
+                    <a asp-action="Index" class="btn btn-secondary"> ⬅️ Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

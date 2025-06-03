@@ -24,9 +24,23 @@ namespace CloStyle.Infrastructure.Repositories
             _roleManager = roleManager;
         }
 
+        public async Task<List<IdentityRole>> GetAllAvaillableRolesAsync()
+        {
+            return await _roleManager.Roles.Select(r => new IdentityRole
+            {
+                Id = r.Id,
+                Name = r.Name
+            }).ToListAsync();
+        }
+
         public async Task<IEnumerable<ApplicationUser>> GetApplicationUsersAsync()
         {
             return await _dbContext.Users.ToListAsync();
+        }
+
+        public async Task<IdentityRole?> GetRoleNameById(string roleId)
+        {
+            return await _roleManager.FindByIdAsync(roleId);
         }
 
         public async Task<List<Brand>> GetUserBrandsAsync(string userId)
@@ -41,20 +55,17 @@ namespace CloStyle.Infrastructure.Repositories
             return await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == userId);
         }
 
-        public async Task<Dictionary<string,string>> GetUserRolesAsync(string userId)
+        public async Task<IdentityRole> GetUserRoleAsync(string userId)
         {
             var user = await _userManager.FindByIdAsync(userId);
-            var roleNames = await _userManager.GetRolesAsync(user);
-            var rolesDict = new Dictionary<string, string>();
-            foreach(var roleName in roleNames)
+            var roles = await _userManager.GetRolesAsync(user);
+            var roleName = roles.FirstOrDefault();
+            if (string.IsNullOrEmpty(roleName))
             {
-                var role = await _roleManager.FindByNameAsync(roleName);
-                if (role != null)
-                {
-                    rolesDict[role.Id] = role.Name;
-                }
+                return null;
             }
-            return rolesDict;
+            var role = await _roleManager.FindByNameAsync(roleName);
+            return role;
         }
     }
 }

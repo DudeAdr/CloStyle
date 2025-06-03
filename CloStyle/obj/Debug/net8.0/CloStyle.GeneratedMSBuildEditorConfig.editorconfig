@@ -32,6 +32,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/adria/Desktop/ClothesShop .NET/CloStyle/CloStyle/Views/AdminPanel/ChangeUserPermissions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxDaGFuZ2VVc2VyUGVybWlzc2lvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/adria/Desktop/ClothesShop .NET/CloStyle/CloStyle/Views/AdminPanel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

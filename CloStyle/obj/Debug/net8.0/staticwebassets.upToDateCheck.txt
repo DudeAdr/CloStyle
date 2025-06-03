@@ -3,11 +3,8 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\brands\2be15539-d34e-4663-ad4b-23227e4b7c27_New-Yorker-logo.jpg
 wwwroot\images\brands\3b5755f3-fb4c-48c1-92ae-878651e23e78_Test-Logo.png
-wwwroot\images\brands\97019f75-9e0f-4435-9884-b21e673890df_Test-Logo.png
 wwwroot\images\brands\adidas.jpg
 wwwroot\images\brands\d17adb5b-7aae-4988-a980-91746d107e25_newb.png
-wwwroot\images\brands\e66a7d9f-2e5e-4c89-8d33-12c3e84658b8_New-Yorker-logo.jpg
-wwwroot\images\brands\ea8d1d70-19d7-494c-96e0-c0508aa35a34_newb.png
 wwwroot\images\brands\nike.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
