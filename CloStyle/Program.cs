@@ -1,6 +1,8 @@
 using CloStyle.Application.Extensions;
 using CloStyle.Infrastructure.Extensions;
 using CloStyle.Infrastructure.Seeders;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
