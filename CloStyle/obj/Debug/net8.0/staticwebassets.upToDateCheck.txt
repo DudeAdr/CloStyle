@@ -6,6 +6,7 @@ wwwroot\images\brands\3b5755f3-fb4c-48c1-92ae-878651e23e78_Test-Logo.png
 wwwroot\images\brands\adidas.jpg
 wwwroot\images\brands\d17adb5b-7aae-4988-a980-91746d107e25_newb.png
 wwwroot\images\brands\nike.jpg
+wwwroot\images\logo\shirt.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

@@ -16,5 +16,6 @@ namespace CloStyle.Domain.Interfaces
         Task<List<Brand>> GetUserBrandsAsync(string userId);
         Task<List<IdentityRole>> GetAllAvaillableRolesAsync();
         Task<IdentityRole?> GetRoleNameById(string roleId);
+        Task DeleteUserAsync(ApplicationUser? applicationUser);
     }
 }

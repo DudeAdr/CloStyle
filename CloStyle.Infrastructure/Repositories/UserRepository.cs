@@ -24,6 +24,14 @@ namespace CloStyle.Infrastructure.Repositories
             _roleManager = roleManager;
         }
 
+        public async Task DeleteUserAsync(ApplicationUser? applicationUser)
+        {
+            if(applicationUser != null)
+            {
+                await _userManager.DeleteAsync(applicationUser);
+            }
+        }
+
         public async Task<List<IdentityRole>> GetAllAvaillableRolesAsync()
         {
             return await _roleManager.Roles.Select(r => new IdentityRole

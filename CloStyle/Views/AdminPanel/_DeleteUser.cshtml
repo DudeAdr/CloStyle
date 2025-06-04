@@ -1,0 +1,27 @@
+﻿@model CloStyle.Application.CloStyle.ViewModels.AdminPanelVM.DeleteUserVM
+@{
+    var modalId = $"deleteUserModal_{Model.UserId}";
+}
+
+<div class="modal fade" id="@modalId" tabindex="-1" role="dialog" aria-labelledby="@($"{modalId}_label")" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="@($"{modalId}_label")">Confirmation needed</h4>
+            </div>
+            <form asp-action="DeleteUser">
+                <div class="modal-body">               
+                    <input type="hidden" asp-for="UserId" />
+                    <span>Are you sure you want to delete account <b>"@Model.UserName"</b> ?</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-danger">
+                        <i class="bi bi-trash3"></i> Delete
+                    </button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

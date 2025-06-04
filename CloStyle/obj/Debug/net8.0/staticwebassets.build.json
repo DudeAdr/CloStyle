@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hsKA2IpZihQAuIksGqwqwrqD1KrbgkFGhSZJZIRfF2Q=",
+  "Hash": "E5JXtDDUvdvGYIcykmKJiWLZZkbN85Ce6X1PjnC+Jj0=",
   "Source": "CloStyle",
   "BasePath": "_content/CloStyle",
   "Mode": "Default",
@@ -225,6 +225,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\brands\\nike.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\logo\\shirt.png",
+      "SourceId": "CloStyle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\",
+      "BasePath": "_content/CloStyle",
+      "RelativePath": "images/logo/shirt#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7m5zqkew5t",
+      "Integrity": "0e4TZvqeNinzEV64WdxMBVQOd/W8v7b6AcZktn7BWDU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo\\shirt.png"
     },
     {
       "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\js\\site.js",
@@ -2347,6 +2368,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-V/oOwSQ/u75XjBFdCCP+mmBVX4kvlB/esSuAHJd2xxc="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo/shirt.7m5zqkew5t.png",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\logo\\shirt.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1465357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0e4TZvqeNinzEV64WdxMBVQOd/W8v7b6AcZktn7BWDU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Jun 2025 13:29:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7m5zqkew5t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo/shirt.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0e4TZvqeNinzEV64WdxMBVQOd/W8v7b6AcZktn7BWDU="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo/shirt.png",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\logo\\shirt.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1465357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0e4TZvqeNinzEV64WdxMBVQOd/W8v7b6AcZktn7BWDU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Jun 2025 13:29:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0e4TZvqeNinzEV64WdxMBVQOd/W8v7b6AcZktn7BWDU="
         }
       ]
     },

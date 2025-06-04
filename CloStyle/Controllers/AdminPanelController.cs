@@ -1,7 +1,8 @@
 ﻿using CloStyle.Application.CloStyle.Commands.ChangeUserPermissions;
-using CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUserBrandsQuery;
+using CloStyle.Application.CloStyle.Commands.DeleteUser;
 using CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUserRoleQuery;
 using CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUsersDataQuery;
+using CloStyle.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -25,13 +26,6 @@ namespace CloStyle.Controllers
             return View(userList);
         }
 
-        //MAYBE NOT NECESSARY
-        /*public async Task<IActionResult> ShowUserBrands(string Id)
-        {
-            var userBrands = await _mediator.Send(new GetUserBrandsQuery(Id));
-            return View(userBrands);
-        }*/
-
         [HttpGet]
         public async Task<IActionResult> ChangeUserPermissions(string Id)
         {
@@ -50,6 +44,23 @@ namespace CloStyle.Controllers
 
             await _mediator.Send(command);
             return RedirectToAction("Index", "AdminPanel");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteUser(DeleteUserCommand command)
+        {
+            var isDeleted = await _mediator.Send(command);
+            if (!isDeleted)
+            {
+                this.AddNotification("error", $"You can't delete your own account!");
+                return RedirectToAction("Index", "AdminPanel");
+            }
+            else
+            {
+                this.AddNotification("success", $"Account has been deleted successfully!");
+                return RedirectToAction("Index", "AdminPanel");
+            }
+                
         }
     }
 }

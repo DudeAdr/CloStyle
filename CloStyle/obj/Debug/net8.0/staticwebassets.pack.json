@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\images\\brands\\nike.jpg"
     },
     {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\logo\\shirt.png",
+      "PackagePath": "staticwebassets\\images\\logo\\shirt.png"
+    },
+    {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
