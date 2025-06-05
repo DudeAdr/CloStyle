@@ -1,4 +1,4 @@
-﻿@model IEnumerable<CloStyle.Application.CloStyle.Dtos.AdminPanelDTOs.UserDto>
+﻿@model CloStyle.Application.CloStyle.ViewModels.AdminPanelVM.IndexUsersVM
 @using CloStyle.Application.CloStyle.ViewModels.AdminPanelVM;
 @{
     ViewData["Title"] = "Users List";
@@ -19,7 +19,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var user in Model)
+        @foreach (var user in Model.Users)
         {
             <tr>
                 <td><strong>@user.Name</strong></td>
@@ -47,9 +47,9 @@
                                 </button>
                             </li>
                             <li>
-                                <a class="dropdown-item" asp-controller="AdminPanel" asp-action="ChangeUserPermissions" asp-route-id="@user.UserId">
+                                <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#changeUserPermissionsModal_@user.UserId">
                                     🔧 Change Permissions
-                                </a>
+                                </button>
                             </li>
                             <li>
                                 <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#deleteUserModal_@user.UserId">
@@ -58,6 +58,7 @@
                             </li>
                         </ul>
                         <partial name="_ShowUserBrands" model="new ShowUserBrandsVM(){UserId = user.UserId, UserName = user.Name, Brands = user.Brands}" />
+                        <partial name="_ChangeUserPermissions" model="new ShowUserRolesVM(){UserId = user.UserId, Name = user.Name, UserRole = user.Role, AllAvailableRoles = Model.AllRoles}"/>
                         <partial name="_DeleteUser" model="new DeleteUserVM(){UserId = user.UserId, UserName = user.Name}"/>
                     </div>
                 </td>

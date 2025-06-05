@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetAllGenders
+namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllSizes
 {
-    public class GetAllGendersQuery : IRequest<IEnumerable<GenderDto>>
+    public class GetAllSizesQuery : IRequest<IEnumerable<SizeDto>>
     {
     }
 }

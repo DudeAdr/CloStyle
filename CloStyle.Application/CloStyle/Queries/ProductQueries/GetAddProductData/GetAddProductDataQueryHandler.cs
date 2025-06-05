@@ -1,7 +1,7 @@
 ﻿using CloStyle.Application.CurrentApplicationUser;
-using CloStyle.Application.CloStyle.Queries.GetAllCategories;
-using CloStyle.Application.CloStyle.Queries.GetAllGenders;
-using CloStyle.Application.CloStyle.Queries.GetAllSizes;
+using CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllCategories;
+using CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllGenders;
+using CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllSizes;
 using CloStyle.Application.CloStyle.ViewModels.ProductVM;
 using CloStyle.Domain.Entities;
 using CloStyle.Domain.Interfaces;

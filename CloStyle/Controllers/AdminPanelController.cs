@@ -1,6 +1,5 @@
 ﻿using CloStyle.Application.CloStyle.Commands.ChangeUserPermissions;
 using CloStyle.Application.CloStyle.Commands.DeleteUser;
-using CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUserRoleQuery;
 using CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUsersDataQuery;
 using CloStyle.Extensions;
 using MediatR;
@@ -26,20 +25,13 @@ namespace CloStyle.Controllers
             return View(userList);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> ChangeUserPermissions(string Id)
-        {
-            var model = await _mediator.Send(new GetUserRoleQuery(Id));
-            return View(model);
-        }
-
         [HttpPost]
         public async Task<IActionResult> ChangeUserPermissions(ChangeUserPermissionsCommand command)
         {
             if (!ModelState.IsValid)
             {
-                var model = await _mediator.Send(new GetUserRoleQuery(command.UserId));
-                return View(model);
+                this.AddNotification("error", $"Account cannot have no roles!");
+                return RedirectToAction("Index", "AdminPanel");
             }
 
             await _mediator.Send(command);

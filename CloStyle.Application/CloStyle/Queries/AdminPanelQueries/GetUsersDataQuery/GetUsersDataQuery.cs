@@ -1,4 +1,5 @@
 ﻿using CloStyle.Application.CloStyle.Dtos.AdminPanelDTOs;
+using CloStyle.Application.CloStyle.ViewModels.AdminPanelVM;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUsersDataQuery
 {
-    public class GetUsersDataQuery : IRequest<List<UserDto>>
+    public class GetUsersDataQuery : IRequest<IndexUsersVM>
     {
     }
 }

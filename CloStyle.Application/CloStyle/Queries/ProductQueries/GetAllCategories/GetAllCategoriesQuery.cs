@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetAllCategories
+namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllCategories
 {
     public class GetAllCategoriesQuery : IRequest<IEnumerable<CategoryDto>>
     { 

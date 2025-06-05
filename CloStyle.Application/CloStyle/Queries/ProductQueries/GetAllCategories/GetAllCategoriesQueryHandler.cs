@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetAllCategories
+namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllCategories
 {
     public class GetAllCategoriesQueryHandler : IRequestHandler<GetAllCategoriesQuery, IEnumerable<CategoryDto>>
     {

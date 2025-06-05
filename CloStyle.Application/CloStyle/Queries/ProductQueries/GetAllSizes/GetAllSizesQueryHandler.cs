@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using CloStyle.Application.CloStyle.Dtos.ProductDTOs;
-using CloStyle.Application.CloStyle.Queries.GetAllCategories;
+using CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllCategories;
 using CloStyle.Domain.Interfaces;
 using MediatR;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloStyle.Application.CloStyle.Queries.GetAllSizes
+namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetAllSizes
 {
     public class GetAllSizesQueryHandler : IRequestHandler<GetAllSizesQuery, IEnumerable<SizeDto>>
     {

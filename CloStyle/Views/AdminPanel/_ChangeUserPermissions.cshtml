@@ -1,0 +1,52 @@
+﻿@model CloStyle.Application.CloStyle.ViewModels.AdminPanelVM.ShowUserRolesVM
+@{
+    var modalId = $"changeUserPermissionsModal_{Model.UserId}";
+}
+
+
+<div class="modal fade" id="@modalId" tabindex="-1" role="dialog" aria-labelledby="@($"{modalId}_label")" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="@($"{modalId}_label")">Change permissions for "@Model.Name"</h5>
+            </div>
+            <form asp-action="ChangeUserPermissions">
+            <div class="modal-body">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="UserId" />
+
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Username</label>
+                    <input asp-for="Name" class="form-control" readonly />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="SelectedRoleId" class="form-label">User Role</label>
+                    <select asp-for="SelectedRoleId" class="form-select">
+                        <option value="">-- Select role --</option>
+                        @foreach (var c in Model.AllAvailableRoles)
+                        {
+                            <option value="@c.Id" selected="@(Model.UserRole?.Id == c.Id)">
+                                @c.Name
+                            </option>
+                        }
+                    </select>
+                    <span asp-validation-for="SelectedRoleId" class="text-danger"></span>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <input type="submit" value="Save changes" class="btn btn-success" />
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

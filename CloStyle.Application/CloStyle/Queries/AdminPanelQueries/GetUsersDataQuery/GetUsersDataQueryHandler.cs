@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CloStyle.Application.CloStyle.Dtos.AdminPanelDTOs;
 using CloStyle.Application.CloStyle.Dtos.BrandDTOs;
+using CloStyle.Application.CloStyle.ViewModels.AdminPanelVM;
 using CloStyle.Application.CurrentApplicationUser;
 using CloStyle.Domain.Interfaces;
 using MediatR;
@@ -13,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUsersDataQuery
 {
-    public class GetUsersDataQueryHandler : IRequestHandler<GetUsersDataQuery, List<UserDto>>
+    public class GetUsersDataQueryHandler : IRequestHandler<GetUsersDataQuery, IndexUsersVM>
     {
         private IUserRepository _userRepository;
         private IMapper _mapper;
@@ -27,17 +28,19 @@ namespace CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUsersDataQu
             _brandRepository = brandRepository;
             _userContext = userContext;
         }
-        public async Task<List<UserDto>> Handle(GetUsersDataQuery request, CancellationToken cancellationToken)
+        public async Task<IndexUsersVM> Handle(GetUsersDataQuery request, CancellationToken cancellationToken)
         {
             var currentUser = _userContext.GetCurrentUser();
 
             if (currentUser == null || !currentUser.IsInRole("Admin"))
             {
-                return new List<UserDto>();
+                return new IndexUsersVM();
             }
 
             var users = await _userRepository.GetApplicationUsersAsync();
             var mappedUsers = _mapper.Map<List<UserDto>>(users);
+            var allRoles = await _userRepository.GetAllAvaillableRolesAsync();
+            var mappedRoles = _mapper.Map<List<RoleDto>>(allRoles);
 
             foreach (var user in mappedUsers)
             {
@@ -57,7 +60,13 @@ namespace CloStyle.Application.CloStyle.Queries.AdminPanelQueries.GetUsersDataQu
                 user.BrandsCount = brands.Count;
             }
 
-            return mappedUsers;
+            var vm = new IndexUsersVM
+            {
+                Users = mappedUsers,
+                AllRoles = mappedRoles
+            };
+
+            return vm;
         }
     }
 }
