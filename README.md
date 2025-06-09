@@ -1,25 +1,44 @@
-This is a project I am currently working on in my free time (unfortunately, I don't have much of it).
+# CloStyle 👕🧥
 
-CloStyle is a web application built with ASP.NET Core MVC, designed to manage clothing brands and their associated products.
+This is a project I am currently working on in my free time.
 
--- Technologies and Tools --
+**CloStyle** is a web application built with **ASP.NET Core MVC**, designed to manage clothing brands and their associated products.
 
-Backend: ASP.NET Core MVC, C#, Entity Framework Core, SQL Server
+---
 
-Architecture: CQRS with MediatR, Repository Pattern, Dependency Injection
+## 🛠 Technologies and Tools
 
-Frontend: Razor Pages, Bootstrap 5, JavaScript
+### Backend
+- ASP.NET Core MVC (C#)
+- Entity Framework
+- SQL Server
+- ASP.NET Core Identity
 
-Utilities: AutoMapper for object-object mapping
+### Architecture
+- CQRS with MediatR
+- Repository Pattern
+- Dependency Injection
+- Clean Architecture
 
--- Architecture Overview --
+### Frontend
+- Razor Pages
+- Bootstrap 5
+- JavaScript
 
-The project follows the principles of Clean Architecture, segregating the application into distinct layers:
+### Utilities
+- AutoMapper
+- Fluent Validation
+---
 
-Domain Layer: Contains core business logic and domain entities.
+## 📌 Features
+- Brand and product management (CRUD operations)
+- User authentication and authorization using ASP.NET Core Identity
+- Role-based access control
+- Responsive UI using Bootstrap
+- Admin Panel used to manage accounts - browsing brands, changing roles, deleting users
+---
 
-Application Layer: Houses application-specific logic, including CQRS handlers and service interfaces.
-
-Presentation Layer: Manages UI concerns using Razor Pages and MVC controllers.
-
-Communication between layers is facilitated through the MediatR library, promoting a decoupled and maintainable codebase.
+## 🚧 Work in Progress
+This project is still under development. New features and improvements are being added regularly.
+### Currently in progress:
+- 🛒 Shopping cart functionality to allow users to add products and make purchases
