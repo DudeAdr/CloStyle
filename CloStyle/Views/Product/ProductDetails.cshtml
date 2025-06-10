@@ -1,0 +1,71 @@
+﻿@model CloStyle.Application.CloStyle.ViewModels.ProductVM.ProductDetailsVM
+
+@{
+    ViewData["Title"] = "ProductDetails";
+}
+
+<h1>Product Details</h1>
+<form asp-controller = "CartController" asp-action="AddToCart" method="post">
+    <div>
+        <hr />
+        <dl class="row">
+            <input asp-for="Id" type="hidden" />
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.BrandName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.BrandName)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Category)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Category.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Gender)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Gender.Name)
+            </dd>
+            <dt class="col-sm-2">
+                Sizes
+            </dt>
+            <div class="mb-3">
+                <select asp-for="SizeId" class="form-select w-25 mt-2">
+                    <option value="">Select...</option>
+                    @foreach (var s in Model.Sizes)
+                    {
+                        <option value="@s.Id">
+                            @s.Size @(s.Stock > 0 ? "✅" : "❌")
+                        </option>
+                    }
+
+                </select>
+                <span asp-validation-for="SizeId" class="text-danger"></span>
+            </div>
+        </dl>
+    </div>
+    <div>
+        <a href="/CloStyle/@Model.BrandName/Products?brandId=@Model.BrandId" class="btn btn-secondary"> ⬅️ Back to List</a>
+        <button type="submit" class="btn btn-success"> <i class="bi bi-plus-circle"></i> Add To Cart</button>
+    </div>
+</form>

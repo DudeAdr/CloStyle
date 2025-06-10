@@ -27,10 +27,5 @@ namespace CloStyle.Infrastructure.Repositories
         {
             return await _dbContext.Genders.FirstAsync(g => g.Id == id);
         }
-
-        public async Task<int> GetGenderIdByName(string name) =>
-            (await _dbContext.Genders.FirstOrDefaultAsync(g => g.Name.ToLower() == name.ToLower()))?.Id ?? -1;
-
-
     }
 }

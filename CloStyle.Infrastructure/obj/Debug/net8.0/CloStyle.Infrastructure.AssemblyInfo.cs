@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CloStyle.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ddbde3c30f6b43355d3b7a4992586adbcdcc6fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+617b91fb62fcc941b112e49645b2966e6c9662b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("CloStyle.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CloStyle.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

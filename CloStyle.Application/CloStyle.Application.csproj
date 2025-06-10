@@ -27,6 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="CloStyle\ViewModels\ShoppingCartVM\" />
 	  <Folder Include="Services\" />
 	</ItemGroup>
 

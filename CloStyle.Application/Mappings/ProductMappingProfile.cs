@@ -33,6 +33,8 @@ namespace CloStyle.Application.Mappings
             CreateMap<Product, ProductFormDto>()
                 .ForMember(dto => dto.IsEditable, opt => opt.MapFrom(src => user != null && (src.CreatedById == user.Id || user.IsInRole("Admin"))));
 
+            CreateMap<Product, ProductDetailsVM>();
+
         }
     }
 }

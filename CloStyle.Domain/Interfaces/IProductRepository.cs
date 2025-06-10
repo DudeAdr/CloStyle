@@ -11,11 +11,7 @@ namespace CloStyle.Domain.Interfaces
     {
         Task Add(Product product);
         Task<Product?> GetProductById(int id);
-        Task<IEnumerable<Product>> GetAll();
         Task<IEnumerable<Product>> GetByBrandId(int brandId);
-        Task<IEnumerable<Product>> GetByCategoryId(int categoryId);
-        Task<IEnumerable<Product>> GetByGenderId(int genderId);
-        Task<IEnumerable<Product>> GetBySizeId(int sizeId);
         Task DeleteProduct(int id);
         Task Commit();
     }

@@ -5,6 +5,7 @@ using CloStyle.Application.CloStyle.Commands.EditProduct;
 using CloStyle.Application.CloStyle.Queries.ProductQueries.GetAddProductData;
 using CloStyle.Application.CloStyle.Queries.ProductQueries.GetDeleteProductData;
 using CloStyle.Application.CloStyle.Queries.ProductQueries.GetEditProductData;
+using CloStyle.Application.CloStyle.Queries.ProductQueries.GetProductDetails;
 using CloStyle.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -102,6 +103,13 @@ namespace CloStyle.Controllers
             this.AddNotification("success", $"Product {command.Name} edited successfully!");
 
             return Redirect($"/CloStyle/{command.BrandName}/Products?brandId={command.BrandId}");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ProductDetails(int id)
+        {
+            var model = await _mediator.Send(new GetProductDetailsQuery(id));
+            return View(model);
         }
     }
 }

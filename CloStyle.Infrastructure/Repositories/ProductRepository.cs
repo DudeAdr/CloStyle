@@ -41,11 +41,6 @@ namespace CloStyle.Infrastructure.Repositories
             }
         }
 
-        public Task<IEnumerable<Product>> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<IEnumerable<Product>> GetByBrandId(int brandId)
         {
             return await _dbContext.Products
@@ -56,22 +51,6 @@ namespace CloStyle.Infrastructure.Repositories
                 .Include(p => p.ProductSizes)
                 .ThenInclude(ps => ps.Size)
                 .ToListAsync();
-        }
-
-
-        public Task<IEnumerable<Product>> GetByCategoryId(int categoryId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IEnumerable<Product>> GetByGenderId(int genderId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IEnumerable<Product>> GetBySizeId(int sizeId)
-        {
-            throw new NotImplementedException();
         }
 
         public async Task<Product?> GetProductById(int id)

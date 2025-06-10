@@ -10,7 +10,7 @@
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h1 class="display-5 mb-0">
-            Products: <span class="text-primary">@Model.BrandName</span>
+            Products: <b>@Model.BrandName</b>
         </h1>
         <div class="d-flex gap-2">
             <a asp-controller="Brand" asp-action="Index" class="btn btn-outline-secondary d-flex align-items-center">
@@ -31,46 +31,53 @@
     else
     {
         <div class="table-responsive">
-            <table class="table table-bordered table-hover align-middle shadow-sm">
+            <table class="table table-bordered align-middle text-center shadow-sm">
                 <thead class="table-dark">
                     <tr>
                         <th>@Html.DisplayNameFor(_ => products.First().Name)</th>
                         <th>@Html.DisplayNameFor(_ => products.First().Price)</th>
                         <th>@Html.DisplayNameFor(_ => products.First().Description)</th>
-                        <th>@Html.DisplayNameFor(_ => products.First().Category.Name)</th>
-                        <th>@Html.DisplayNameFor(_ => products.First().Gender.Name)</th>
                         <th>Sizes</th>
+                        <th></th>
                         @if (Model.IsEditable && isInRole)
                         {
                             <th>Actions</th>
-                        }
+                        }                     
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var product in products)
                     {
                         <tr>
-                            <td>@product.Name</td>
-                            <td>@product.Price.ToString("C")</td>
-                            <td>@product.Description</td>
-                            <td>@product.Category.Name</td>
-                            <td>@product.Gender.Name</td>
-                            <td>
+                            <td class="align-middle"> @product.Name</td>
+                            <td class="align-middle">@product.Price.ToString("C")</td>
+                            <td class="align-middle">@product.Description</td>
+                            <td class="align-middle">
                                 @if (product.Sizes != null && product.Sizes.Any())
                                 {
-                                    <ul class="list-group list-group-flush">
+                                    <div class="mb-0">
                                         @foreach (var size in product.Sizes)
                                         {
-                                            <li class="list-group-item px-2 py-1">
-                                                Size: <strong>@size.Size</strong> – Quantity: <strong>@size.Stock</strong>
-                                            </li>
+                                            <span class="list-group-item px-2 py-1 d-flex justify-content-between">
+                                                <span><strong>@size.Size</strong></span>
+                                                <span>Quantity: <strong>@size.Stock</strong></span>
+                                            </span>
                                         }
-                                    </ul>
+                                    </div>
+                                    
                                 }
                                 else
                                 {
                                     <span class="text-muted">No data</span>
                                 }
+                            </td>
+                            <td class="align-middle">
+                                <a asp-controller="Product"
+                                    asp-action="ProductDetails"
+                                    asp-route-id="@product.Id"
+                                    class="btn btn-outline-primary btn-sm">
+                                    👁 Details
+                                </a>
                             </td>
                             @{
                                 if (Model.IsEditable && isInRole)
@@ -90,8 +97,7 @@
                                         </a>
                                     </td>
                                 }
-                            }
-                                
+                            }  
                         </tr>
                     }
                 </tbody>
