@@ -495,6 +495,88 @@
       ]
     },
     {
+      "Route": "images/brands/677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.iz8g43hhmx.jpg",
+      "AssetFile": "images/brands/677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 15:18:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iz8g43hhmx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE="
+        },
+        {
+          "Name": "label",
+          "Value": "images/brands/677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/brands/677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg",
+      "AssetFile": "images/brands/677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 15:18:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE="
+        }
+      ]
+    },
+    {
       "Route": "images/brands/adidas.8ll72ypoj6.jpg",
       "AssetFile": "images/brands/adidas.jpg",
       "Selectors": [],

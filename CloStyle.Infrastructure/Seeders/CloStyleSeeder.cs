@@ -1,5 +1,6 @@
 ﻿using CloStyle.Domain.Entities;
 using CloStyle.Infrastructure.Persistence;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -117,6 +118,17 @@ namespace CloStyle.Infrastructure.Seeders
                         Console.WriteLine($"ProductId: {ps.ProductId}, SizeId: {ps.SizeId}, Stock: {ps.Stock}");
                     }
                     _dbContext.ProductSizes.AddRange(productSizes);
+                    await _dbContext.SaveChangesAsync();
+                }
+                if (!_dbContext.Roles.Any())
+                {
+                    var roles = new List<IdentityRole>
+                    {
+                        new IdentityRole { Name = "Admin", NormalizedName = "ADMIN" },
+                        new IdentityRole { Name = "Owner", NormalizedName = "OWNER" },
+                        new IdentityRole { Name = "User", NormalizedName = "USER" }
+                    };
+                    _dbContext.Roles.AddRange(roles);
                     await _dbContext.SaveChangesAsync();
                 }
             }

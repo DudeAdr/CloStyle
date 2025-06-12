@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E5JXtDDUvdvGYIcykmKJiWLZZkbN85Ce6X1PjnC+Jj0=",
+  "Hash": "aqE1+7XArhCZ9SvArZ92pv9F7oXAdC05XjKGhGiGNS0=",
   "Source": "CloStyle",
   "BasePath": "_content/CloStyle",
   "Mode": "Default",
@@ -162,6 +162,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\brands\\3b5755f3-fb4c-48c1-92ae-878651e23e78_Test-Logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg",
+      "SourceId": "CloStyle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\",
+      "BasePath": "_content/CloStyle",
+      "RelativePath": "images/brands/677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iz8g43hhmx",
+      "Integrity": "gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\brands\\677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg"
     },
     {
       "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\adidas.jpg",
@@ -2122,6 +2143,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-RA6AAwD91dAXQ5nKkGZdfclwiYGR1yo12YNFIT2cWY8="
+        }
+      ]
+    },
+    {
+      "Route": "images/brands/677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.iz8g43hhmx.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 15:18:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iz8g43hhmx"
+        },
+        {
+          "Name": "label",
+          "Value": "images/brands/677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE="
+        }
+      ]
+    },
+    {
+      "Route": "images/brands/677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 15:18:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE="
         }
       ]
     },
