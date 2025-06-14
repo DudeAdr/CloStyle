@@ -53,10 +53,10 @@
                             <td class="align-middle">@product.Price.ToString("C")</td>
                             <td class="align-middle">@product.Description</td>
                             <td class="align-middle">
-                                @if (product.Sizes != null && product.Sizes.Any())
+                                @if (product.Sizes != null && product.Sizes.Any(c => c.Stock > 0))
                                 {
                                     <div class="mb-0">
-                                        @foreach (var size in product.Sizes)
+                                        @foreach (var size in product.Sizes.Where(c => c.Stock > 0))
                                         {
                                             <span class="list-group-item px-2 py-1 d-flex justify-content-between">
                                                 <span><strong>@size.Size</strong></span>

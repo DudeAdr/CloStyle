@@ -1,11 +1,14 @@
 wwwroot\css\brand.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\brands\0a80576c-7054-4532-b63b-537c79e9b889_New-Yorker-logo.jpg
 wwwroot\images\brands\2be15539-d34e-4663-ad4b-23227e4b7c27_New-Yorker-logo.jpg
+wwwroot\images\brands\3591c7ce-f6a9-450d-9cf2-b22991d75368_w3kr4m2fi3111.png
 wwwroot\images\brands\3b5755f3-fb4c-48c1-92ae-878651e23e78_Test-Logo.png
 wwwroot\images\brands\677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg
 wwwroot\images\brands\adidas.jpg
 wwwroot\images\brands\d17adb5b-7aae-4988-a980-91746d107e25_newb.png
+wwwroot\images\brands\e673183c-d84b-4b43-891d-0acb3cb7fe5b_w3kr4m2fi3111.png
 wwwroot\images\brands\nike.jpg
 wwwroot\images\logo\shirt.png
 wwwroot\js\site.js

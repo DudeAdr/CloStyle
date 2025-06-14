@@ -55,7 +55,10 @@ namespace CloStyle.Infrastructure.Repositories
 
         public async Task<Product?> GetProductById(int id)
         {
-            return await _dbContext.FindAsync<Product>(id);
+            return await _dbContext.Products
+                .Include(p => p.ProductSizes)
+                    .ThenInclude(s => s.Size)
+                .FirstOrDefaultAsync(p => p.Id == id);
         }
     }
 }
