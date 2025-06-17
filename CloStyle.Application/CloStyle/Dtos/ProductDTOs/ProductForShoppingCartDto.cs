@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace CloStyle.Application.CloStyle.Dtos.ProductDTOs
 {
-
-    //FINISH LATER FOR CART VIEW
     public class ProductForShoppingCartDto
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string SizeId { get; set; }
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+        public string BrandName { get; set; }
+        public decimal UnitPrice { get; set; }
+        public int Quantity { get; set; }
+        public decimal TotalPrice => UnitPrice * Quantity;
+        public int ProductSizeId { get; set; }
+        public string ProductSizeName { get; set; }
     }
 }

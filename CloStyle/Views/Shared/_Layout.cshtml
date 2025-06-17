@@ -45,6 +45,14 @@
                             };
                         }
                     </ul>
+                    @{
+                        if (User.IsInRole("User"))
+                        {
+                            <a asp-controller="Cart" asp-action="ShowShoppingCart" class="btn d-flex align-items-center">
+                                <i class="bi bi-bag-fill"></i>
+                            </a>
+                        }
+                    }        
                     <partial name="_LoginPartial" />
                 </div>
             </div>

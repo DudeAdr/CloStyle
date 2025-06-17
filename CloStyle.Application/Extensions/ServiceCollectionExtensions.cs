@@ -32,6 +32,7 @@ namespace CloStyle.Application.Extensions
                 cfg.AddProfile(new CategoryMappingProfile());
                 cfg.AddProfile(new SizeMappingProfile());
                 cfg.AddProfile(new UserMappingProfile());
+                cfg.AddProfile(new ShoppingCartMappingProfile());
             }).CreateMapper()
             );
 

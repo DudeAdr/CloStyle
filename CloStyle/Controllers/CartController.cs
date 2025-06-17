@@ -1,5 +1,6 @@
 ﻿using CloStyle.Application.CloStyle.Commands.AddProductToCart;
 using CloStyle.Application.CloStyle.Queries.ProductQueries.GetProductDetails;
+using CloStyle.Application.CloStyle.Queries.ShoppingCartQueries.GetShoppingCartDetails;
 using CloStyle.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -8,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CloStyle.Controllers
 {
+    [Authorize(Roles = "User")]
     public class CartController : Controller
     {
         private IMediator _mediator;
@@ -21,7 +23,6 @@ namespace CloStyle.Controllers
             return View();
         }
 
-        [Authorize(Roles = "User")]
         public async Task<IActionResult> AddProductToCart(AddProductToCartCommand command)
         {
             if (!ModelState.IsValid)
@@ -51,6 +52,12 @@ namespace CloStyle.Controllers
             this.AddNotification("success", $"Product added successfully");
             return Redirect($"/CloStyle/{command.BrandName}/Products?brandId={command.BrandId}");
 
+        }
+
+        public async Task<ActionResult> ShowShoppingCart()
+        {
+            var model = await _mediator.Send(new GetShoppingCartDetailsQuery());
+            return View(model);
         }
     }
 }

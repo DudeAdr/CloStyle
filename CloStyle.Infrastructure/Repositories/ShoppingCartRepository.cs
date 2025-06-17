@@ -65,13 +65,34 @@ namespace CloStyle.Infrastructure.Repositories
         {
             return await _dbContext.ShoppingCarts
                 .Include(c => c.Items)
-                    .ThenInclude(ps => ps.Product)
-                        .ThenInclude(g => g.Gender)
+                    .ThenInclude(i => i.Product)
+                        .ThenInclude(p => p.Gender)
                 .Include(c => c.Items)
                     .ThenInclude(i => i.Product)
                         .ThenInclude(p => p.Category)
+                .Include(c => c.Items)
+                        .ThenInclude(i => i.ProductSize)
+                            .ThenInclude(ps => ps.Size)
+                .Include(c => c.Items)
+                    .ThenInclude(i => i.Product.Brand)
 
                 .FirstOrDefaultAsync(c => c.UserId == userId);
+        }
+
+        public async Task RemoveItemFromShoppingCart(string userId, Product product, int sizeId)
+        {
+            var cart = await GetShoppingCartByUserId(userId);
+
+            if (cart != null && cart.Items.Any(i => i.ProductId == product.Id && i.ProductSizeId == sizeId))
+            {
+                cart.Items.Remove(cart.Items.FirstOrDefault(i => i.ProductId == product.Id && i.ProductSizeId == sizeId && i.Quantity > 0));
+            }
+            else
+            {
+                throw new InvalidOperationException($"There is no product {product.Name} in this shopping cart");
+            }
+
+            await _dbContext.SaveChangesAsync();
         }
 
         private async Task<bool> IsProductAvaillable(Product product, int sizeId, int quantity)

@@ -20,6 +20,7 @@ namespace CloStyle.Domain.Entities
         public Product Product { get; set; }
         [Required]
         public int ProductSizeId { get; set; }
+        public ProductSize ProductSize { get; set; }
         [Required]
         public int Quantity { get; set; }
     }

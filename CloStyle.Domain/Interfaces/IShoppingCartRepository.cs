@@ -11,5 +11,6 @@ namespace CloStyle.Domain.Interfaces
     {
         Task<ShoppingCart> GetShoppingCartByUserId(string userId);
         Task AddItemToShoppingCart(string userId, Product product, int sizeId, int quantity);
+        Task RemoveItemFromShoppingCart(string userId, Product product, int sizeId);
     }
 }
