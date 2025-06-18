@@ -16,9 +16,14 @@
             <a asp-controller="Brand" asp-action="Index" class="btn btn-outline-secondary d-flex align-items-center">
                 <span>⬅️</span> Back to Brands
             </a>
-            <a asp-controller="Product" asp-action="Add" asp-route-id="@Model.BrandId" class="btn btn-success d-flex align-items-center">
-                <i class="bi bi-plus-circle me-2"></i> Add New Product
-            </a>         
+            @{
+                if (isInRole && Model.IsEditable)
+                {
+                    <a asp-controller="Product" asp-action="Add" asp-route-id="@Model.BrandId" class="btn btn-success d-flex align-items-center">
+                        <i class="bi bi-plus-circle me-2"></i> Add New Product
+                    </a>
+                }
+            }         
         </div>
     </div>
 

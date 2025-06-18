@@ -659,6 +659,88 @@
       ]
     },
     {
+      "Route": "images/brands/63025f48-4f31-4472-8c94-41217226d1e7_New-Yorker-logo.iz8g43hhmx.jpg",
+      "AssetFile": "images/brands/63025f48-4f31-4472-8c94-41217226d1e7_New-Yorker-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:34:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iz8g43hhmx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE="
+        },
+        {
+          "Name": "label",
+          "Value": "images/brands/63025f48-4f31-4472-8c94-41217226d1e7_New-Yorker-logo.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/brands/63025f48-4f31-4472-8c94-41217226d1e7_New-Yorker-logo.jpg",
+      "AssetFile": "images/brands/63025f48-4f31-4472-8c94-41217226d1e7_New-Yorker-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:34:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gq6RZOR+A7OPhFka+F8ocnnEKfhAA7MHMEc97isMssE="
+        }
+      ]
+    },
+    {
       "Route": "images/brands/677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.iz8g43hhmx.jpg",
       "AssetFile": "images/brands/677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg",
       "Selectors": [],

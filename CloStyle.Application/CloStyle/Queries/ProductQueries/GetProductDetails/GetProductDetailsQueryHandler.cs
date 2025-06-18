@@ -33,6 +33,10 @@ namespace CloStyle.Application.CloStyle.Queries.ProductQueries.GetProductDetails
         public async Task<ProductDetailsVM> Handle(GetProductDetailsQuery request, CancellationToken cancellationToken)
         {
             var product = await _productRepository.GetProductById(request.id);
+            if (product == null)
+            {
+                return new ProductDetailsVM();
+            }
             var gender = await _genderRepository.GetGenderById(product.GenderId);
             var category = await _categoryRepository.GetCategoryById(product.CategoryId);
             var sizes = await _sizeRepository.GetAll();

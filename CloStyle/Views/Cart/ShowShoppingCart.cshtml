@@ -4,86 +4,61 @@
     ViewData["Title"] = "ShowShoppingCart";
 }
 
-<h1>Your shopping cart:</h1>
+<h1 class="text-center mt-md-4">Your shopping cart</h1>
 
-<div>
-    <hr />
-    @foreach (var item in Model.Items)
+<div class="container mt-5">
+    @if (Model==null)
     {
-        <div>
-            <dl class="row">
-                <dt class="col-sm-2">
-                    Product ID
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(modelItem => item.ProductId)
-                </dd>
-            </dl>
-            <dl class="row">
-                <dt class="col-sm-2">
-                    Brand Name
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(modelItem => item.BrandName)
-                </dd>
-            </dl>
-            <dl class="row">
-                <dt class="col-sm-2">
-                    Product Name
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(modelItem => item.ProductName)
-                </dd>
-            </dl>
-            <dl class="row">
-                <dt class="col-sm-2">
-                    Quantity
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(modelItem => item.Quantity)
-                </dd>
-            </dl>
-            <dl class="row">
-                <dt class="col-sm-2">
-                    Unit Price
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(modelItem => item.UnitPrice)
-                </dd>
-            </dl>
-            <dl class="row">
-                <dt class="col-sm-2">
-                    Total Price
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(modelItem => item.TotalPrice)
-                </dd>
-            </dl>
-            <dl class="row">
-                <dt class="col-sm-2">
-                    Size Id
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(modelItem => item.ProductSizeId)
-                </dd>
-            </dl>
-            <dl class="row">
-                <dt class="col-sm-2">
-                    Size
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(modelItem => item.ProductSizeName)
-                </dd>
-            </dl>
-            <br /><br />
+        <div class="alert alert-warning text-center" role="alert">
+            <h1>Your cart is currently empty</h1>
+            If you want to add something click <a asp-controller="Brand" asp-action="Index">here</a>
         </div>
     }
-    <dl class="row">
-        <dt class = "col-sm-2">
-            Total: 
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TotalCartPrice)
-        </dd>
-    </dl>
+    else
+    {
+        <div class="row">
+        @foreach (var item in Model.Items)
+        {
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <form asp-controller="Cart" asp-action="RemoveProductFromCart" method="post">
+                            <input type="hidden" name="ProductId" value="@item.ProductId" />
+                            <input type="hidden" name="ProductSizeId" value="@item.ProductSizeId" />
+
+                            <h5 class="card-title">@item.ProductName</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">@item.BrandName</h6>
+
+                            <ul class="list-group list-group-flush my-3">
+                                <li class="list-group-item">
+                                    <strong>Size:</strong> @item.ProductSizeName
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Quantity:</strong> @item.Quantity
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Unit Price:</strong> @item.UnitPrice.ToString("C")
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Total Price:</strong> @item.TotalPrice.ToString("C")
+                                </li>
+                            </ul>
+
+                            <button type="submit" class="btn btn-danger w-100">Remove From Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="alert alert-info text-end fs-5">
+                <strong>Total:</strong> @Model.TotalCartPrice.ToString("C")
+            </div>
+        </div>
+    </div>
+    }
 </div>
+    

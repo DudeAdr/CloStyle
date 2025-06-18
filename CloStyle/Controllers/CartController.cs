@@ -1,4 +1,5 @@
 ﻿using CloStyle.Application.CloStyle.Commands.AddProductToCart;
+using CloStyle.Application.CloStyle.Commands.RemoveProductFromCart;
 using CloStyle.Application.CloStyle.Queries.ProductQueries.GetProductDetails;
 using CloStyle.Application.CloStyle.Queries.ShoppingCartQueries.GetShoppingCartDetails;
 using CloStyle.Extensions;
@@ -18,11 +19,8 @@ namespace CloStyle.Controllers
         {
             _mediator = mediator;
         }
-        public async Task<ActionResult> Index()
-        {
-            return View();
-        }
 
+        [HttpPost]
         public async Task<IActionResult> AddProductToCart(AddProductToCartCommand command)
         {
             if (!ModelState.IsValid)
@@ -54,10 +52,25 @@ namespace CloStyle.Controllers
 
         }
 
+        [HttpGet]
         public async Task<ActionResult> ShowShoppingCart()
         {
             var model = await _mediator.Send(new GetShoppingCartDetailsQuery());
             return View(model);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> RemoveProductFromCart(RemoveProductFromCartCommand command)
+        {
+            if(!ModelState.IsValid)
+            {
+                this.AddNotification("error", "Product not found");
+                return RedirectToAction("ShowShoppingCart");
+            }
+
+            await _mediator.Send(command);
+            this.AddNotification("success", "Product successfully removed from cart");
+            return RedirectToAction("ShowShoppingCart");
         }
     }
 }

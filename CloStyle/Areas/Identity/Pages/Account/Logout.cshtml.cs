@@ -5,11 +5,14 @@
 using System;
 using System.Threading.Tasks;
 using CloStyle.Domain.Entities;
+using CloStyle.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System.Text.Json;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace CloStyle.Areas.Identity.Pages.Account
 {
@@ -30,7 +33,9 @@ namespace CloStyle.Areas.Identity.Pages.Account
             _logger.LogInformation("User logged out.");
             if (returnUrl != null)
             {
-                return LocalRedirect(returnUrl);
+                var notification = new Notification("success","Successfully logged out!");
+                this.TempData["Notification"] = JsonSerializer.Serialize(notification);
+                return Redirect("/");   
             }
             else
             {

@@ -85,6 +85,10 @@ namespace CloStyle.Infrastructure.Repositories
 
             if (cart != null && cart.Items.Any(i => i.ProductId == product.Id && i.ProductSizeId == sizeId))
             {
+                var productDb = _dbContext.Products.FirstOrDefault(i => i.Id == product.Id);
+                var productSizes = product.ProductSizes.FirstOrDefault(i => i.SizeId == sizeId);
+                productDb.ProductSizes.FirstOrDefault(i => i.SizeId == sizeId).Stock += cart.Items.FirstOrDefault(i => i.ProductId == product.Id && i.ProductSizeId == sizeId).Quantity;
+                _dbContext.Products.Update(productDb);
                 cart.Items.Remove(cart.Items.FirstOrDefault(i => i.ProductId == product.Id && i.ProductSizeId == sizeId && i.Quantity > 0));
             }
             else
