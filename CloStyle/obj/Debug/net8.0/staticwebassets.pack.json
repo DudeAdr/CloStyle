@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CloStyle.bundle.scp.css",
-      "PackagePath": "staticwebassets\\CloStyle.nrl36k502x.bundle.scp.css"
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CloStyle.MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CloStyle.MVC.n47bpef9pi.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\css\\brand.css",
@@ -313,24 +313,24 @@
       "PackagePath": "staticwebassets\\lib\\toastr.js\\toastr.min.js"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CloStyle.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CloStyle.MVC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CloStyle.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CloStyle.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CloStyle.props",
-      "PackagePath": "build\\CloStyle.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CloStyle.MVC.props",
+      "PackagePath": "build\\CloStyle.MVC.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CloStyle.props",
-      "PackagePath": "buildMultiTargeting\\CloStyle.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CloStyle.MVC.props",
+      "PackagePath": "buildMultiTargeting\\CloStyle.MVC.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CloStyle.props",
-      "PackagePath": "buildTransitive\\CloStyle.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CloStyle.MVC.props",
+      "PackagePath": "buildTransitive\\CloStyle.MVC.props"
     }
   ],
   "ElementsToRemove": []

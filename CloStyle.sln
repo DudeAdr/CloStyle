@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloStyle", "CloStyle\CloStyle.csproj", "{79E9C596-79CB-4F29-B6A5-8CACB39ED2D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloStyle.MVC", "CloStyle\CloStyle.MVC.csproj", "{79E9C596-79CB-4F29-B6A5-8CACB39ED2D3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloStyle.Application", "CloStyle.Application\CloStyle.Application.csproj", "{94E05EB3-7B79-45D6-9E4D-F4AE0603ED20}"
 EndProject

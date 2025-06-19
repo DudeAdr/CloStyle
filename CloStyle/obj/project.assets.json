@@ -8493,9 +8493,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\CloStyle.csproj",
-      "projectName": "CloStyle",
-      "projectPath": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\CloStyle.csproj",
+      "projectUniqueName": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\CloStyle.MVC.csproj",
+      "projectName": "CloStyle.MVC",
+      "projectPath": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\CloStyle.MVC.csproj",
       "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\obj\\",
       "projectStyle": "PackageReference",
