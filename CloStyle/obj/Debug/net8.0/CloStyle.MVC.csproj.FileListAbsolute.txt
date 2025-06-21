@@ -308,3 +308,10 @@ C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\obj\Debug\net8.0\refin
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\obj\Debug\net8.0\CloStyle.MVC.pdb
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\obj\Debug\net8.0\CloStyle.MVC.genruntimeconfig.cache
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\obj\Debug\net8.0\ref\CloStyle.MVC.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\Spire.Pdf.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\SkiaSharp.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\runtimes\tizen-armel\native\libSkiaSharp.so
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\runtimes\tizen-x86\native\libSkiaSharp.so
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll

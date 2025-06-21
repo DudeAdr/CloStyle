@@ -44,6 +44,14 @@
                                 </li>
                             };
                         }
+                        @{
+                            if (User.IsInRole("Owner"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="OwnerPanel" asp-action="Index">Owner Panel</a>
+                                </li>
+                            };
+                        }
                     </ul>
                     @{
                         if (User.IsInRole("User"))

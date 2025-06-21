@@ -36,6 +36,7 @@ namespace CloStyle.Infrastructure.Extensions
             services.AddScoped<ISizeRepository, SizeRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
+            services.AddScoped<IOwnerPanelRepository, OwnerPanelRepository>();
         }
     }
 }
