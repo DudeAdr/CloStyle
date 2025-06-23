@@ -17,24 +17,12 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\0a80576c-7054-4532-b63b-537c79e9b889_New-Yorker-logo.jpg",
-      "PackagePath": "staticwebassets\\images\\brands\\0a80576c-7054-4532-b63b-537c79e9b889_New-Yorker-logo.jpg"
-    },
-    {
-      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\2be15539-d34e-4663-ad4b-23227e4b7c27_New-Yorker-logo.jpg",
-      "PackagePath": "staticwebassets\\images\\brands\\2be15539-d34e-4663-ad4b-23227e4b7c27_New-Yorker-logo.jpg"
-    },
-    {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\3591c7ce-f6a9-450d-9cf2-b22991d75368_w3kr4m2fi3111.png",
       "PackagePath": "staticwebassets\\images\\brands\\3591c7ce-f6a9-450d-9cf2-b22991d75368_w3kr4m2fi3111.png"
     },
     {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\3b5755f3-fb4c-48c1-92ae-878651e23e78_Test-Logo.png",
       "PackagePath": "staticwebassets\\images\\brands\\3b5755f3-fb4c-48c1-92ae-878651e23e78_Test-Logo.png"
-    },
-    {
-      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\63025f48-4f31-4472-8c94-41217226d1e7_New-Yorker-logo.jpg",
-      "PackagePath": "staticwebassets\\images\\brands\\63025f48-4f31-4472-8c94-41217226d1e7_New-Yorker-logo.jpg"
     },
     {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\677f7607-601b-4277-bd4a-eb05476108a0_New-Yorker-logo.jpg",
@@ -53,8 +41,16 @@
       "PackagePath": "staticwebassets\\images\\brands\\d17adb5b-7aae-4988-a980-91746d107e25_newb.png"
     },
     {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\e669100a-fd7b-4621-8a4d-34e22a05c429_Test-Logo.png",
+      "PackagePath": "staticwebassets\\images\\brands\\e669100a-fd7b-4621-8a4d-34e22a05c429_Test-Logo.png"
+    },
+    {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\e673183c-d84b-4b43-891d-0acb3cb7fe5b_w3kr4m2fi3111.png",
       "PackagePath": "staticwebassets\\images\\brands\\e673183c-d84b-4b43-891d-0acb3cb7fe5b_w3kr4m2fi3111.png"
+    },
+    {
+      "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\effcc279-515c-407f-9fc0-6cb12011d4af_Test-Logo.png",
+      "PackagePath": "staticwebassets\\images\\brands\\effcc279-515c-407f-9fc0-6cb12011d4af_Test-Logo.png"
     },
     {
       "Id": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\nike.jpg",

@@ -20,6 +20,15 @@ namespace CloStyle.Infrastructure.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<ProductSize>()
+                .HasKey(ps => new { ps.ProductId, ps.SizeId });
+
+            modelBuilder.Entity<ShoppingCartItem>()
+                .HasOne(sci => sci.ProductSize)
+                .WithMany(ps => ps.ShoppingCartItems)
+                .HasForeignKey(sci => new { sci.ProductId, sci.SizeId })
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

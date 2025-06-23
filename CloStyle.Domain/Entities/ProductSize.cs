@@ -13,15 +13,12 @@ namespace CloStyle.Domain.Entities
     {
         [Key]
         public int Id { get; set; }
-
-        [ForeignKey("Product")]
         public int ProductId { get; set; }
         public Product Product { get; set; }
-
-        [ForeignKey("Size")]
         public int SizeId { get; set; }
         public Size Size { get; set; }
-
         public int Stock { get; set; }
+        
+        public ICollection<ShoppingCartItem> ShoppingCartItems { get; set; }
     }
 }

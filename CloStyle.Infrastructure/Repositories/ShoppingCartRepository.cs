@@ -36,7 +36,7 @@ namespace CloStyle.Infrastructure.Repositories
                 await _dbContext.SaveChangesAsync();
             }
 
-            var existingItem = cart.Items.FirstOrDefault(i => i.ProductId == product.Id && i.ProductSizeId == sizeId);
+            var existingItem = cart.Items.FirstOrDefault(i => i.ProductId == product.Id && i.SizeId == sizeId);
             var productSizes = product.ProductSizes.FirstOrDefault(i => i.SizeId == sizeId);
 
             if (existingItem != null)
@@ -48,7 +48,7 @@ namespace CloStyle.Infrastructure.Repositories
             {
                 var newItem = (new ShoppingCartItem()
                 {
-                    ProductSizeId = sizeId,
+                    SizeId = sizeId,
                     Quantity = quantity,
                     ShoppingCartId = cart.Id,
                     ProductId = product.Id
@@ -83,13 +83,13 @@ namespace CloStyle.Infrastructure.Repositories
         {
             var cart = await GetShoppingCartByUserId(userId);
 
-            if (cart != null && cart.Items.Any(i => i.ProductId == product.Id && i.ProductSizeId == sizeId))
+            if (cart != null && cart.Items.Any(i => i.ProductId == product.Id && i.SizeId == sizeId))
             {
                 var productDb = _dbContext.Products.FirstOrDefault(i => i.Id == product.Id);
                 var productSizes = product.ProductSizes.FirstOrDefault(i => i.SizeId == sizeId);
-                productDb.ProductSizes.FirstOrDefault(i => i.SizeId == sizeId).Stock += cart.Items.FirstOrDefault(i => i.ProductId == product.Id && i.ProductSizeId == sizeId).Quantity;
+                productDb.ProductSizes.FirstOrDefault(i => i.SizeId == sizeId).Stock += cart.Items.FirstOrDefault(i => i.ProductId == product.Id && i.SizeId == sizeId).Quantity;
                 _dbContext.Products.Update(productDb);
-                cart.Items.Remove(cart.Items.FirstOrDefault(i => i.ProductId == product.Id && i.ProductSizeId == sizeId && i.Quantity > 0));
+                cart.Items.Remove(cart.Items.FirstOrDefault(i => i.ProductId == product.Id && i.SizeId == sizeId && i.Quantity > 0));
             }
             else
             {

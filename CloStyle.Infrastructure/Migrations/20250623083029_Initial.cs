@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CloStyle.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class Dbwithrolesandcart : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -275,15 +275,14 @@ namespace CloStyle.Infrastructure.Migrations
                 name: "ProductSizes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
                     ProductId = table.Column<int>(type: "int", nullable: false),
                     SizeId = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false),
                     Stock = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProductSizes", x => x.Id);
+                    table.PrimaryKey("PK_ProductSizes", x => new { x.ProductId, x.SizeId });
                     table.ForeignKey(
                         name: "FK_ProductSizes_Products_ProductId",
                         column: x => x.ProductId,
@@ -306,12 +305,18 @@ namespace CloStyle.Infrastructure.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ShoppingCartId = table.Column<int>(type: "int", nullable: false),
                     ProductId = table.Column<int>(type: "int", nullable: false),
-                    ProductSizeId = table.Column<int>(type: "int", nullable: false),
+                    SizeId = table.Column<int>(type: "int", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_ShoppingCartItems", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ShoppingCartItems_ProductSizes_ProductId_SizeId",
+                        columns: x => new { x.ProductId, x.SizeId },
+                        principalTable: "ProductSizes",
+                        principalColumns: new[] { "ProductId", "SizeId" },
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_ShoppingCartItems_Products_ProductId",
                         column: x => x.ProductId,
@@ -386,19 +391,14 @@ namespace CloStyle.Infrastructure.Migrations
                 column: "GenderId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ProductSizes_ProductId",
-                table: "ProductSizes",
-                column: "ProductId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_ProductSizes_SizeId",
                 table: "ProductSizes",
                 column: "SizeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ShoppingCartItems_ProductId",
+                name: "IX_ShoppingCartItems_ProductId_SizeId",
                 table: "ShoppingCartItems",
-                column: "ProductId");
+                columns: new[] { "ProductId", "SizeId" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_ShoppingCartItems_ShoppingCartId",
@@ -430,22 +430,22 @@ namespace CloStyle.Infrastructure.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "ProductSizes");
-
-            migrationBuilder.DropTable(
                 name: "ShoppingCartItems");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "Sizes");
+                name: "ProductSizes");
+
+            migrationBuilder.DropTable(
+                name: "ShoppingCarts");
 
             migrationBuilder.DropTable(
                 name: "Products");
 
             migrationBuilder.DropTable(
-                name: "ShoppingCarts");
+                name: "Sizes");
 
             migrationBuilder.DropTable(
                 name: "Brands");

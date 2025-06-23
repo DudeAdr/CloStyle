@@ -92,7 +92,7 @@ namespace CloStyle.Infrastructure.Seeders
                     {
                         new Product {Name = "Air Max", Price = 120.99m, BrandId = nikeBrand.Id, CategoryId = 1, GenderId = 1, Description = "Comfortable running shoes" },
                         new Product {Name = "Ultraboost", Price = 150.49m, BrandId = adidasBrand.Id, CategoryId = 1, GenderId = 1, Description = "High-performance sports shoes" },
-                        new Product {Name = "Nike T-Shirt", Price = 30.00m, BrandId = nikeBrand.Id, CategoryId = 2, GenderId = 2, Description = "Casual cotton t-shirt"}
+                        new Product {Name = "Nike T-Shirt", Price = 30.00m, BrandId = nikeBrand.Id, CategoryId = 2, GenderId = 2, Description = "Casual cotton t-shirt"},
                     };
 
                     _dbContext.Products.AddRange(products);
@@ -111,7 +111,10 @@ namespace CloStyle.Infrastructure.Seeders
                         new ProductSize { ProductId = airMax.Id, SizeId = 2, Stock = 150 },
                         new ProductSize { ProductId = airMax.Id, SizeId = 3, Stock = 75 },
                         new ProductSize {ProductId = ultraboost.Id, SizeId = 3, Stock = 50 },
-                        new ProductSize {ProductId = nikeTShirt.Id, SizeId = 1, Stock = 75 }
+                        new ProductSize {ProductId = nikeTShirt.Id, SizeId = 1, Stock = 75 },
+                        new ProductSize {ProductId = nikeTShirt.Id, SizeId = 4, Stock = 55 },
+                        new ProductSize {ProductId = nikeTShirt.Id, SizeId = 5, Stock = 25 },
+                        new ProductSize {ProductId = nikeTShirt.Id, SizeId = 6, Stock = 66 }
                     };
                     foreach (var ps in productSizes)
                     {

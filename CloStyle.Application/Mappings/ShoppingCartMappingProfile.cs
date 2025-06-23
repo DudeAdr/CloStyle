@@ -24,7 +24,7 @@ namespace CloStyle.Application.Mappings
                 .ForMember(dest => dest.BrandName, opt => opt.MapFrom(src => src.Product.Brand.Name))
                 .ForMember(dest => dest.UnitPrice, opt => opt.MapFrom(src => src.Product.Price))
                 .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.Quantity))
-                .ForMember(dest => dest.ProductSizeId, opt => opt.MapFrom(src => src.ProductSizeId))
+                .ForMember(dest => dest.ProductSizeId, opt => opt.MapFrom(src => src.SizeId))
                 .ForMember(dest => dest.ProductSizeName, opt => opt.MapFrom(src => src.ProductSize.Size.Name));
 
             CreateMap<ShoppingCart, ShoppingCartDetailsVM>()

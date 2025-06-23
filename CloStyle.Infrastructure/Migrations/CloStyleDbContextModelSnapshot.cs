@@ -190,24 +190,19 @@ namespace CloStyle.Infrastructure.Migrations
 
             modelBuilder.Entity("CloStyle.Domain.Entities.ProductSize", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
                     b.Property<int>("SizeId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
                     b.Property<int>("Stock")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
+                    b.HasKey("ProductId", "SizeId");
 
                     b.HasIndex("SizeId");
 
@@ -244,20 +239,20 @@ namespace CloStyle.Infrastructure.Migrations
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProductSizeId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<int>("ShoppingCartId")
                         .HasColumnType("int");
 
+                    b.Property<int>("SizeId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
-
                     b.HasIndex("ShoppingCartId");
+
+                    b.HasIndex("ProductId", "SizeId");
 
                     b.ToTable("ShoppingCartItems");
                 });
@@ -496,7 +491,15 @@ namespace CloStyle.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("CloStyle.Domain.Entities.ProductSize", "ProductSize")
+                        .WithMany("ShoppingCartItems")
+                        .HasForeignKey("ProductId", "SizeId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.Navigation("Product");
+
+                    b.Navigation("ProductSize");
 
                     b.Navigation("ShoppingCart");
                 });
@@ -570,6 +573,11 @@ namespace CloStyle.Infrastructure.Migrations
             modelBuilder.Entity("CloStyle.Domain.Entities.Product", b =>
                 {
                     b.Navigation("ProductSizes");
+                });
+
+            modelBuilder.Entity("CloStyle.Domain.Entities.ProductSize", b =>
+                {
+                    b.Navigation("ShoppingCartItems");
                 });
 
             modelBuilder.Entity("CloStyle.Domain.Entities.ShoppingCart", b =>
