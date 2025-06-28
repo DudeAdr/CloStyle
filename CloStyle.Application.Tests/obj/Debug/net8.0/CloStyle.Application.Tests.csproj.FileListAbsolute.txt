@@ -244,3 +244,5 @@ C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application.Tests\obj\
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application.Tests\obj\Debug\net8.0\CloStyle.Application.Tests.pdb
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application.Tests\obj\Debug\net8.0\CloStyle.Application.Tests.genruntimeconfig.cache
 C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application.Tests\obj\Debug\net8.0\ref\CloStyle.Application.Tests.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application.Tests\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\adria\Desktop\ClothesShop .NET\CloStyle\CloStyle.Application.Tests\bin\Debug\net8.0\Moq.dll

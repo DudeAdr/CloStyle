@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{94E05EB3-7B79-45D6-9E4D-F4AE0603ED20}|CloStyle.Application\\CloStyle.Application.csproj|c:\\users\\adria\\desktop\\clothesshop .net\\clostyle\\clostyle.application\\clostyle\\commands\\addbrand\\addbrandcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94E05EB3-7B79-45D6-9E4D-F4AE0603ED20}|CloStyle.Application\\CloStyle.Application.csproj|solutionrelative:clostyle.application\\clostyle\\commands\\addbrand\\addbrandcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD8CF8FF-9125-49EC-A43C-4AD1876B99F0}|CloStyle.Application.Tests\\CloStyle.Application.Tests.csproj|c:\\users\\adria\\desktop\\clothesshop .net\\clostyle\\clostyle.application.tests\\clostyle\\commands\\addbrand\\addbrandcommandvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD8CF8FF-9125-49EC-A43C-4AD1876B99F0}|CloStyle.Application.Tests\\CloStyle.Application.Tests.csproj|solutionrelative:clostyle.application.tests\\clostyle\\commands\\addbrand\\addbrandcommandvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FD8CF8FF-9125-49EC-A43C-4AD1876B99F0}|CloStyle.Application.Tests\\CloStyle.Application.Tests.csproj|c:\\users\\adria\\desktop\\clothesshop .net\\clostyle\\clostyle.application.tests\\currentapplicationuser\\currentusertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD8CF8FF-9125-49EC-A43C-4AD1876B99F0}|CloStyle.Application.Tests\\CloStyle.Application.Tests.csproj|solutionrelative:clostyle.application.tests\\currentapplicationuser\\currentusertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD8CF8FF-9125-49EC-A43C-4AD1876B99F0}|CloStyle.Application.Tests\\CloStyle.Application.Tests.csproj|c:\\users\\adria\\desktop\\clothesshop .net\\clostyle\\clostyle.application.tests\\currentapplicationuser\\usercontexttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD8CF8FF-9125-49EC-A43C-4AD1876B99F0}|CloStyle.Application.Tests\\CloStyle.Application.Tests.csproj|solutionrelative:clostyle.application.tests\\currentapplicationuser\\usercontexttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E05EB3-7B79-45D6-9E4D-F4AE0603ED20}|CloStyle.Application\\CloStyle.Application.csproj|c:\\users\\adria\\desktop\\clothesshop .net\\clostyle\\clostyle.application\\clostyle\\commands\\addbrand\\addbrandcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94E05EB3-7B79-45D6-9E4D-F4AE0603ED20}|CloStyle.Application\\CloStyle.Application.csproj|solutionrelative:clostyle.application\\clostyle\\commands\\addbrand\\addbrandcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94E05EB3-7B79-45D6-9E4D-F4AE0603ED20}|CloStyle.Application\\CloStyle.Application.csproj|c:\\users\\adria\\desktop\\clothesshop .net\\clostyle\\clostyle.application\\currentapplicationuser\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,46 +37,87 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1662,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 1827,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserContext.cs",
-              "DocumentMoniker": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CurrentApplicationUser\\UserContext.cs",
-              "RelativeDocumentMoniker": "CloStyle.Application\\CurrentApplicationUser\\UserContext.cs",
-              "ToolTip": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CurrentApplicationUser\\UserContext.cs",
-              "RelativeToolTip": "CloStyle.Application\\CurrentApplicationUser\\UserContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T19:19:35.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CurrentUser.cs",
-              "DocumentMoniker": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CurrentApplicationUser\\CurrentUser.cs",
-              "RelativeDocumentMoniker": "CloStyle.Application\\CurrentApplicationUser\\CurrentUser.cs",
-              "ToolTip": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CurrentApplicationUser\\CurrentUser.cs",
-              "RelativeToolTip": "CloStyle.Application\\CurrentApplicationUser\\CurrentUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T19:19:22.842Z"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "AddBrandCommandValidatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application.Tests\\CloStyle\\Commands\\AddBrand\\AddBrandCommandValidatorTests.cs",
+              "RelativeDocumentMoniker": "CloStyle.Application.Tests\\CloStyle\\Commands\\AddBrand\\AddBrandCommandValidatorTests.cs",
+              "ToolTip": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application.Tests\\CloStyle\\Commands\\AddBrand\\AddBrandCommandValidatorTests.cs",
+              "RelativeToolTip": "CloStyle.Application.Tests\\CloStyle\\Commands\\AddBrand\\AddBrandCommandValidatorTests.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAIwMcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:59:29.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddBrandCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CloStyle\\Commands\\AddBrand\\AddBrandCommandHandler.cs",
+              "RelativeDocumentMoniker": "CloStyle.Application\\CloStyle\\Commands\\AddBrand\\AddBrandCommandHandler.cs",
+              "ToolTip": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CloStyle\\Commands\\AddBrand\\AddBrandCommandHandler.cs",
+              "RelativeToolTip": "CloStyle.Application\\CloStyle\\Commands\\AddBrand\\AddBrandCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:56:53.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserContextTests.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application.Tests\\CurrentApplicationUser\\UserContextTests.cs",
+              "RelativeDocumentMoniker": "CloStyle.Application.Tests\\CurrentApplicationUser\\UserContextTests.cs",
+              "ToolTip": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application.Tests\\CurrentApplicationUser\\UserContextTests.cs",
+              "RelativeToolTip": "CloStyle.Application.Tests\\CurrentApplicationUser\\UserContextTests.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwCcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:32:17.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserContext.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CurrentApplicationUser\\UserContext.cs",
+              "RelativeDocumentMoniker": "CloStyle.Application\\CurrentApplicationUser\\UserContext.cs",
+              "ToolTip": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CurrentApplicationUser\\UserContext.cs",
+              "RelativeToolTip": "CloStyle.Application\\CurrentApplicationUser\\UserContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAC0AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T19:19:35.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CurrentUser.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CurrentApplicationUser\\CurrentUser.cs",
+              "RelativeDocumentMoniker": "CloStyle.Application\\CurrentApplicationUser\\CurrentUser.cs",
+              "ToolTip": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CurrentApplicationUser\\CurrentUser.cs",
+              "RelativeToolTip": "CloStyle.Application\\CurrentApplicationUser\\CurrentUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T19:19:22.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CurrentUserTests.cs",
               "DocumentMoniker": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application.Tests\\CurrentApplicationUser\\CurrentUserTests.cs",
               "RelativeDocumentMoniker": "CloStyle.Application.Tests\\CurrentApplicationUser\\CurrentUserTests.cs",
               "ToolTip": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application.Tests\\CurrentApplicationUser\\CurrentUserTests.cs",
               "RelativeToolTip": "CloStyle.Application.Tests\\CurrentApplicationUser\\CurrentUserTests.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBkAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T18:54:51.687Z",
               "EditorCaption": ""
@@ -68,6 +125,25 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1497,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddBrandCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CloStyle\\Commands\\AddBrand\\AddBrandCommandValidator.cs",
+              "RelativeDocumentMoniker": "CloStyle.Application\\CloStyle\\Commands\\AddBrand\\AddBrandCommandValidator.cs",
+              "ToolTip": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle.Application\\CloStyle\\Commands\\AddBrand\\AddBrandCommandValidator.cs",
+              "RelativeToolTip": "CloStyle.Application\\CloStyle\\Commands\\AddBrand\\AddBrandCommandValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:59:11.723Z",
+              "EditorCaption": ""
             }
           ]
         }
