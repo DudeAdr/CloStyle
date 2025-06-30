@@ -41,4 +41,4 @@ This is a project I am currently working on in my free time.
 ## 🚧 Work in Progress
 This project is still under development. New features and improvements are being added regularly.
 ### Currently in progress:
-- 🛒 Shopping cart functionality to allow users to add products and make purchases
+- Writing tests for the entire project
