@@ -1,6 +1,6 @@
 # CloStyle 👕🧥
 
-This is a project I am currently working on in my free time.
+This project was created to develop my skills in building web applications using .NET
 
 **CloStyle** is a web application built with **ASP.NET Core MVC**, designed to manage clothing brands and their associated products.
 
