@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M8nmwY1v4FS/FOp0T4wu9/4DySlpAm51Miadim7st5M=",
+  "Hash": "/wKHLf9LInb1fZszvmzu+2EqzYKqzcPwZ5HZLk5WKSQ=",
   "Source": "CloStyle.MVC",
   "BasePath": "_content/CloStyle.MVC",
   "Mode": "Default",
@@ -122,12 +122,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\620b2359-2aa2-4903-b0ca-670ddfe00f73_newb.png",
+      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\577f36b4-5d80-4158-aced-a660d0ed6f77_UrbanStyleFit.jpg",
       "SourceId": "CloStyle.MVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\",
       "BasePath": "_content/CloStyle.MVC",
-      "RelativePath": "images/brands/620b2359-2aa2-4903-b0ca-670ddfe00f73_newb#[.{fingerprint}]?.png",
+      "RelativePath": "images/brands/577f36b4-5d80-4158-aced-a660d0ed6f77_UrbanStyleFit#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -136,19 +136,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tqwsht1c0d",
-      "Integrity": "xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=",
+      "Fingerprint": "26vtm8dpj2",
+      "Integrity": "CkmhjOOlHkcT5NIoPAoiRigs3Ic6ZSNcsqRVhp3pGAw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\brands\\620b2359-2aa2-4903-b0ca-670ddfe00f73_newb.png"
+      "OriginalItemSpec": "wwwroot\\images\\brands\\577f36b4-5d80-4158-aced-a660d0ed6f77_UrbanStyleFit.jpg"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\adidas.jpg",
+      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\a53ce8f1-cf3c-4369-8f39-e29744dee904_pureStrength.jpg",
       "SourceId": "CloStyle.MVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\",
       "BasePath": "_content/CloStyle.MVC",
-      "RelativePath": "images/brands/adidas#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/brands/a53ce8f1-cf3c-4369-8f39-e29744dee904_pureStrength#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -157,19 +157,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8ll72ypoj6",
-      "Integrity": "9PwT4MUKkhCIcMsuCcYc9rkDIdLmJ1a34jVjzlxZfag=",
+      "Fingerprint": "2zhhg30wp3",
+      "Integrity": "PnFzfQ09oshXs5idbFXKH9e0TfHKMfSvIEXlN5EziOc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\brands\\adidas.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\brands\\a53ce8f1-cf3c-4369-8f39-e29744dee904_pureStrength.jpg"
     },
     {
-      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\nike.jpg",
+      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\b6607dce-c89c-4f7b-a58f-5a2cea6c7e30_MtnAthletic.jpg",
       "SourceId": "CloStyle.MVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\",
       "BasePath": "_content/CloStyle.MVC",
-      "RelativePath": "images/brands/nike#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/brands/b6607dce-c89c-4f7b-a58f-5a2cea6c7e30_MtnAthletic#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -178,11 +178,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rn4bukq7yx",
-      "Integrity": "V/oOwSQ/u75XjBFdCCP+mmBVX4kvlB/esSuAHJd2xxc=",
+      "Fingerprint": "98iio2o2ux",
+      "Integrity": "N3NOdkRbfCmvl9jq1J64yehOJI9GgR0cG5VUVYImtmM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\brands\\nike.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\brands\\b6607dce-c89c-4f7b-a58f-5a2cea6c7e30_MtnAthletic.jpg"
     },
     {
       "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\logo\\shirt.png",
@@ -204,6 +204,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo\\shirt.png"
+    },
+    {
+      "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\pics\\backgroundpic.jpg",
+      "SourceId": "CloStyle.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\",
+      "BasePath": "_content/CloStyle.MVC",
+      "RelativePath": "images/pics/backgroundpic#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p2frcxefxy",
+      "Integrity": "EdVns3fyXQwQ1U8isakd19ir1YL+FDqI2uS2OwOrS4U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pics\\backgroundpic.jpg"
     },
     {
       "Identity": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\js\\site.js",
@@ -1920,8 +1941,8 @@
       ]
     },
     {
-      "Route": "images/brands/620b2359-2aa2-4903-b0ca-670ddfe00f73_newb.png",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\620b2359-2aa2-4903-b0ca-670ddfe00f73_newb.png",
+      "Route": "images/brands/577f36b4-5d80-4158-aced-a660d0ed6f77_UrbanStyleFit.26vtm8dpj2.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\577f36b4-5d80-4158-aced-a660d0ed6f77_UrbanStyleFit.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1930,56 +1951,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7717"
+          "Value": "113626"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=\""
+          "Value": "\"CkmhjOOlHkcT5NIoPAoiRigs3Ic6ZSNcsqRVhp3pGAw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Jun 2025 08:36:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg="
-        }
-      ]
-    },
-    {
-      "Route": "images/brands/620b2359-2aa2-4903-b0ca-670ddfe00f73_newb.tqwsht1c0d.png",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\620b2359-2aa2-4903-b0ca-670ddfe00f73_newb.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7717"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 23 Jun 2025 08:36:34 GMT"
+          "Value": "Tue, 12 Aug 2025 17:51:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1989,21 +1973,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tqwsht1c0d"
+          "Value": "26vtm8dpj2"
         },
         {
           "Name": "label",
-          "Value": "images/brands/620b2359-2aa2-4903-b0ca-670ddfe00f73_newb.png"
+          "Value": "images/brands/577f36b4-5d80-4158-aced-a660d0ed6f77_UrbanStyleFit.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xen6VCwRsCxeencK5TmJV+iJz6D7MPFQrxhvHPNEIUg="
+          "Value": "sha256-CkmhjOOlHkcT5NIoPAoiRigs3Ic6ZSNcsqRVhp3pGAw="
         }
       ]
     },
     {
-      "Route": "images/brands/adidas.8ll72ypoj6.jpg",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\adidas.jpg",
+      "Route": "images/brands/577f36b4-5d80-4158-aced-a660d0ed6f77_UrbanStyleFit.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\577f36b4-5d80-4158-aced-a660d0ed6f77_UrbanStyleFit.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2012,7 +1996,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "21654"
+          "Value": "113626"
         },
         {
           "Name": "Content-Type",
@@ -2020,56 +2004,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9PwT4MUKkhCIcMsuCcYc9rkDIdLmJ1a34jVjzlxZfag=\""
+          "Value": "\"CkmhjOOlHkcT5NIoPAoiRigs3Ic6ZSNcsqRVhp3pGAw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 06:53:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8ll72ypoj6"
-        },
-        {
-          "Name": "label",
-          "Value": "images/brands/adidas.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9PwT4MUKkhCIcMsuCcYc9rkDIdLmJ1a34jVjzlxZfag="
-        }
-      ]
-    },
-    {
-      "Route": "images/brands/adidas.jpg",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\adidas.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21654"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9PwT4MUKkhCIcMsuCcYc9rkDIdLmJ1a34jVjzlxZfag=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 06:53:16 GMT"
+          "Value": "Tue, 12 Aug 2025 17:51:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2079,13 +2018,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9PwT4MUKkhCIcMsuCcYc9rkDIdLmJ1a34jVjzlxZfag="
+          "Value": "sha256-CkmhjOOlHkcT5NIoPAoiRigs3Ic6ZSNcsqRVhp3pGAw="
         }
       ]
     },
     {
-      "Route": "images/brands/nike.jpg",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\nike.jpg",
+      "Route": "images/brands/a53ce8f1-cf3c-4369-8f39-e29744dee904_pureStrength.2zhhg30wp3.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\a53ce8f1-cf3c-4369-8f39-e29744dee904_pureStrength.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2094,7 +2033,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8315"
+          "Value": "88349"
         },
         {
           "Name": "Content-Type",
@@ -2102,48 +2041,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"V/oOwSQ/u75XjBFdCCP+mmBVX4kvlB/esSuAHJd2xxc=\""
+          "Value": "\"PnFzfQ09oshXs5idbFXKH9e0TfHKMfSvIEXlN5EziOc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 09:45:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-V/oOwSQ/u75XjBFdCCP+mmBVX4kvlB/esSuAHJd2xxc="
-        }
-      ]
-    },
-    {
-      "Route": "images/brands/nike.rn4bukq7yx.jpg",
-      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\nike.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8315"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"V/oOwSQ/u75XjBFdCCP+mmBVX4kvlB/esSuAHJd2xxc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 09:45:38 GMT"
+          "Value": "Tue, 12 Aug 2025 17:52:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2153,15 +2055,134 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rn4bukq7yx"
+          "Value": "2zhhg30wp3"
         },
         {
           "Name": "label",
-          "Value": "images/brands/nike.jpg"
+          "Value": "images/brands/a53ce8f1-cf3c-4369-8f39-e29744dee904_pureStrength.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-V/oOwSQ/u75XjBFdCCP+mmBVX4kvlB/esSuAHJd2xxc="
+          "Value": "sha256-PnFzfQ09oshXs5idbFXKH9e0TfHKMfSvIEXlN5EziOc="
+        }
+      ]
+    },
+    {
+      "Route": "images/brands/a53ce8f1-cf3c-4369-8f39-e29744dee904_pureStrength.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\a53ce8f1-cf3c-4369-8f39-e29744dee904_pureStrength.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88349"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PnFzfQ09oshXs5idbFXKH9e0TfHKMfSvIEXlN5EziOc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 17:52:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PnFzfQ09oshXs5idbFXKH9e0TfHKMfSvIEXlN5EziOc="
+        }
+      ]
+    },
+    {
+      "Route": "images/brands/b6607dce-c89c-4f7b-a58f-5a2cea6c7e30_MtnAthletic.98iio2o2ux.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\b6607dce-c89c-4f7b-a58f-5a2cea6c7e30_MtnAthletic.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N3NOdkRbfCmvl9jq1J64yehOJI9GgR0cG5VUVYImtmM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 17:52:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "98iio2o2ux"
+        },
+        {
+          "Name": "label",
+          "Value": "images/brands/b6607dce-c89c-4f7b-a58f-5a2cea6c7e30_MtnAthletic.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N3NOdkRbfCmvl9jq1J64yehOJI9GgR0cG5VUVYImtmM="
+        }
+      ]
+    },
+    {
+      "Route": "images/brands/b6607dce-c89c-4f7b-a58f-5a2cea6c7e30_MtnAthletic.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\brands\\b6607dce-c89c-4f7b-a58f-5a2cea6c7e30_MtnAthletic.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N3NOdkRbfCmvl9jq1J64yehOJI9GgR0cG5VUVYImtmM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 17:52:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N3NOdkRbfCmvl9jq1J64yehOJI9GgR0cG5VUVYImtmM="
         }
       ]
     },
@@ -2244,6 +2265,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-0e4TZvqeNinzEV64WdxMBVQOd/W8v7b6AcZktn7BWDU="
+        }
+      ]
+    },
+    {
+      "Route": "images/pics/backgroundpic.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\pics\\backgroundpic.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4398319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EdVns3fyXQwQ1U8isakd19ir1YL+FDqI2uS2OwOrS4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 17:31:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EdVns3fyXQwQ1U8isakd19ir1YL+FDqI2uS2OwOrS4U="
+        }
+      ]
+    },
+    {
+      "Route": "images/pics/backgroundpic.p2frcxefxy.jpg",
+      "AssetFile": "C:\\Users\\adria\\Desktop\\ClothesShop .NET\\CloStyle\\CloStyle\\wwwroot\\images\\pics\\backgroundpic.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4398319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EdVns3fyXQwQ1U8isakd19ir1YL+FDqI2uS2OwOrS4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Aug 2025 17:31:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p2frcxefxy"
+        },
+        {
+          "Name": "label",
+          "Value": "images/pics/backgroundpic.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EdVns3fyXQwQ1U8isakd19ir1YL+FDqI2uS2OwOrS4U="
         }
       ]
     },

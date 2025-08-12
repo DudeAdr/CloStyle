@@ -1,10 +1,11 @@
 wwwroot\css\brand.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\images\brands\620b2359-2aa2-4903-b0ca-670ddfe00f73_newb.png
-wwwroot\images\brands\adidas.jpg
-wwwroot\images\brands\nike.jpg
+wwwroot\images\brands\577f36b4-5d80-4158-aced-a660d0ed6f77_UrbanStyleFit.jpg
+wwwroot\images\brands\a53ce8f1-cf3c-4369-8f39-e29744dee904_pureStrength.jpg
+wwwroot\images\brands\b6607dce-c89c-4f7b-a58f-5a2cea6c7e30_MtnAthletic.jpg
 wwwroot\images\logo\shirt.png
+wwwroot\images\pics\backgroundpic.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

@@ -3,3 +3,4 @@
 ################################################################################
 
 /CloStyle/appsettings.json
+/CloStyle.Infrastructure/Seeders/CloStyleSeeder.cs
